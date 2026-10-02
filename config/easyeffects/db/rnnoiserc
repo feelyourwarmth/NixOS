@@ -1,0 +1,5 @@
+[sie][RNNoise#0]
+enableVad=true
+release=60
+useStandardModel=false
+vadThres=0

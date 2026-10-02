@@ -1,0 +1,4 @@
+[sie][EchoCanceller#0]
+enableAGC=false
+enableEchoCanceller=false
+noiseSuppressionLevel=0

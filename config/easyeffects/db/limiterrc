@@ -1,0 +1,5 @@
+[sie][Limiter#0]
+attack=0.5
+lookahead=3
+release=20
+threshold=-15

@@ -1,0 +1,16 @@
+{
+    "edge": 0,
+    "editGridSize": 16,
+    "editGridSnap": true,
+    "front": [
+    ],
+    "motion": {
+        "amount": "subtle",
+        "idle": "breathe",
+        "music": true,
+        "speed": 0.4
+    },
+    "quality": "fine",
+    "shadow": 0.45,
+    "shadowAngle": 90
+}

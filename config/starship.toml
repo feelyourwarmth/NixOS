@@ -1,0 +1,35 @@
+add_newline = false
+palette = "mythos"
+
+format = """
+ㅤ
+$directory$git_branch$cmd_duration
+$character"""
+
+[palettes.mythos]
+white = "#FFFFFF"
+
+[directory]
+style = "white bold"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " 󰌾"
+read_only_style = "white bold"
+format = "[$path ]($style)[$read_only]($read_only_style)"
+
+[git_branch]
+symbol = "󰊢 "
+style = "white bold"
+format = "[$symbol$branch ]($style)"
+
+[cmd_duration]
+min_time = 500
+style = "white bold"
+format = "[󰔚 $duration ]($style)"
+
+[character]
+success_symbol = "[感じる ↝](white)"
+error_symbol = "[感じる ↝](white)"
+
+[package]
+disabled = true

@@ -1,0 +1,59 @@
+{
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/user.txt",
+    "width": 1,
+    "height": 2,
+    "padding": {
+      "left": 0,
+      "right": 1,
+      "top": 0
+    }
+  },
+  "display": {
+    "color": {
+      "keys": "38;2;169;169;169"
+    }
+  },
+  "modules": [
+    {
+      "format": "\u001b[38;2;169;169;169m──\u001b[0m \u001b[1;38;2;243;237;225mRYOKU\u001b[0m \u001b[38;2;58;46;36m───────────────────────────\u001b[0m",
+      "type": "custom"
+    },
+    {
+      "format": "{pretty-name}",
+      "key": "OS",
+      "type": "os"
+    },
+    {
+      "format": "{release}",
+      "key": "KER",
+      "type": "kernel"
+    },
+    {
+      "key": "CPU",
+      "type": "cpu"
+    },
+    {
+      "key": "GPU",
+      "type": "gpu"
+    },
+    {
+      "key": "MEM",
+      "type": "memory"
+    },
+    {
+      "key": "UP",
+      "type": "uptime"
+    },
+    {
+      "key": "WM",
+      "type": "wm"
+    },
+    {
+      "key": "DISK",
+      "type": "disk"
+    },
+    "break"
+  ]
+}

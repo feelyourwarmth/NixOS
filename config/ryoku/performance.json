@@ -1,0 +1,15 @@
+{
+    "ambientBarMotion": true,
+    "autoPowerSaverOnBattery": false,
+    "disableBlur": false,
+    "disableShadows": true,
+    "liveWallpaper60": false,
+    "lowPowerMode": false,
+    "pauseLiveWallpaperWhenFullscreen": true,
+    "powerProfileEffects": false,
+    "reduceMotion": false,
+    "unloadLauncherWhenIdle": true,
+    "unloadOverviewWhenIdle": true,
+    "unloadVisualizerWhenSilent": true,
+    "unloadWidgetsWhenCovered": true
+}

@@ -1,0 +1,8 @@
+{
+    "defaultCores": 4,
+    "defaultDisk": 64,
+    "defaultDisplay": "window",
+    "defaultRam": 8,
+    "extraPkgs": "",
+    "tools": "git,build,cli,spice"
+}

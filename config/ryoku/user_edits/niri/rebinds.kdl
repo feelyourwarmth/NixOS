@@ -1,0 +1,183 @@
+binds {
+    Super+backslash { spawn-sh "kitty gpk"; }
+    Super+period { spawn-sh "flatpak run it.mijorus.smile"; }
+    Super+apostrophe { spawn-sh "kitty ssh -i ~/.ssh/ryoku_id ryoku.dev"; }
+    Super+Shift+B { spawn-sh "nvibrant 1 0"; }
+    Super+Shift+N { spawn-sh "nvibrant 1 1023"; }
+    Super+W repeat=false { spawn-sh "jq -e '(.barStyle // \"qsbar\") == \"iris\" and .inir.closeConfirm.enabled == true' \"${XDG_CONFIG_HOME:-$HOME/.config}/ryoku/shell.json\" >/dev/null 2>&1 && qs -c shell ipc call closeConfirm trigger || niri msg action close-window"; }
+    Super+Shift+F { fullscreen-window; }
+    Super+Ctrl+1 { move-window-to-workspace 1; }
+    Super+Ctrl+2 { move-window-to-workspace 2; }
+    Super+Ctrl+3 { move-window-to-workspace 3; }
+    Super+Ctrl+4 { move-window-to-workspace 4; }
+    Super+Ctrl+5 { move-window-to-workspace 5; }
+    Super+Ctrl+6 { move-window-to-workspace 6; }
+    Super+Ctrl+7 { move-window-to-workspace 7; }
+    Super+Ctrl+8 { move-window-to-workspace 8; }
+    Super+Ctrl+9 { move-window-to-workspace 9; }
+    Super+Ctrl+0 { move-window-to-workspace 10; }
+    Super+Z { spawn "ryoku-app" "terminal"; }
+    Super+Shift+E { spawn "kitty" "-e" "yazi"; }
+    Super+M { spawn "ryotunes"; }
+    Super+Q { spawn "ryogami" "wallpaper" "ui"; }
+    Super+slash { spawn "ryoku-shell" "visualizer"; }
+    Super+A { toggle-window-floating; }
+    Super+R { switch-preset-column-width; }
+    Super+Shift+R { switch-preset-window-height; }
+    Super+T { toggle-column-tabbed-display; }
+    Super+D { maximize-column; }
+    Super+C { center-column; }
+    Alt+Tab { focus-window-previous; }
+    Super+Left { focus-column-left; }
+    Super+Right { focus-column-right; }
+    Super+Up { focus-window-up; }
+    Super+Down { focus-window-down; }
+    Super+Home { focus-column-first; }
+    Super+End { focus-column-last; }
+    Super+Shift+Left { move-column-left; }
+    Super+Shift+Right { move-column-right; }
+    Super+Shift+Up { move-window-up; }
+    Super+Shift+Down { move-window-down; }
+    Super+bracketleft { consume-or-expel-window-left; }
+    Super+bracketright { consume-or-expel-window-right; }
+    Super+Ctrl+Left { set-column-width "-10%"; }
+    Super+Ctrl+Right { set-column-width "+10%"; }
+    Super+Ctrl+Up { set-window-height "-10%"; }
+    Super+Ctrl+Down { set-window-height "+10%"; }
+    Super+Ctrl+R { reset-window-height; }
+    Super+1 { focus-workspace 1; }
+    Super+2 { focus-workspace 2; }
+    Super+3 { focus-workspace 3; }
+    Super+4 { focus-workspace 4; }
+    Super+5 { focus-workspace 5; }
+    Super+6 { focus-workspace 6; }
+    Super+7 { focus-workspace 7; }
+    Super+8 { focus-workspace 8; }
+    Super+9 { focus-workspace 9; }
+    Super+0 { focus-workspace 10; }
+    Super+Shift+1 { move-window-to-workspace 1 focus=false; }
+    Super+Shift+2 { move-window-to-workspace 2 focus=false; }
+    Super+Shift+3 { move-window-to-workspace 3 focus=false; }
+    Super+Shift+4 { move-window-to-workspace 4 focus=false; }
+    Super+Shift+5 { move-window-to-workspace 5 focus=false; }
+    Super+Shift+6 { move-window-to-workspace 6 focus=false; }
+    Super+Shift+7 { move-window-to-workspace 7 focus=false; }
+    Super+Shift+8 { move-window-to-workspace 8 focus=false; }
+    Super+Shift+9 { move-window-to-workspace 9 focus=false; }
+    Super+Shift+0 { move-window-to-workspace 10 focus=false; }
+    Super+KP_1 { focus-workspace 1; }
+    Super+KP_2 { focus-workspace 2; }
+    Super+KP_3 { focus-workspace 3; }
+    Super+KP_4 { focus-workspace 4; }
+    Super+KP_5 { focus-workspace 5; }
+    Super+KP_6 { focus-workspace 6; }
+    Super+KP_7 { focus-workspace 7; }
+    Super+KP_8 { focus-workspace 8; }
+    Super+KP_9 { focus-workspace 9; }
+    Super+KP_0 { focus-workspace 10; }
+    Super+Alt+KP_1 { move-window-to-workspace 1; }
+    Super+Alt+KP_2 { move-window-to-workspace 2; }
+    Super+Alt+KP_3 { move-window-to-workspace 3; }
+    Super+Alt+KP_4 { move-window-to-workspace 4; }
+    Super+Alt+KP_5 { move-window-to-workspace 5; }
+    Super+Alt+KP_6 { move-window-to-workspace 6; }
+    Super+Alt+KP_7 { move-window-to-workspace 7; }
+    Super+Alt+KP_8 { move-window-to-workspace 8; }
+    Super+Alt+KP_9 { move-window-to-workspace 9; }
+    Super+Alt+KP_0 { move-window-to-workspace 10; }
+    Super+Shift+KP_1 { move-window-to-workspace 1 focus=false; }
+    Super+Shift+KP_2 { move-window-to-workspace 2 focus=false; }
+    Super+Shift+KP_3 { move-window-to-workspace 3 focus=false; }
+    Super+Shift+KP_4 { move-window-to-workspace 4 focus=false; }
+    Super+Shift+KP_5 { move-window-to-workspace 5 focus=false; }
+    Super+Shift+KP_6 { move-window-to-workspace 6 focus=false; }
+    Super+Shift+KP_7 { move-window-to-workspace 7 focus=false; }
+    Super+Shift+KP_8 { move-window-to-workspace 8 focus=false; }
+    Super+Shift+KP_9 { move-window-to-workspace 9 focus=false; }
+    Super+Shift+KP_0 { move-window-to-workspace 10 focus=false; }
+    Super+Page_Up { focus-workspace-up; }
+    Super+Page_Down { focus-workspace-down; }
+    Super+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
+    Super+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+    Super+Shift+Page_Up { move-column-to-workspace-up; }
+    Super+Shift+Page_Down { move-column-to-workspace-down; }
+    Super+Ctrl+Page_Up { move-workspace-up; }
+    Super+Ctrl+Page_Down { move-workspace-down; }
+    Super+Tab { toggle-overview; }
+    Super+Alt+Left { focus-monitor-left; }
+    Super+Alt+Right { focus-monitor-right; }
+    Super+Alt+Up { focus-monitor-up; }
+    Super+Alt+Down { focus-monitor-down; }
+    Super+Alt+Shift+Left { move-column-to-monitor-left; }
+    Super+Alt+Shift+Right { move-column-to-monitor-right; }
+    Super+Alt+Shift+Up { move-column-to-monitor-up; }
+    Super+Alt+Shift+Down { move-column-to-monitor-down; }
+    Super+Ctrl+Alt+Left { move-workspace-to-monitor-left; }
+    Super+Ctrl+Alt+Right { move-workspace-to-monitor-right; }
+    Super+Ctrl+Alt+Up { move-workspace-to-monitor-up; }
+    Super+Ctrl+Alt+Down { move-workspace-to-monitor-down; }
+    Super+P { spawn "ryoku-wm-niri" "act" "output.cycle"; }
+    Super+E { spawn "ryoku-app" "files"; }
+    Super+B { spawn "ryoku-app" "browser"; }
+    Super+N { spawn "ryoku-app" "editor"; }
+    Super+O { spawn "ryoku-app" "notes"; }
+    Super+Space { spawn "ryoku-shell" "launcher"; }
+    Super+K { spawn-sh "pkill -x -f 'qs -c keys' 2>/dev/null || env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoku-keys.lock qs -c keys"; }
+    Super+L { spawn "ryoku-shell" "lock"; }
+    Super+Escape { spawn "ryoku-shell" "quicksettings"; }
+    Super+Shift+W { spawn "ryogami" "wallpaper" "random"; }
+    Super+Shift+V { spawn-sh "ryoku-summon ryovm env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryovm.lock qs -c ryovm"; }
+    Super+V { spawn "ryoku-shell" "clipboard"; }
+    Super+Shift+M { spawn "ryoku-shell" "visualizer-overlay"; }
+    Super+Alt+M { spawn "ryoku-shell" "visualizer-place"; }
+    Super+grave { spawn "ryoku-shell" "voice"; }
+    Super+comma { spawn "ryoku-shell" "hub" "open"; }
+    Super+S { spawn "ryoku-shell" "stash"; }
+    Super+Shift+S { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock qs -c ryoshot; fi"; }
+    Print { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock qs -c ryoshot; fi"; }
+    Shift+Print { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor qs -c ryoshot; fi"; }
+    Super+Shift+C { spawn "hyprpicker" "-a"; }
+    Super+Shift+A { spawn "ryoku-restart-audio"; }
+    Super+Shift+Escape { toggle-keyboard-shortcuts-inhibit; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "ryoku-volume" "up"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "ryoku-volume" "down"; }
+    XF86AudioMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
+    XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "ryoku-cmd-brightness" "+5"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "ryoku-cmd-brightness" "-5"; }
+    XF86TouchpadToggle allow-when-locked=true repeat=false { spawn "ryoku-wm-niri" "act" "input.touchpad" "toggle"; }
+    XF86TouchpadOn allow-when-locked=true repeat=false { spawn "ryoku-wm-niri" "act" "input.touchpad" "on"; }
+    XF86TouchpadOff allow-when-locked=true repeat=false { spawn "ryoku-wm-niri" "act" "input.touchpad" "off"; }
+    Super+KP_End { focus-workspace 1; }
+    Super+KP_Down { focus-workspace 2; }
+    Super+KP_Next { focus-workspace 3; }
+    Super+KP_Left { focus-workspace 4; }
+    Super+KP_Begin { focus-workspace 5; }
+    Super+KP_Right { focus-workspace 6; }
+    Super+KP_Home { focus-workspace 7; }
+    Super+KP_Up { focus-workspace 8; }
+    Super+KP_Prior { focus-workspace 9; }
+    Super+KP_Insert { focus-workspace 10; }
+    Super+Alt+KP_End { move-window-to-workspace 1; }
+    Super+Alt+KP_Down { move-window-to-workspace 2; }
+    Super+Alt+KP_Next { move-window-to-workspace 3; }
+    Super+Alt+KP_Left { move-window-to-workspace 4; }
+    Super+Alt+KP_Begin { move-window-to-workspace 5; }
+    Super+Alt+KP_Right { move-window-to-workspace 6; }
+    Super+Alt+KP_Home { move-window-to-workspace 7; }
+    Super+Alt+KP_Up { move-window-to-workspace 8; }
+    Super+Alt+KP_Prior { move-window-to-workspace 9; }
+    Super+Alt+KP_Insert { move-window-to-workspace 10; }
+    Super+Shift+KP_End { move-window-to-workspace 1 focus=false; }
+    Super+Shift+KP_Down { move-window-to-workspace 2 focus=false; }
+    Super+Shift+KP_Next { move-window-to-workspace 3 focus=false; }
+    Super+Shift+KP_Left { move-window-to-workspace 4 focus=false; }
+    Super+Shift+KP_Begin { move-window-to-workspace 5 focus=false; }
+    Super+Shift+KP_Right { move-window-to-workspace 6 focus=false; }
+    Super+Shift+KP_Home { move-window-to-workspace 7 focus=false; }
+    Super+Shift+KP_Up { move-window-to-workspace 8 focus=false; }
+    Super+Shift+KP_Prior { move-window-to-workspace 9 focus=false; }
+    Super+Shift+KP_Insert { move-window-to-workspace 10 focus=false; }
+}

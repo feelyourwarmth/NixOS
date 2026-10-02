@@ -14,6 +14,7 @@
       ./modules/rules.nix
       ./modules/pkgs.nix
       ./modules/nct6687.nix
+      ./modules/services.nix
     ];
 
   # Use the systemd-boot EFI boot loader.

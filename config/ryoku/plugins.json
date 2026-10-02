@@ -1,0 +1,310 @@
+{
+  "market": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {
+      "design": "area",
+      "symbols": "BTC-USD",
+      "window": "1W",
+      "refreshSec": 180,
+      "accent": "wallpaper",
+      "showGrid": true
+    },
+    "desktopWidget": {
+      "x": 0,
+      "y": 776,
+      "scale": 1.0730359091770214,
+      "locked": false
+    }
+  },
+  "a0d812f5c4b2d0d2ae7138fea188178bdae192743c7d8523ce7f445e2b3f81e3": {
+    "settings": {
+      "window": "1W",
+      "symbols": "BTC-USD",
+      "active": "BTC-USD"
+    }
+  },
+  "awe-storage-map": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 0,
+      "y": 896,
+      "scale": 0.7641929938157066,
+      "locked": false
+    }
+  },
+  "coffee": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {
+      "barLabel": "none",
+      "poll": 10,
+      "helperPath": ""
+    }
+  },
+  "awe-git-dashboard": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 480,
+      "y": 640,
+      "scale": 0.8
+    }
+  },
+  "awe-clock": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 0,
+      "y": 756,
+      "scale": 0.8
+    }
+  },
+  "awe-battery": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 40,
+      "y": 854,
+      "scale": 0.8
+    }
+  },
+  "awe-calc": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 460,
+      "y": 110,
+      "scale": 0.8
+    }
+  },
+  "awe-calendar": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 880,
+      "y": 110,
+      "scale": 0.8
+    }
+  },
+  "awe-clipboard": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 1300,
+      "y": 518,
+      "scale": 0.8
+    }
+  },
+  "awe-crypto": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 40,
+      "y": 574,
+      "scale": 0.8
+    }
+  },
+  "awe-habits": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 1720,
+      "y": 518,
+      "scale": 0.8
+    }
+  },
+  "awe-media": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 460,
+      "y": 390,
+      "scale": 0.8
+    }
+  },
+  "awe-network": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 352,
+      "y": 896,
+      "scale": 0.8
+    }
+  },
+  "awe-notes": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 1720,
+      "y": 318,
+      "scale": 0.8
+    }
+  },
+  "awe-ping": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 880,
+      "y": 522,
+      "scale": 0.8
+    }
+  },
+  "awe-poster": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 880,
+      "y": 330,
+      "scale": 0.8
+    }
+  },
+  "awe-quote": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 880,
+      "y": 814,
+      "scale": 0.8
+    }
+  },
+  "awe-resource-wheel": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 1300,
+      "y": 326,
+      "scale": 0.8
+    }
+  },
+  "awe-system-info": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {
+      "colorAuto": false,
+      "color": ""
+    },
+    "desktopWidget": {
+      "x": 32,
+      "y": 768,
+      "scale": 0.8
+    }
+  },
+  "awe-thermal": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 40,
+      "y": 718,
+      "scale": 0.8
+    }
+  },
+  "awe-timer": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 1720,
+      "y": 110,
+      "scale": 0.8
+    }
+  },
+  "awe-todo": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 1300,
+      "y": 110,
+      "scale": 0.8
+    }
+  },
+  "awe-visualizer": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 880,
+      "y": 670,
+      "scale": 0.8
+    }
+  },
+  "awe-volume-brightness": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 1300,
+      "y": 694,
+      "scale": 0.8
+    }
+  },
+  "awe-weather": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {
+      "colorAuto": false,
+      "color": ""
+    },
+    "desktopWidget": {
+      "x": 32,
+      "y": 864,
+      "scale": 0.8
+    }
+  },
+  "awe-clock-world": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {},
+    "desktopWidget": {
+      "x": 40,
+      "y": 390,
+      "scale": 0.8
+    }
+  },
+  "kotoba": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {
+      "intervalMin": 5,
+      "autoAdvance": false,
+      "scriptHiragana": true,
+      "scriptKatakana": true,
+      "scriptKanji": true,
+      "typeRecognition": true,
+      "typeReading": true,
+      "typeRecall": false,
+      "typeKana": true,
+      "showRomaji": true,
+      "showFurigana": true,
+      "showIntervals": true,
+      "notify": false,
+      "fontScale": 1.0,
+      "online": false,
+      "dictPack": "basic",
+      "decksDir": ""
+    },
+    "desktopWidget": {
+      "x": 32,
+      "y": 800
+    }
+  }
+}

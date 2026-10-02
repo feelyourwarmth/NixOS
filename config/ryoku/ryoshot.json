@@ -1,0 +1,14 @@
+{
+  "blurRadius": 64,
+  "mosaicBlock": 12,
+  "zoomFactor": 2,
+  "copyOnSave": true,
+  "saveDir": "",
+  "toolStyle": {
+    "redact": {
+      "color": "#e75a50",
+      "width": 2,
+      "filled": false
+    }
+  }
+}

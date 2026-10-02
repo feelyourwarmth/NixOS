@@ -1,0 +1,26 @@
+{
+  "components": {
+    "wallpaperSelector": {
+      "displayMode": "slices",
+      "enabled": true,
+      "gridLayout": "uniform",
+      "lastAppliedKey": "darkclouds"
+    }
+  },
+  "display": {},
+  "integrations": [],
+  "matugen": {
+    "mode": "dark"
+  },
+  "performance": {
+    "imageOptimizePreset": "quality",
+    "imageOptimizeResolution": "4k"
+  },
+  "transition": {
+    "shader": "fadecolor"
+  },
+  "wallhaven": {
+    "apiKey": "oJgcZenpLsTseT8NS7hn2SpcgH7vRT9F"
+  },
+  "wallpaperMute": true
+}

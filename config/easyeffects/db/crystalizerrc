@@ -1,0 +1,13 @@
+[sie][Crystalizer#0]
+bypass=true
+intensityBand10=-21
+intensityBand11=9
+
+[sie][Crystalizer#1]
+bypass=true
+
+[sie][Crystalizer#2]
+intensityBand5=-40
+intensityBand6=-40
+intensityBand7=-40
+intensityBand8=-40

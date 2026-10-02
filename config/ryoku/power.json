@@ -1,0 +1,16 @@
+{
+  "aspm": "performance",
+  "idle": {
+    "enabled": false,
+    "battery": {
+      "dimSec": 0,
+      "screenOffSec": 60,
+      "suspendSec": 0
+    },
+    "ac": {
+      "dimSec": 0,
+      "screenOffSec": 60,
+      "suspendSec": 0
+    }
+  }
+}

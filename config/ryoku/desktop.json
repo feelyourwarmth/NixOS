@@ -1,0 +1,395 @@
+{
+  "desktop": {
+    "appOverrides": [],
+    "appearance": {
+      "activeBorder": "#e0563b",
+      "activeOpacity": 1,
+      "animatedBorder": true,
+      "animations": true,
+      "blurBrightness": 1,
+      "blurContrast": 0.8916,
+      "blurEnabled": false,
+      "blurIgnoreOpacity": true,
+      "blurNewOptimizations": true,
+      "blurNoise": 0.01,
+      "blurPasses": 2,
+      "blurPopups": true,
+      "blurSize": 4,
+      "blurSpecial": false,
+      "blurVibrancy": 0.17,
+      "blurVibrancyDarkness": 0,
+      "blurXray": true,
+      "borderAngleSpeed": 6,
+      "borderFollowsPalette": true,
+      "borderPartOfWindow": true,
+      "borderSize": 1,
+      "dimAround": 0.4,
+      "dimInactive": true,
+      "dimModal": true,
+      "dimSpecial": 0.2,
+      "dimStrength": 0.2,
+      "extendBorderGrab": 15,
+      "fullscreenOpacity": 1,
+      "gapsIn": 4,
+      "gapsOut": 6,
+      "gapsWorkspaces": 16,
+      "glowColor": "#ee33cc",
+      "glowEnabled": false,
+      "glowRange": 10,
+      "hoverIconOnBorder": true,
+      "inactiveBorder": "#313a4d",
+      "inactiveOpacity": 0.9,
+      "layout": "scrolling",
+      "noFocusFallback": false,
+      "resizeCorner": 0,
+      "resizeOnBorder": true,
+      "rounding": 6,
+      "roundingPower": 4,
+      "shadowColor": "#000000",
+      "shadowEnabled": false,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 5,
+      "shadowPower": 4,
+      "shadowRange": 45,
+      "shadowScale": 1,
+      "shadowSharp": false,
+      "shadowSpread": 0,
+      "snapEnabled": false,
+      "windowStyle": "gnomed",
+      "wobblyWindows": false
+    },
+    "apps": {
+      "browser": "zen-beta --name zen-beta",
+      "editor": "kitty -e nvim",
+      "files": "nautilus"
+    },
+    "autostart": [
+      {
+        "command": "easyeffects --hide-window --service-mode"
+      },
+      {
+        "command": "gsr-ui"
+      }
+    ],
+    "cursor": {
+      "hideOnKeyPress": false,
+      "inactiveTimeout": 0,
+      "size": 20,
+      "theme": "Bibata-Material-Ryoku"
+    },
+    "env": [
+      {
+        "key": "RYOKU_LEDS_DISABLE",
+        "value": "1"
+      }
+    ],
+    "input": {
+      "accelProfile": "flat",
+      "clickfinger": false,
+      "disableWhileTyping": false,
+      "followMouse": 1,
+      "kbLayout": "us,br",
+      "kbOptions": "grp:alt_shift_toggle",
+      "kbVariant": "",
+      "leftHanded": false,
+      "middleClickPaste": true,
+      "middleEmulation": false,
+      "mouseNaturalScroll": false,
+      "mouseScrollFactor": 1,
+      "naturalScroll": false,
+      "numlockByDefault": false,
+      "repeatDelay": 250,
+      "repeatRate": 20,
+      "sensitivity": 0.1,
+      "swipeCreateNew": true,
+      "swipeDistance": 300,
+      "swipeFingers": 3,
+      "swipeInvert": true,
+      "tapAndDrag": false,
+      "tapToClick": false,
+      "touchScrollFactor": 1,
+      "workspaceSwipe": false
+    },
+    "keybindRebinds": {
+      "SUPER + ALT + E": "SUPER + SHIFT + E",
+      "SUPER + ALT + {n}": "SUPER + CTRL + {n}",
+      "SUPER + F": "SUPER + SHIFT + F",
+      "SUPER + J": "SUPER + M",
+      "SUPER + M": "SUPER + slash",
+      "SUPER + Q": "SUPER + W",
+      "SUPER + Return": "SUPER + Z",
+      "SUPER + W": "SUPER + Q"
+    },
+    "keybinds": [
+      {
+        "action": "exec",
+        "keys": "SUPER + backslash",
+        "value": "kitty gpk"
+      },
+      {
+        "action": "exec",
+        "keys": "SUPER + period",
+        "value": "flatpak run it.mijorus.smile"
+      },
+      {
+        "action": "exec",
+        "keys": "SUPER + apostrophe",
+        "release": false,
+        "value": "kitty ssh -i ~/.ssh/ryoku_id ryoku.dev"
+      },
+      {
+        "action": "exec",
+        "keys": "SUPER + SHIFT + B",
+        "release": false,
+        "value": "nvibrant 1 0"
+      },
+      {
+        "action": "exec",
+        "keys": "SUPER + SHIFT + N",
+        "release": false,
+        "value": "nvibrant 1 1023"
+      }
+    ],
+    "windowRules": [
+      {
+        "action": "maximize",
+        "class": "",
+        "title": "Discord",
+        "value": ""
+      },
+      {
+        "action": "maximize",
+        "class": "",
+        "title": "Zen",
+        "value": ""
+      },
+      {
+        "action": "workspace",
+        "class": "discord-canary",
+        "title": "",
+        "value": "2"
+      }
+    ],
+    "windows": {
+      "tameMaximizeOnOpen": true
+    }
+  },
+  "wm": {
+    "hyprland": {
+      "anim": {
+        "curves": [
+          {
+            "name": "almostLinear",
+            "x0": 0.34,
+            "x1": 0.64,
+            "y0": 1.5,
+            "y1": 1
+          }
+        ],
+        "items": [
+          {
+            "bezier": "almostLinear",
+            "enabled": true,
+            "leaf": "fadeOut",
+            "speed": 2.2,
+            "style": ""
+          }
+        ]
+      },
+      "dwindle": {
+        "defaultSplitRatio": 1,
+        "forceSplit": "follow",
+        "preserveSplit": false,
+        "smartResizing": true,
+        "smartSplit": false,
+        "useActiveForSplits": true
+      },
+      "layerRules": [],
+      "master": {
+        "mfact": 0.55,
+        "newOnTop": false,
+        "newStatus": "slave",
+        "orientation": "left",
+        "smartResizing": true
+      },
+      "plugins": {
+        "dynamicCursors": {
+          "enabled": false,
+          "magnify": 4,
+          "mode": "tilt",
+          "shake": true
+        },
+        "hyprbars": {
+          "blur": true,
+          "buttons": true,
+          "enabled": false,
+          "height": 26,
+          "textSize": 11
+        },
+        "hyprfocus": {
+          "bounce": 0.95,
+          "enabled": false,
+          "mode": "bounce",
+          "opacity": 0.8,
+          "slide": 20
+        },
+        "hyprglass": {
+          "blurStrength": 2,
+          "brightness": 1,
+          "enabled": false,
+          "opacity": 1,
+          "preset": "clear",
+          "theme": "dark",
+          "tint": "8899aa22"
+        },
+        "hyprscrolling": {
+          "columnWidth": 0.5,
+          "followFocus": true
+        },
+        "imgborders": {
+          "blur": false,
+          "enabled": false,
+          "image": "",
+          "insets": "0,0,0,0",
+          "scale": 1,
+          "sizes": "8,8,8,8",
+          "smooth": true
+        },
+        "keysounds": {
+          "enabled": false,
+          "profile": "cherry-mx-brown",
+          "release": true,
+          "volume": 0.6
+        }
+      }
+    },
+    "niri": {
+      "alwaysCenterSingleColumn": true,
+      "anim": {
+        "configNotificationOpenClose": {
+          "curve": "ease-out-cubic",
+          "dampingRatio": 1,
+          "durationMs": 250,
+          "epsilon": 0.0001,
+          "mode": "default",
+          "stiffness": 800
+        },
+        "horizontalViewMovement": {
+          "curve": "ease-out-cubic",
+          "dampingRatio": 1,
+          "durationMs": 250,
+          "epsilon": 0.0001,
+          "mode": "default",
+          "stiffness": 800
+        },
+        "overviewOpenClose": {
+          "curve": "ease-out-cubic",
+          "dampingRatio": 1,
+          "durationMs": 250,
+          "epsilon": 0.0001,
+          "mode": "default",
+          "stiffness": 800
+        },
+        "screenshotUiOpen": {
+          "curve": "ease-out-cubic",
+          "dampingRatio": 1,
+          "durationMs": 250,
+          "epsilon": 0.0001,
+          "mode": "default",
+          "stiffness": 800
+        },
+        "windowClose": {
+          "curve": "ease-out-cubic",
+          "dampingRatio": 1,
+          "durationMs": 250,
+          "epsilon": 0.0001,
+          "mode": "default",
+          "stiffness": 800
+        },
+        "windowMovement": {
+          "curve": "ease-out-cubic",
+          "dampingRatio": 1,
+          "durationMs": 250,
+          "epsilon": 0.0001,
+          "mode": "default",
+          "stiffness": 800
+        },
+        "windowOpen": {
+          "curve": "ease-out-cubic",
+          "dampingRatio": 1,
+          "durationMs": 250,
+          "epsilon": 0.0001,
+          "mode": "default",
+          "stiffness": 800
+        },
+        "windowResize": {
+          "curve": "ease-out-cubic",
+          "dampingRatio": 1,
+          "durationMs": 250,
+          "epsilon": 0.0001,
+          "mode": "default",
+          "stiffness": 800
+        },
+        "workspaceSwitch": {
+          "curve": "ease-out-cubic",
+          "dampingRatio": 1,
+          "durationMs": 250,
+          "epsilon": 0.0001,
+          "mode": "default",
+          "stiffness": 800
+        }
+      },
+      "animationSlowdown": 1,
+      "backdropColor": "#1E1E1E",
+      "backgroundColor": "",
+      "blockOutApps": "",
+      "borderGradient": false,
+      "centerFocusedColumn": "never",
+      "defaultColumnDisplay": "normal",
+      "defaultColumnWidth": 0.5,
+      "disablePowerKey": false,
+      "dndEdgeViewScrollDelayMs": 100,
+      "dndEdgeViewScrollMaxSpeed": 1500,
+      "dndEdgeViewScrollTriggerWidth": 30,
+      "dndEdgeWorkspaceDelayMs": 100,
+      "dndEdgeWorkspaceMaxSpeed": 1500,
+      "dndEdgeWorkspaceTriggerHeight": 50,
+      "emptyWorkspaceAboveFirst": false,
+      "focusFollowsMouseScroll": -1,
+      "frame": "focusRing",
+      "gradientAngle": 180,
+      "gradientFrom": "#e0563b",
+      "gradientRelativeTo": "window",
+      "gradientTo": "#9b3226",
+      "hotCorners": false,
+      "hotkeyOverlayHideNotBound": false,
+      "hotkeyOverlaySkip": true,
+      "insertHint": true,
+      "layerRules": [],
+      "modKey": "Super",
+      "modKeyNested": "Super",
+      "overviewZoom": 0.5,
+      "preferNoCsd": true,
+      "presetColumnWidths": "0.33333, 0.5, 0.66667",
+      "presetWindowHeights": "0.33333, 0.5, 0.66667",
+      "recentWindows": false,
+      "screenshotPath": "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png",
+      "struts": {
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0
+      },
+      "tabIndicatorHideSingle": true,
+      "tabIndicatorWidth": 4,
+      "urgentColor": "#9b0000",
+      "warpMouseToFocus": "separate",
+      "workspaceAutoBackAndForth": false,
+      "workspaceShadow": true,
+      "workspaceShadowColor": "",
+      "workspaceShadowOffsetY": 10,
+      "workspaceShadowSoftness": 40,
+      "workspaceShadowSpread": 10
+    }
+  }
+}

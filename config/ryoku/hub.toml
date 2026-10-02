@@ -1,0 +1,4 @@
+[ui]
+  section = "bar-studio"
+  update_interval = "daily"
+  advanced = "1"

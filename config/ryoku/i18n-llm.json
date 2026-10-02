@@ -1,0 +1,7 @@
+{
+  "_help": "Paste your API key into \"key\". The default is OpenRouter (OpenAI-compatible, one key for every model, cheap): get a key at https://openrouter.ai/keys and pick a model at https://openrouter.ai/models . For vanilla OpenAI set provider \"openai\" and url \"\"; for Anthropic set provider \"anthropic\". Any field can also be set via env: RYOKU_I18N_PROVIDER / _KEY / _MODEL / _URL (env wins, used by CI).",
+  "provider": "openai",
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "model": "google/gemini-2.5-flash",
+  "key": ""
+}

@@ -1,0 +1,6 @@
+[sie][Compressor#0]
+attack=5
+knee=-9
+release=80
+releaseThreshold=0
+threshold=-22

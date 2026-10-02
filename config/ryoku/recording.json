@@ -1,0 +1,9 @@
+{
+    "codec": "h264",
+    "cursor": true,
+    "directory": "",
+    "encoder": "gpu",
+    "fps": 60,
+    "framerateMode": "cfr",
+    "quality": "ultra"
+}

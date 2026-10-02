@@ -1,0 +1,15 @@
+{
+    "bgBlur": 2,
+    "heroImage": "file:///home/feel/Pictures/Wallpapers/darkclouds.jpg",
+    "heroPosX": 0.5,
+    "heroPosY": 0.5,
+    "heroStrength": 0.3962,
+    "horizonColor": "#ffc777",
+    "horizonMode": "auto",
+    "radius": 16,
+    "resultSettleMs": 360,
+    "showGreeting": false,
+    "showWeather": true,
+    "variant": "main",
+    "weatherUnit": "C"
+}
