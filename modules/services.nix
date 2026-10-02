@@ -27,8 +27,8 @@
     };
 
     script = ''
-      chown feel:users /etc/nixos/config/easyeffects
-      chmod 0755 /etc/nixos/config/easyeffects
+      chown -R feel:users /etc/nixos/config/easyeffects
+      chmod -R u+rwX /etc/nixos/config/easyeffects
     '';
   };
 
