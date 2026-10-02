@@ -28,6 +28,8 @@
     easyeffects
     (discord-canary.override { withVencord = true; }) # DISCORD CANARY
     inputs.zen-browser.packages."${pkgs.system}".default # ZEN BROWSER
+    proton-vpn
+    mission-center
 
     # PACKAGES
     tumbler
@@ -39,6 +41,14 @@
     lua51Packages.luarocks
     vimPlugins.LazyVim
     lsp-plugins
+    uv
+    unzip
+    mangohud
+
+    # LARP
+    unimatrix
+    cbonsai
+    lavat
   ];
 
   # STEAM WITH SLSSTEAM
