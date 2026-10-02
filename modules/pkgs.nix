@@ -14,6 +14,7 @@
     fetch
     ncdu
     btop
+    nvibrant
 
     # GIT
     lazygit

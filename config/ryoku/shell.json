@@ -1,5 +1,5 @@
 {
-  "barStyle": "kairos",
+  "barStyle": "python",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -902,7 +902,7 @@
           "cornerRadius": -1,
           "dateSize": 12,
           "dateText": "7.12 — 8.31",
-          "detailColor": "#D0B996",
+          "detailColor": "#AAA299",
           "detailOpacity": 72,
           "dim": 10,
           "enable": false,
@@ -918,24 +918,24 @@
           "outlineColor": "#000000",
           "outlineOpacity": 0,
           "paletteMode": "adaptive",
-          "palettePreset": "adaptive",
+          "palettePreset": "custom",
           "placementStrategy": "free",
-          "preset": "exhibition",
-          "primaryColor": "#E7D4B2",
+          "preset": "custom",
+          "primaryColor": "#F1EEE7",
           "primaryColumns": 2,
           "primaryOpacity": 100,
           "primarySize": 72,
           "primaryText": "夏の記憶",
           "primaryWeight": 500,
           "rotateLatin": false,
-          "ruleColor": "#C18A53",
+          "ruleColor": "#E0B46A",
           "ruleOpacity": 78,
           "ruleThickness": 1,
-          "sealColor": "#A64B39",
+          "sealColor": "#D9684B",
           "sealFillOpacity": 0,
           "sealOpacity": 100,
           "sealText": "特別展",
-          "secondaryColor": "#CDB48D",
+          "secondaryColor": "#C9C2B8",
           "secondaryColumns": 2,
           "secondaryFontFamily": "",
           "secondaryLetterSpacing": 1,
@@ -2739,6 +2739,120 @@
   },
   "osdOpacity": 1,
   "osdRadius": 0,
+  "python": {
+    "bar": {
+      "autohide": false,
+      "autohideTimeout": 1000,
+      "distinctPills": false,
+      "groupColors": {},
+      "hideEmptyWorkspaces": false,
+      "modules": {
+        "center": [
+          "timedate",
+          "info",
+          "weather"
+        ],
+        "left": [
+          "left",
+          "workspaces"
+        ],
+        "right": [
+          "tray",
+          "kb",
+          "wifi",
+          "vol"
+        ]
+      },
+      "opacity": 82,
+      "position": "top",
+      "style": "modular",
+      "time": {
+        "format": "HH:mm:ss"
+      },
+      "timeStyle": "material",
+      "width": 99,
+      "workspaceCount": 5,
+      "workspacesStyle": "numbers"
+    },
+    "dock": {
+      "apps": [],
+      "autohide": false,
+      "autohideTimeout": 1000,
+      "cascadeScale": false,
+      "editing": false,
+      "elementSize": 44,
+      "enableScrolling": false,
+      "enabled": false,
+      "exclusive": false,
+      "floating": false,
+      "hoverScale": 120,
+      "onTop": true,
+      "opacity": 100,
+      "overrideBoundsCorrection": false,
+      "position": "bottom",
+      "smartAutohide": true,
+      "visibleElements": 7
+    },
+    "general": {
+      "avatarPath": "",
+      "language": "en",
+      "muteSfx": true,
+      "openGuideAtStartup": false,
+      "quickactions": true,
+      "screenshotCaptureOnRelease": false,
+      "sfxVolume": 100,
+      "wallpaperDir": "",
+      "weatherInterval": 15,
+      "weatherUnit": "metric",
+      "workspaceCount": 8
+    },
+    "launcher": {
+      "itemCount": 6,
+      "position": "top",
+      "smartRanking": true,
+      "terminalCommand": "kitty -e",
+      "width": 600
+    },
+    "notifications": {
+      "dnd": false,
+      "horizontalPosition": 88,
+      "position": "top right",
+      "showEmptyGraphic": true,
+      "sound": false,
+      "soundFile": "/home/feel/.config/quickshell/shell/modules/bar/barstyles/python/assets/sounds/notifications/Botanica.wav",
+      "verticalPosition": 15
+    },
+    "theme": {
+      "activePreset": "Obsidian",
+      "borderRadius": 8,
+      "colors": {
+        "base": "#000000",
+        "blue": "#ffffff",
+        "crust": "#000000",
+        "green": "#ffffff",
+        "mantle": "#050505",
+        "maroon": "#808080",
+        "mauve": "#d0d0d0",
+        "overlay0": "#5a5a5a",
+        "overlay1": "#7a7a7a",
+        "overlay2": "#9a9a9a",
+        "peach": "#cccccc",
+        "pink": "#e0e0e0",
+        "red": "#a0a0a0",
+        "sapphire": "#e0e0e0",
+        "subtext0": "#a0a0a0",
+        "subtext1": "#c0c0c0",
+        "surface0": "#1a1a1a",
+        "surface1": "#2a2a2a",
+        "surface2": "#3a3a3a",
+        "teal": "#c0c0c0",
+        "text": "#ffffff",
+        "yellow": "#ffffff"
+      },
+      "fontFamily": "Space Grotesk",
+      "matugen": true
+    }
+  },
   "qsbar": {
     "aiTools": "claude,codex,opencode",
     "audioBoost": true,
