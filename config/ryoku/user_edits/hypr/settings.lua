@@ -32,6 +32,7 @@ hl.window_rule({ name = "ryoku-tame-maximize-on-open", match = { class = ".*" },
 hl.window_rule({ name = "ryoku-user-1", match = { title = "Discord" }, maximize = true })
 hl.window_rule({ name = "ryoku-user-2", match = { title = "Zen" }, maximize = true })
 hl.window_rule({ name = "ryoku-user-3", match = { class = "discord-canary" }, workspace = "2" })
+hl.window_rule({ name = "ryoku-user-4", match = { title = "Ryotunes" }, workspace = "3" })
 hl.bind("SUPER + backslash", hl.dsp.exec_cmd("kitty gpk"))
 hl.bind("SUPER + period", hl.dsp.exec_cmd("flatpak run it.mijorus.smile"))
 hl.bind("SUPER + apostrophe", hl.dsp.exec_cmd("kitty ssh -i ~/.ssh/ryoku_id ryoku.dev"))

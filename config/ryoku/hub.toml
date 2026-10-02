@@ -1,4 +1,4 @@
 [ui]
-  section = "windowrules"
+  section = "gpu"
   update_interval = "daily"
   advanced = "1"
