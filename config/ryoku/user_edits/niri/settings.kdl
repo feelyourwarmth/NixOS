@@ -113,6 +113,11 @@ window-rule {
     open-on-workspace "2"
 }
 
+window-rule {
+    match title="Ryotunes"
+    open-on-workspace "3"
+}
+
 layer-rule {
     match namespace="ryoku-overview-backdrop"
     place-within-backdrop true

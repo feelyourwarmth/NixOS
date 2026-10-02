@@ -168,6 +168,12 @@
         "class": "discord-canary",
         "title": "",
         "value": "2"
+      },
+      {
+        "action": "workspace",
+        "class": "",
+        "title": "Ryotunes",
+        "value": "3"
       }
     ],
     "windows": {
