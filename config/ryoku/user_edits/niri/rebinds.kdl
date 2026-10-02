@@ -1,7 +1,4 @@
 binds {
-    Super+backslash { spawn-sh "kitty gpk"; }
-    Super+period { spawn-sh "flatpak run it.mijorus.smile"; }
-    Super+apostrophe { spawn-sh "kitty ssh -i ~/.ssh/ryoku_id ryoku.dev"; }
     Super+Shift+B { spawn-sh "nvibrant 1 0"; }
     Super+Shift+N { spawn-sh "nvibrant 1 1023"; }
     Super+W repeat=false { spawn-sh "jq -e '(.barStyle // \"qsbar\") == \"iris\" and .inir.closeConfirm.enabled == true' \"${XDG_CONFIG_HOME:-$HOME/.config}/ryoku/shell.json\" >/dev/null 2>&1 && qs -c shell ipc call closeConfirm trigger || niri msg action close-window"; }

@@ -123,22 +123,6 @@
     "keybinds": [
       {
         "action": "exec",
-        "keys": "SUPER + backslash",
-        "value": "kitty gpk"
-      },
-      {
-        "action": "exec",
-        "keys": "SUPER + period",
-        "value": "flatpak run it.mijorus.smile"
-      },
-      {
-        "action": "exec",
-        "keys": "SUPER + apostrophe",
-        "release": false,
-        "value": "kitty ssh -i ~/.ssh/ryoku_id ryoku.dev"
-      },
-      {
-        "action": "exec",
         "keys": "SUPER + SHIFT + B",
         "release": false,
         "value": "nvibrant 1 0"
