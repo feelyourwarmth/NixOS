@@ -103,6 +103,12 @@
       '';
     };
 
+    modules = {
+      body = ''
+        cd /etc/nixos/modules
+      '';
+    };
+
     config = {
       body = ''
         sudo -E nvim /etc/nixos/configuration.nix
@@ -118,6 +124,12 @@
     home = {
       body = ''
         sudo -E nvim /etc/nixos/home.nix
+      '';
+    };
+
+    pkgs = {
+      body = ''
+        sudo -E nvim /etc/nixos/modules/pkgs.nix
       '';
     };
   };
