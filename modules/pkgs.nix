@@ -27,7 +27,6 @@
     gpu-screen-recorder-ui
     easyeffects
     (discord-canary.override { withVencord = true; }) # DISCORD CANARY
-    #inputs.zen-browser.packages."${pkgs.system}".default # ZEN BROWSER
     proton-vpn
     mission-center
 
