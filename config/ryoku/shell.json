@@ -2796,7 +2796,7 @@
     "general": {
       "avatarPath": "",
       "language": "en",
-      "muteSfx": true,
+      "muteSfx": false,
       "openGuideAtStartup": false,
       "quickactions": true,
       "screenshotCaptureOnRelease": false,
