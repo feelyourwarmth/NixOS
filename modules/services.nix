@@ -17,6 +17,38 @@
     '';
   };
 
+  systemd.services.fix-easyeffects-permissions = {
+    description = "Ensure easyeffects config directory has correct permissions";
+
+    wantedBy = [ "multi-user.target" ];
+
+    serviceConfig = {
+      Type = "oneshot";
+    };
+
+    script = ''
+      chown feel:users /etc/nixos/config/easyeffects
+      chmod 0755 /etc/nixos/config/easyeffects
+    '';
+  };
+
+  
+  systemd.services.fix-git-permissions = {
+    description = "Ensure NixOS Git repository has correct permissions";
+
+    wantedBy = [ "multi-user.target" ];
+
+    serviceConfig = {
+      Type = "oneshot";
+    };
+
+    script = ''
+      chown -R feel:users /etc/nixos/.git
+      chmod -R u+rwX /etc/nixos/.git
+    '';
+  };
+
+
   systemd.user.services.sync-ryoku = {
     description = "Sync Ryoku config to NixOS";
 
