@@ -40,6 +40,10 @@
   home.file.".config/easyeffects".source =
     ./config/easyeffects;
 
+  # LAZYVIM CONFIG
+  home.file.".config/nvim".source =
+    ./config/nvim;
+
   home.stateVersion = "26.05";
 }
 
