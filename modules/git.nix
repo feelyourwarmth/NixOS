@@ -6,6 +6,7 @@
     config = {
         user.name = "feelyourwarmth";
         user.email = "pientpvp@gmail.com";
+        pull.rebase = false;
       };
   };
 }
