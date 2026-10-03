@@ -5,4 +5,5 @@ git clone https://github.com/feelyourwarmth/NixOS.git ~/NixOS
 sudo rm /etc/nixos/configuration.nix
 sudo cp -a ~/NixOS/. /etc/nixos
 sudo nixos-rebuild switch --flake /etc/nixos#nixos
+reboot
 ```
