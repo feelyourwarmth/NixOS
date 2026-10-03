@@ -33,6 +33,7 @@ hl.window_rule({ name = "ryoku-user-1", match = { title = "Discord" }, maximize 
 hl.window_rule({ name = "ryoku-user-2", match = { title = "Zen" }, maximize = true })
 hl.window_rule({ name = "ryoku-user-3", match = { class = "discord-canary" }, workspace = "2" })
 hl.window_rule({ name = "ryoku-user-4", match = { title = "Ryotunes" }, workspace = "3" })
+hl.window_rule({ name = "ryoku-user-5", match = { title = "Sober" }, workspace = "1" })
 hl.bind("SUPER + SHIFT + B", hl.dsp.exec_cmd("nvibrant 1 0"))
 hl.bind("SUPER + SHIFT + N", hl.dsp.exec_cmd("nvibrant 1 1023"))
 hl.config({ input = { follow_mouse = 1 } })

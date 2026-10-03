@@ -1,4 +1,4 @@
 [ui]
-  section = "updates"
+  section = "input"
   update_interval = "daily"
   advanced = "1"

@@ -91,21 +91,6 @@
       "pinned": []
     },
     "menus": {
-      "quick-settings": {
-        "anchor": "left",
-        "expansion": "always",
-        "minWidth": 410,
-        "modules": [
-          "home",
-          "notifications",
-          "weather",
-          "capture",
-          "stage"
-        ],
-        "widgets": [
-          "quick-settings"
-        ]
-      },
       "theme": {
         "anchor": "right",
         "expansion": "never",
@@ -178,15 +163,7 @@
       }
     },
     "style": "slate-frame",
-    "surfaces": {
-      "stash": {
-        "anchor": "right",
-        "minWidth": 340,
-        "panes": [
-          "stash"
-        ]
-      }
-    },
+    "surfaces": {},
     "version": 1
   },
   "frameCorner": 8,
@@ -2941,6 +2918,32 @@
     "workspaceStyle": "numbers"
   },
   "screenShader": "",
+  "sidebars": {
+    "depth": true,
+    "left": {
+      "cards": [
+        "system",
+        "notifications",
+        "weather",
+        "media",
+        "capture",
+        "stage"
+      ],
+      "enabled": true
+    },
+    "motion": "standard",
+    "push": true,
+    "right": {
+      "cards": [
+        "usage",
+        "tools",
+        "chat"
+      ],
+      "enabled": true
+    },
+    "wallpaperSlide": 1.15,
+    "width": 380
+  },
   "theme": {
     "attributes": {
       "font": {

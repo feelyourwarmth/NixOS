@@ -392,11 +392,11 @@
         "ryotunesSrc": "ryotunesSrc"
       },
       "locked": {
-        "lastModified": 1790982929,
-        "narHash": "sha256-mTMoFkByI3lpMOqsmVRhFW+GDqu/nZTwvdXo7PGLy4U=",
+        "lastModified": 1790985127,
+        "narHash": "sha256-qbKM8xZ9dOkneaXltz9REJHVVL3Aq5UZfkc9I2E+/3g=",
         "owner": "aethctl",
         "repo": "Ryoku-on-NixOS",
-        "rev": "faaa9d7922352afb0a79e5039147c50ca7f1c8da",
+        "rev": "65c3b684165914e0b72db3da6a7ac3c3d5704ec5",
         "type": "github"
       },
       "original": {
