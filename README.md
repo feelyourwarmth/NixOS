@@ -2,6 +2,7 @@
 
 ```bash
 git clone https://github.com/feelyourwarmth/NixOS.git ~/NixOS
+rm ~/NixOS/hardware-configuration.nix
 sudo rm /etc/nixos/configuration.nix
 sudo cp -a ~/NixOS/. /etc/nixos
 sudo nixos-rebuild switch --flake /etc/nixos#nixos
