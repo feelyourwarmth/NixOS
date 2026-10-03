@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  services.flatpak.enable = true;
+
   systemd.services.fix-ryoku-permissions = {
     description = "Ensure Ryoku config directory has correct permissions";
 

@@ -2753,14 +2753,14 @@
           "weather"
         ],
         "left": [
-          "left",
           "workspaces"
         ],
         "right": [
           "tray",
           "kb",
           "wifi",
-          "vol"
+          "vol",
+          "left"
         ]
       },
       "opacity": 82,
