@@ -6,5 +6,8 @@ return {
     display = {
       theme = "minecraft",
     },
+    idle = {
+      enabled = false,
+    },
   },
 }
