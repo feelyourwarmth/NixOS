@@ -30,6 +30,7 @@
     (discord-canary.override { withVencord = true; }) # DISCORD CANARY
     proton-vpn
     mission-center
+    nwg-look
 
     # PACKAGES
     tumbler
