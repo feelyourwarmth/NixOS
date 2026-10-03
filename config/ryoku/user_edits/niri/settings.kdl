@@ -118,6 +118,11 @@ window-rule {
     open-on-workspace "3"
 }
 
+window-rule {
+    match title="Sober"
+    open-on-workspace "1"
+}
+
 layer-rule {
     match namespace="ryoku-overview-backdrop"
     place-within-backdrop true

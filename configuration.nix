@@ -130,6 +130,13 @@
         sudo -E nvim /etc/nixos/modules/pkgs.nix
       '';
     };
+
+    services = {
+      body = ''
+        sudo -E nvim /etc/nixos/modules/services.nix
+      '';
+    };
+
   };
 
   environment.variables = {

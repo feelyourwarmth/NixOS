@@ -10,7 +10,6 @@
     curl
     wget
     nmap
-    flatpak
     fetch
     ncdu
     btop

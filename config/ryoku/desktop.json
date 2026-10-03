@@ -158,6 +158,12 @@
         "class": "",
         "title": "Ryotunes",
         "value": "3"
+      },
+      {
+        "action": "workspace",
+        "class": "",
+        "title": "Sober",
+        "value": "1"
       }
     ],
     "windows": {
