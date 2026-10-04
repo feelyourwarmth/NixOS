@@ -1144,7 +1144,7 @@
           "contentWidth": 320,
           "cornerRadius": -1,
           "dim": 0,
-          "displayMode": "bars",
+          "displayMode": "tiles",
           "enable": false,
           "fillOpacity": 0.7,
           "graphFillOpacity": 0.3,
@@ -2733,7 +2733,7 @@
         ],
         "left": [
           "workspaces",
-          "media"
+          "focus"
         ],
         "right": [
           "tray",
@@ -2813,7 +2813,7 @@
   "qsbar": {
     "aiTools": "claude,codex,opencode",
     "audioBoost": true,
-    "barAnim": 3,
+    "barAnim": 0,
     "barAutoHide": false,
     "barBorderEnabled": true,
     "barColor": "accent",
@@ -2847,8 +2847,8 @@
         "clock"
       ],
       "left": [
-        "workspaces",
         "launcher",
+        "workspaces",
         "status",
         "memory",
         "cpu",
@@ -2880,17 +2880,17 @@
       "brightness": false,
       "claude": false,
       "cpu": false,
-      "cpuTemperature": true,
+      "cpuTemperature": false,
       "gpu": false,
       "layout": false,
       "media": false,
-      "memory": true,
-      "mpris": true,
+      "memory": false,
+      "mpris": false,
       "network": true,
       "power": false,
       "quick": false,
       "status": true,
-      "storage": true,
+      "storage": false,
       "volume": true,
       "weather": true
     },
