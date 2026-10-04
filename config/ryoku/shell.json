@@ -84,6 +84,7 @@
     "shadow": true,
     "style": "islands"
   },
+  "fontFamily": "Maple Mono NF",
   "fontScale": 1,
   "formatLocale": "en_US",
   "frameBars": {
@@ -1029,6 +1030,7 @@
           "enable": false,
           "locked": false,
           "placementStrategy": "free",
+          "rotateSeconds": 45,
           "showBackground": true,
           "showBorder": true,
           "showMeta": true,
@@ -2730,7 +2732,8 @@
           "weather"
         ],
         "left": [
-          "workspaces"
+          "workspaces",
+          "media"
         ],
         "right": [
           "tray",
@@ -2800,32 +2803,9 @@
       "verticalPosition": 15
     },
     "theme": {
-      "activePreset": "Obsidian",
+      "activePreset": "Matugen",
       "borderRadius": 8,
-      "colors": {
-        "base": "#000000",
-        "blue": "#ffffff",
-        "crust": "#000000",
-        "green": "#ffffff",
-        "mantle": "#050505",
-        "maroon": "#808080",
-        "mauve": "#d0d0d0",
-        "overlay0": "#5a5a5a",
-        "overlay1": "#7a7a7a",
-        "overlay2": "#9a9a9a",
-        "peach": "#cccccc",
-        "pink": "#e0e0e0",
-        "red": "#a0a0a0",
-        "sapphire": "#e0e0e0",
-        "subtext0": "#a0a0a0",
-        "subtext1": "#c0c0c0",
-        "surface0": "#1a1a1a",
-        "surface1": "#2a2a2a",
-        "surface2": "#3a3a3a",
-        "teal": "#c0c0c0",
-        "text": "#ffffff",
-        "yellow": "#ffffff"
-      },
+      "colors": {},
       "fontFamily": "Space Grotesk",
       "matugen": true
     }
@@ -2919,7 +2899,6 @@
   },
   "screenShader": "",
   "sidebars": {
-    "depth": true,
     "left": {
       "cards": [
         "system",
@@ -2929,20 +2908,35 @@
         "capture",
         "stage"
       ],
-      "enabled": true
+      "enabled": true,
+      "height": 1100,
+      "heightMode": "fixed",
+      "maxHeight": 95,
+      "pinned": false,
+      "position": "center",
+      "presentations": {},
+      "width": 720
     },
     "motion": "standard",
-    "push": true,
     "right": {
       "cards": [
-        "usage",
         "tools",
+        "usage",
         "chat"
       ],
-      "enabled": true
-    },
-    "wallpaperSlide": 1.15,
-    "width": 380
+      "enabled": true,
+      "height": 1000,
+      "heightMode": "fixed",
+      "maxHeight": 85,
+      "pinned": false,
+      "position": "center",
+      "presentations": {
+        "chat": "summary",
+        "tools": "summary",
+        "usage": "summary"
+      },
+      "width": 1040
+    }
   },
   "theme": {
     "attributes": {

@@ -1,10 +1,10 @@
 {
   "components": {
     "wallpaperSelector": {
-      "displayMode": "slices",
+      "displayMode": "depth",
       "enabled": true,
       "gridLayout": "uniform",
-      "lastAppliedKey": "wallhaven-1qod3w"
+      "lastAppliedKey": "wallhaven-6o6orw"
     }
   },
   "display": {},

@@ -22,6 +22,7 @@
     # APPS
     shiru
     openrgb
+    brave-origin
     chromium
     lact
     gpu-screen-recorder-ui

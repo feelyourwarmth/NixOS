@@ -4,6 +4,7 @@
   "zoomFactor": 2,
   "copyOnSave": true,
   "saveDir": "",
+  "lastAction": "shot",
   "toolStyle": {
     "redact": {
       "color": "#e75a50",
