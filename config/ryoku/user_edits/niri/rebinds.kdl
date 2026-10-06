@@ -119,6 +119,8 @@ binds {
     Super+N { spawn "ryoku-app" "editor"; }
     Super+O { spawn "ryoku-app" "notes"; }
     Super+Space { spawn "ryoku-shell" "launcher"; }
+    Alt+Space { spawn "ryoku-shell" "ask"; }
+    Super+Alt+Space { spawn-sh "ryoku-summon Rashin flock -n -o /tmp/rashin-app.lock rashin-app"; }
     Super+K { spawn-sh "pkill -x -f 'qs -c keys' 2>/dev/null || env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoku-keys.lock qs -c keys"; }
     Super+L { spawn "ryoku-shell" "lock"; }
     Super+Escape { spawn "ryoku-shell" "quicksettings"; }
@@ -129,7 +131,6 @@ binds {
     Super+Alt+M { spawn "ryoku-shell" "visualizer-place"; }
     Super+grave { spawn "ryoku-shell" "voice"; }
     Super+comma { spawn "ryoku-shell" "hub" "open"; }
-    Super+S { spawn "ryoku-shell" "stash"; }
     Super+Shift+S { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock qs -c ryoshot; fi"; }
     Print { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock qs -c ryoshot; fi"; }
     Shift+Print { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor qs -c ryoshot; fi"; }

@@ -24,9 +24,7 @@ hl.env("XCURSOR_SIZE", "20")
 hl.env("HYPRCURSOR_THEME", "Bibata-Material-Ryoku")
 hl.env("HYPRCURSOR_SIZE", "20")
 
-hl.env("RYOKU_LEDS_DISABLE", "1")
-
-hl.env("BROWSER", "/nix/store/hj5by84clcbgpwfjrkyw5vqr5f8na9n3-brave-origin-1.96.59/bin/brave-origin")
+hl.env("BROWSER", "zen-beta --name zen-beta")
 
 hl.window_rule({ name = "ryoku-tame-maximize-on-open", match = { class = ".*" }, suppress_event = "maximize" })
 hl.window_rule({ name = "ryoku-user-1", match = { title = "Discord" }, maximize = true })

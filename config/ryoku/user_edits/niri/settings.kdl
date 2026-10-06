@@ -81,8 +81,7 @@ recent-windows {
 }
 
 environment {
-    RYOKU_LEDS_DISABLE "1"
-    BROWSER "/nix/store/hj5by84clcbgpwfjrkyw5vqr5f8na9n3-brave-origin-1.96.59/bin/brave-origin"
+    BROWSER "zen-beta --name zen-beta"
 }
 
 spawn-sh-at-startup "easyeffects --hide-window --service-mode"
@@ -96,6 +95,13 @@ window-rule {
 window-rule {
     match is-active=false
     opacity 0.9
+}
+
+window-rule {
+    match title="^Rashin$"
+    open-floating true
+    default-column-width { fixed 1280; }
+    default-window-height { fixed 820; }
 }
 
 window-rule {

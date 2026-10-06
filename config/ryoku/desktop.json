@@ -59,7 +59,7 @@
       "wobblyWindows": false
     },
     "apps": {
-      "browser": "/nix/store/hj5by84clcbgpwfjrkyw5vqr5f8na9n3-brave-origin-1.96.59/bin/brave-origin",
+      "browser": "zen-beta --name zen-beta",
       "editor": "kitty -e nvim",
       "files": "nautilus"
     },
@@ -77,12 +77,7 @@
       "size": 20,
       "theme": "Bibata-Material-Ryoku"
     },
-    "env": [
-      {
-        "key": "RYOKU_LEDS_DISABLE",
-        "value": "1"
-      }
-    ],
+    "env": [],
     "input": {
       "accelProfile": "flat",
       "clickfinger": false,

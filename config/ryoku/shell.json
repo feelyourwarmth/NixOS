@@ -1,5 +1,5 @@
 {
-  "barStyle": "iris",
+  "barStyle": "python",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -2932,46 +2932,6 @@
     "workspaceStyle": "numbers"
   },
   "screenShader": "",
-  "sidebars": {
-    "left": {
-      "cards": [
-        "system",
-        "notifications",
-        "weather",
-        "media",
-        "capture",
-        "stage"
-      ],
-      "enabled": true,
-      "height": 1100,
-      "heightMode": "fixed",
-      "maxHeight": 95,
-      "pinned": false,
-      "position": "center",
-      "presentations": {},
-      "width": 720
-    },
-    "motion": "standard",
-    "right": {
-      "cards": [
-        "tools",
-        "usage",
-        "chat"
-      ],
-      "enabled": true,
-      "height": 1000,
-      "heightMode": "fixed",
-      "maxHeight": 85,
-      "pinned": false,
-      "position": "center",
-      "presentations": {
-        "chat": "summary",
-        "tools": "summary",
-        "usage": "summary"
-      },
-      "width": 1040
-    }
-  },
   "theme": {
     "attributes": {
       "font": {

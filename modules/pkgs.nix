@@ -31,6 +31,7 @@
     proton-vpn
     mission-center
     nwg-look
+    gnome-disk-utility
 
     # PACKAGES
     tumbler
@@ -51,6 +52,12 @@
     cbonsai
     lavat
   ];
+
+  # ZSH SHELL
+  programs.zsh.enable = true;
+  users.extraUsers.feel = {
+    shell = pkgs.zsh;
+  };
 
   # STEAM WITH SLSSTEAM
   programs.steam = {
