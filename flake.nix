@@ -1,6 +1,4 @@
 {
-  description = "My NixOS System";
-
   nixConfig = {
     extra-substituters = [
       "https://attic.xuyh0120.win/lantian"

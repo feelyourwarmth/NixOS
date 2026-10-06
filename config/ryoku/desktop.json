@@ -59,7 +59,7 @@
       "wobblyWindows": false
     },
     "apps": {
-      "browser": "zen-beta --name zen-beta",
+      "browser": "/nix/store/hj5by84clcbgpwfjrkyw5vqr5f8na9n3-brave-origin-1.96.59/bin/brave-origin",
       "editor": "kitty -e nvim",
       "files": "nautilus"
     },
@@ -164,6 +164,18 @@
         "class": "",
         "title": "Sober",
         "value": "1"
+      },
+      {
+        "action": "maximize",
+        "class": "",
+        "title": "Brave",
+        "value": ""
+      },
+      {
+        "action": "maximize",
+        "class": "",
+        "title": "Vivaldi",
+        "value": ""
       }
     ],
     "windows": {

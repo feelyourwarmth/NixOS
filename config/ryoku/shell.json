@@ -1,5 +1,5 @@
 {
-  "barStyle": "python",
+  "barStyle": "iris",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -84,7 +84,7 @@
     "shadow": true,
     "style": "islands"
   },
-  "fontFamily": "Maple Mono NF",
+  "fontFamily": "Inter",
   "fontScale": 1,
   "formatLocale": "en_US",
   "frameBars": {
@@ -1478,8 +1478,9 @@
     "iris": {
       "appearance": {
         "accent": "blue",
-        "adaptive": 50,
+        "adaptive": 100,
         "aura": "subtle",
+        "controlPlate": "none",
         "density": 1,
         "expandedRadius": 26,
         "figureWeight": "bold",
@@ -1563,6 +1564,7 @@
           "highlightHue": 32,
           "lightReach": 100,
           "lines": 100,
+          "linkShapes": true,
           "melt": 100,
           "moveTime": 100,
           "openTime": 100,
@@ -1577,6 +1579,7 @@
           "surface": "black",
           "text": 95
         },
+        "themeColoursOnly": false,
         "themeId": "iris",
         "tint": 0,
         "titleFontFamily": "JetBrainsMono Nerd Font"
@@ -1587,8 +1590,8 @@
         "centerModules": [],
         "clockAccent": "highlight",
         "clockScale": 90,
-        "clockStyle": "dateTime",
-        "composition": "cluster",
+        "clockStyle": "time",
+        "composition": "unified",
         "desktopBanner": "wallpaper",
         "desktopBlocks": [
           "profile",
@@ -1598,31 +1601,29 @@
           "modules"
         ],
         "events": true,
-        "fullCenter": [
-          "island"
-        ],
+        "fullCenter": [],
         "fullEnd": [
           "tray",
-          "notifications",
-          "sound",
           "controls"
         ],
         "fullStart": [
           "workspaces",
-          "window"
+          "time",
+          "calendar",
+          "notifications"
         ],
-        "height": 36,
+        "height": 38,
         "hoverDelay": 300,
         "hoverExpand": true,
         "layout": "island",
         "leftModules": [],
-        "margin": 8,
+        "margin": 6,
         "mediaBlocks": [
-          "player",
           "levels",
           "timeline",
           "transport",
-          "players"
+          "players",
+          "player"
         ],
         "navItems": [
           "media",
@@ -1640,6 +1641,7 @@
         "padding": 120,
         "pageWidth": 440,
         "pieces": [],
+        "piecesSide": "end",
         "position": "top",
         "reserveSpace": true,
         "rightModules": [],
@@ -1648,6 +1650,7 @@
         "screenList": [],
         "scrollAction": "volume",
         "scrollBubbles": true,
+        "shape": "squircle",
         "trailing": "none"
       },
       "bubbles": {
@@ -1783,14 +1786,44 @@
         }
       },
       "controlCenter": {
+        "columns": 4,
         "controls": "tiles",
+        "labels": false,
+        "levels": [
+          "brightness",
+          "volume",
+          "microphone"
+        ],
+        "modules": [
+          "platter",
+          "media",
+          "darkMode",
+          "nightLight",
+          "levels",
+          "idle",
+          "snip",
+          "devices",
+          "record",
+          "notifications"
+        ],
         "opens": "island",
+        "platter": [
+          "network",
+          "bluetooth",
+          "focus",
+          "gameMode"
+        ],
+        "preset": "iris",
         "sections": [
           "connectivity",
           "media",
           "shortcuts",
           "levels",
           "notifications"
+        ],
+        "sizes": [
+          "devices:2x1",
+          "record:2x1"
         ],
         "width": 360
       },
@@ -1834,7 +1867,7 @@
       },
       "player": {
         "artworkBackground": true,
-        "bubbleOpens": "island",
+        "bubbleOpens": "card",
         "cardPinned": false,
         "roundCover": false
       },
@@ -2722,7 +2755,7 @@
     "bar": {
       "autohide": false,
       "autohideTimeout": 1000,
-      "distinctPills": false,
+      "distinctPills": true,
       "groupColors": {},
       "hideEmptyWorkspaces": false,
       "modules": {
@@ -2743,7 +2776,7 @@
           "left"
         ]
       },
-      "opacity": 82,
+      "opacity": 92,
       "position": "top",
       "style": "modular",
       "time": {
@@ -2776,7 +2809,7 @@
     "general": {
       "avatarPath": "",
       "language": "en",
-      "muteSfx": false,
+      "muteSfx": true,
       "openGuideAtStartup": false,
       "quickactions": true,
       "screenshotCaptureOnRelease": false,

@@ -20,9 +20,9 @@
     github-cli
 
     # APPS
-    shiru
     openrgb
     brave-origin
+    vivaldi
     chromium
     lact
     gpu-screen-recorder-ui

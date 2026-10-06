@@ -82,7 +82,7 @@ recent-windows {
 
 environment {
     RYOKU_LEDS_DISABLE "1"
-    BROWSER "zen-beta --name zen-beta"
+    BROWSER "/nix/store/hj5by84clcbgpwfjrkyw5vqr5f8na9n3-brave-origin-1.96.59/bin/brave-origin"
 }
 
 spawn-sh-at-startup "easyeffects --hide-window --service-mode"
@@ -121,6 +121,16 @@ window-rule {
 window-rule {
     match title="Sober"
     open-on-workspace "1"
+}
+
+window-rule {
+    match title="Brave"
+    open-maximized true
+}
+
+window-rule {
+    match title="Vivaldi"
+    open-maximized true
 }
 
 layer-rule {
