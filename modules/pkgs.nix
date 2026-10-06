@@ -53,12 +53,6 @@
     lavat
   ];
 
-  # ZSH SHELL
-  programs.zsh.enable = true;
-  users.extraUsers.feel = {
-    shell = pkgs.zsh;
-  };
-
   # STEAM WITH SLSSTEAM
   programs.steam = {
     enable = true;
