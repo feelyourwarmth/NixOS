@@ -1499,6 +1499,7 @@
         "preset": "iris",
         "previews": true,
         "saved": [],
+        "settingsLayout": "home",
         "studioPreview": true,
         "surfaces": {
           "cards": {
@@ -1591,7 +1592,7 @@
         "clockAccent": "highlight",
         "clockScale": 90,
         "clockStyle": "time",
-        "composition": "unified",
+        "composition": "cluster",
         "desktopBanner": "wallpaper",
         "desktopBlocks": [
           "profile",
