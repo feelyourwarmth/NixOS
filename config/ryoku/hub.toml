@@ -1,4 +1,4 @@
 [ui]
-  section = "displays"
+  section = "input"
   update_interval = "daily"
   advanced = "1"
