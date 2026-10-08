@@ -139,22 +139,22 @@
 
   };
 
-  environment.variables = {
-    EDITOR = "nvim";
-    VISUAL = "nvim";
+  #environment.variables = {
+  #  EDITOR = "nvim";
+  #  VISUAL = "nvim";
+  #
+  #  XDG_CONFIG_HOME = "/home/feel/.config";
+  #  XDG_DATA_HOME = "/home/feel/.local/share";
+  #  XDG_STATE_HOME = "/home/feel/.local/state";
+  #  XDG_CACHE_HOME = "/home/feel/.cache";
+  #};
 
-    XDG_CONFIG_HOME = "/home/feel/.config";
-    XDG_DATA_HOME = "/home/feel/.local/share";
-    XDG_STATE_HOME = "/home/feel/.local/state";
-    XDG_CACHE_HOME = "/home/feel/.cache";
-  };
-
-  security.sudo.extraConfig = ''
-    Defaults env_keep += "XDG_CONFIG_HOME"
-    Defaults env_keep += "XDG_DATA_HOME"
-    Defaults env_keep += "XDG_STATE_HOME"
-    Defaults env_keep += "XDG_CACHE_HOME"
-  '';
+  #security.sudo.extraConfig = ''
+  #  Defaults env_keep += "XDG_CONFIG_HOME"
+  #  Defaults env_keep += "XDG_DATA_HOME"
+  #  Defaults env_keep += "XDG_STATE_HOME"
+  #  Defaults env_keep += "XDG_CACHE_HOME"
+  #'';
 
   system.stateVersion = "26.05";
 }
