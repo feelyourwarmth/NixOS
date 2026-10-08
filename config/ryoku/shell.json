@@ -1,5 +1,13 @@
 {
-  "barStyle": "python",
+  "ask": {
+    "bubble": {
+      "enabled": false,
+      "screen": "",
+      "x": 0.94,
+      "y": 0.68
+    }
+  },
+  "barStyle": "chroma",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -56,6 +64,14 @@
         "icon": "Arch"
       }
     }
+  },
+  "chroma": {
+    "gap": 10,
+    "opacity": 0.92,
+    "position": "top",
+    "radius": 8,
+    "scale": 0.8,
+    "workspaceMode": "numbers"
   },
   "clipboard": {
     "cardRadius": 6,

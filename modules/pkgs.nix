@@ -32,6 +32,7 @@
     mission-center
     nwg-look
     gnome-disk-utility
+    anydesk
 
     # PACKAGES
     tumbler

@@ -10,7 +10,7 @@
 
   inputs = {
     ryoku = {
-      url = "github:aethctl/Ryoku-on-NixOS/unstable-dev";
+      url = "github:aethctl/Ryoku-on-NixOS/unstable-branch";
     };
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";

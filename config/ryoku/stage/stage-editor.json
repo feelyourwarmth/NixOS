@@ -176,7 +176,7 @@
                     "tertiary": ""
                 }
             },
-            "type": "scheme-intense"
+            "type": "scheme-auto"
         },
         "roundingValue": 28,
         "scrollAnimations": false,
