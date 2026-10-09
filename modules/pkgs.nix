@@ -22,7 +22,6 @@
     # APPS
     openrgb
     brave-origin
-    vivaldi
     chromium
     lact
     gpu-screen-recorder-ui
@@ -31,7 +30,6 @@
     proton-vpn
     mission-center
     nwg-look
-    gnome-disk-utility
     anydesk
 
     # PACKAGES
@@ -46,7 +44,6 @@
     lsp-plugins
     uv
     unzip
-    mangohud
 
     # LARP
     unimatrix

@@ -42,8 +42,8 @@ layout {
     focus-ring {
         on
         width 1
-        active-color "#cac9d5"
-        inactive-color "#131315"
+        active-color "#cacaca"
+        inactive-color "#131313"
         urgent-color "#9b0000"
     }
     tab-indicator {
@@ -88,13 +88,20 @@ spawn-sh-at-startup "easyeffects --hide-window --service-mode"
 spawn-sh-at-startup "gsr-ui"
 
 window-rule {
-    geometry-corner-radius 6
+    geometry-corner-radius 4
     clip-to-geometry true
 }
 
 window-rule {
     match is-active=false
     opacity 0.9
+}
+
+window-rule {
+    match title="^Welcome to Ryoku$"
+    open-floating true
+    default-column-width { fixed 1180; }
+    default-window-height { fixed 760; }
 }
 
 window-rule {

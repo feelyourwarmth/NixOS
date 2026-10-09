@@ -34,8 +34,6 @@ hl.window_rule({ name = "ryoku-user-4", match = { title = "Ryotunes" }, workspac
 hl.window_rule({ name = "ryoku-user-5", match = { title = "Sober" }, workspace = "1" })
 hl.window_rule({ name = "ryoku-user-6", match = { title = "Brave" }, maximize = true })
 hl.window_rule({ name = "ryoku-user-7", match = { title = "Vivaldi" }, maximize = true })
-hl.bind("SUPER + SHIFT + B", hl.dsp.exec_cmd("nvibrant 1 0"))
-hl.bind("SUPER + SHIFT + N", hl.dsp.exec_cmd("nvibrant 1 1023"))
 hl.config({ input = { follow_mouse = 1 } })
 
 

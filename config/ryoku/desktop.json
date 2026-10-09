@@ -43,7 +43,7 @@
       "noFocusFallback": false,
       "resizeCorner": 0,
       "resizeOnBorder": true,
-      "rounding": 6,
+      "rounding": 4,
       "roundingPower": 4,
       "shadowColor": "#000000",
       "shadowEnabled": false,
@@ -115,20 +115,7 @@
       "SUPER + Return": "SUPER + Z",
       "SUPER + W": "SUPER + Q"
     },
-    "keybinds": [
-      {
-        "action": "exec",
-        "keys": "SUPER + SHIFT + B",
-        "release": false,
-        "value": "nvibrant 1 0"
-      },
-      {
-        "action": "exec",
-        "keys": "SUPER + SHIFT + N",
-        "release": false,
-        "value": "nvibrant 1 1023"
-      }
-    ],
+    "keybinds": [],
     "windowRules": [
       {
         "action": "maximize",

@@ -4,10 +4,13 @@
       "displayMode": "depth",
       "enabled": true,
       "gridLayout": "uniform",
-      "lastAppliedKey": "storm"
+      "lastAppliedKey": "wallhaven-5ypy88"
     }
   },
   "display": {},
+  "general": {
+    "uiScale": 0.8
+  },
   "integrations": [],
   "matugen": {
     "mode": "dark"

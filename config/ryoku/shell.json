@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "chroma",
+  "barStyle": "nomarchy",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -77,6 +77,35 @@
     "cardRadius": 6,
     "paneRadius": 8,
     "panelRadius": 6
+  },
+  "controls": {
+    "hidden": [],
+    "sections": [
+      {
+        "id": "vitals",
+        "visible": true
+      },
+      {
+        "id": "connections",
+        "visible": true
+      },
+      {
+        "id": "powerProfile",
+        "visible": true
+      },
+      {
+        "id": "media",
+        "visible": false
+      },
+      {
+        "id": "levels",
+        "visible": true
+      },
+      {
+        "id": "bottomControls",
+        "visible": true
+      }
+    ]
   },
   "displays": {
     "bar_style": {
