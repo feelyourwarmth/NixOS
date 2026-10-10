@@ -1,4 +1,4 @@
 [ui]
-  section = "windowmanager"
+  section = "windowrules"
   update_interval = "daily"
   advanced = "1"

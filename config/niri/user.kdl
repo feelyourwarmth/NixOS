@@ -15,15 +15,11 @@ workspace "3"
 workspace "4"
 workspace "5"
 
-//spawn-at-startup "wlsunset" "-t" "4500" "-T" "6500" "-s" "19:00" "-S" "07:00"
-
 binds {
     Super+WheelScrollUp { focus-column-left; }
     Super+WheelScrollDown { focus-column-right; }
     Alt+Backslash { spawn-sh "flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot"; }
     Ctrl+Backslash { spawn-sh "flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor ryoku-qs -c ryoshot"; }
-    //Alt+Backslash { spawn-sh "RISHOT_SAVEDIR=/home/feel/Pictures/Screenshots rishot"; }
-    //Ctrl+Backslash { spawn-sh "RISHOT_SAVEDIR=/home/feel/Pictures/Screenshots rishot monitor"; }
 }
 
 window-rule {
@@ -42,6 +38,11 @@ window-rule {
     open-fullscreen true
     open-focused true
     open-on-workspace "1"
+}
+
+window-rule {
+    match app-id="ryomanager"
+    default-floating-position x=0 y=0 relative-to="top-left"
 }
 
 window-rule {

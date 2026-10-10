@@ -158,6 +158,12 @@
         "class": "",
         "title": "Vivaldi",
         "value": ""
+      },
+      {
+        "action": "workspace",
+        "class": "",
+        "title": "Steam",
+        "value": "1"
       }
     ],
     "windows": {

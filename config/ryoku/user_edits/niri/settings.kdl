@@ -146,6 +146,11 @@ window-rule {
     open-maximized true
 }
 
+window-rule {
+    match title="Steam"
+    open-on-workspace "1"
+}
+
 layer-rule {
     match namespace="ryoku-overview-backdrop"
     place-within-backdrop true

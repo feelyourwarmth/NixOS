@@ -74,6 +74,7 @@
   programs.fish.shellFunctions = {
     rebuild = {
       body = ''
+        sudo -v
         sudo nixos-rebuild switch --flake /etc/nixos#nixos
         echo "Rebuild Complete!"
       '';
@@ -81,6 +82,9 @@
 
     update = {
       body = ''
+        sudo -v
+        ryoku status
+        ryoku update
         sudo nix-channel --update
         sudo nix flake update --flake /etc/nixos
         sudo nixos-rebuild switch --flake /etc/nixos#nixos
@@ -90,6 +94,7 @@
 
     clean = {
       body = ''
+        sudo -v
         sudo nix-collect-garbage -d
         echo "Nix garbage collection complete!"
       '';
