@@ -15,6 +15,9 @@
     btop
     nvibrant
 
+    # TUI
+    claude-code
+
     # GIT
     lazygit
     github-cli

@@ -115,7 +115,14 @@
       "SUPER + Return": "SUPER + Z",
       "SUPER + W": "SUPER + Q"
     },
-    "keybinds": [],
+    "keybinds": [
+      {
+        "action": "exec",
+        "keys": "CTRL + ALT + Delete",
+        "release": false,
+        "value": "ryomanager"
+      }
+    ],
     "windowRules": [
       {
         "action": "maximize",

@@ -9,4 +9,12 @@
         pull.rebase = false;
       };
   };
+
+  programs.fish.shellFunctions = {
+    gs = {
+      body = ''
+        git status
+      '';
+    };
+  };
 }

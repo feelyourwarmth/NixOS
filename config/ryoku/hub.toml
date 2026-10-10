@@ -1,4 +1,4 @@
 [ui]
-  section = "windowrules"
+  section = "input"
   update_interval = "daily"
   advanced = "1"

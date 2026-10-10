@@ -106,6 +106,12 @@
       '';
     };
 
+    nix = {
+      body = ''
+        sudo -E nvim /etc/nixos
+      '';
+    };
+
     modules = {
       body = ''
         cd /etc/nixos/modules
@@ -142,6 +148,11 @@
       '';
     };
 
+    larp = {
+      body = ''
+        fetch --infinite --shading-mode sextants
+      '';
+    };
   };
 
   #environment.variables = {

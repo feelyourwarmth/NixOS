@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "nomarchy",
+  "barStyle": "qsbar",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -2894,9 +2894,9 @@
     "audioBoost": true,
     "barAnim": 0,
     "barAutoHide": false,
-    "barBorderEnabled": true,
+    "barBorderEnabled": false,
     "barColor": "accent",
-    "barCornerRadius": 10,
+    "barCornerRadius": 6,
     "barFrostEnabled": true,
     "barGapBottom": -4,
     "barGapLeft": 8,
@@ -2905,7 +2905,6 @@
     "barPosition": "top",
     "barScale": 1,
     "barSeps": [
-      "G3",
       "G9"
     ],
     "barShadowEnabled": true,
@@ -2917,21 +2916,20 @@
       "G6",
       "G11",
       "G14",
-      "G17",
-      "G19"
+      "G17"
     ],
     "launcherLogoMode": "icon",
     "layout": {
       "center": [
-        "clock"
+        "status"
       ],
       "left": [
         "launcher",
         "workspaces",
-        "status",
         "memory",
         "cpu",
-        "ai"
+        "ai",
+        "clock"
       ],
       "right": [
         "quick",
@@ -2965,16 +2963,16 @@
       "media": false,
       "memory": false,
       "mpris": false,
-      "network": true,
+      "network": false,
       "power": false,
       "quick": false,
       "status": true,
       "storage": false,
-      "volume": true,
+      "volume": false,
       "weather": true
     },
     "workspaceMode": "5",
-    "workspaceStyle": "numbers"
+    "workspaceStyle": "rings"
   },
   "screenShader": "",
   "theme": {
