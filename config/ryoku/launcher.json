@@ -8,7 +8,7 @@
     "horizonMode": "auto",
     "radius": 10,
     "resultSettleMs": 120,
-    "showGreeting": false,
+    "showGreeting": true,
     "showWeather": true,
     "variant": "main",
     "weatherUnit": "C"

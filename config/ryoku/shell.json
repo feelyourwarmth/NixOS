@@ -2903,12 +2903,12 @@
     "barGapRight": 8,
     "barGapTop": 4,
     "barPosition": "top",
-    "barScale": 1,
+    "barScale": 1.1,
     "barSeps": [
       "G9"
     ],
     "barShadowEnabled": true,
-    "barShellStyle": "fit",
+    "barShellStyle": "islands",
     "barTemperatureSource": "cpu",
     "iconOnlyGids": [
       "G18",
@@ -2920,9 +2920,7 @@
     ],
     "launcherLogoMode": "icon",
     "layout": {
-      "center": [
-        "status"
-      ],
+      "center": [],
       "left": [
         "launcher",
         "workspaces",
@@ -2943,7 +2941,8 @@
         "bluetooth",
         "cputemp",
         "network",
-        "storage"
+        "storage",
+        "status"
       ],
       "version": 1
     },
@@ -2972,7 +2971,7 @@
       "weather": true
     },
     "workspaceMode": "5",
-    "workspaceStyle": "rings"
+    "workspaceStyle": "numbers"
   },
   "screenShader": "",
   "theme": {
