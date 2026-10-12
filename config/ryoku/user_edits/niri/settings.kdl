@@ -42,8 +42,8 @@ layout {
     focus-ring {
         on
         width 1
-        active-color "#d3c9c1"
-        inactive-color "#141312"
+        active-color "#d2cab8"
+        inactive-color "#141311"
         urgent-color "#9b0000"
     }
     tab-indicator {
@@ -93,6 +93,10 @@ window-rule {
 }
 
 window-rule {
+    opacity 0.98
+}
+
+window-rule {
     match is-active=false
     opacity 0.9
 }
@@ -109,6 +113,16 @@ window-rule {
     open-floating true
     default-column-width { fixed 1280; }
     default-window-height { fixed 820; }
+}
+
+window-rule {
+    match app-id="ryoport_console"
+    open-floating true
+}
+
+window-rule {
+    match app-id="(v|V)ncviewer"
+    open-floating true
 }
 
 window-rule {

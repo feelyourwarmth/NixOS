@@ -41,7 +41,7 @@
     "clockX": 848,
     "clockY": 64,
     "dateDesign": "inline",
-    "dateShow": false,
+    "dateShow": true,
     "dayprogressAnchor": "free",
     "dayprogressColor": "",
     "dayprogressColor2": "",
@@ -472,6 +472,16 @@
     "irisWorldStyle": "inir",
     "irisWorldX": 120,
     "irisWorldY": 600,
+    "monitors": {
+        "DP-1": {
+            "clockAnchor": "free",
+            "clockEnabled": false,
+            "clockLocked": true,
+            "clockScale": 0.7000000000000001,
+            "clockX": 864,
+            "clockY": 80
+        }
+    },
     "musicAnchor": "free",
     "musicApp": "",
     "musicColor": "",

@@ -1,16 +1,19 @@
 {
   "aspm": "performance",
   "idle": {
-    "enabled": false,
+    "enabled": true,
     "battery": {
       "dimSec": 0,
-      "screenOffSec": 60,
-      "suspendSec": 0
+      "screenOffSec": 0,
+      "suspendSec": 0,
+      "lockSec": 0
     },
     "ac": {
-      "dimSec": 0,
-      "screenOffSec": 60,
-      "suspendSec": 0
-    }
+      "dimSec": 180,
+      "screenOffSec": 420,
+      "suspendSec": 0,
+      "lockSec": 900
+    },
+    "onDesktops": true
   }
 }

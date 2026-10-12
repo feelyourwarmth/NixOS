@@ -1,19 +1,30 @@
 {
   "components": {
     "wallpaperSelector": {
-      "displayMode": "depth",
+      "displayMode": "slices",
       "enabled": true,
       "gridLayout": "uniform",
-      "lastAppliedKey": "sdafdsf"
+      "lastAppliedKey": "wallhaven-9okkr1",
+      "startPosition": "browsing"
     }
   },
   "display": {},
+  "filterBar": {
+    "sticky": true
+  },
   "general": {
+    "notifyOnWallpaperChange": false,
+    "selectorBackdropOpacity": 10,
     "uiScale": 0.8
   },
   "integrations": [],
   "matugen": {
     "mode": "dark"
+  },
+  "overviewBackdrop": {
+    "blur": 40,
+    "blurEnabled": true,
+    "dim": 20
   },
   "performance": {
     "imageOptimizePreset": "quality",

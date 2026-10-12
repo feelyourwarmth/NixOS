@@ -36,6 +36,8 @@
     anydesk
 
     # PACKAGES
+    nil
+    nixd
     tumbler
     ffmpegthumbnailer
     ffmpeg-headless
@@ -72,4 +74,6 @@
   programs.coolercontrol = {
     enable = true;
   };
+
+  programs.nix-ld.enable = true;
 }

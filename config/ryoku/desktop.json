@@ -3,7 +3,7 @@
     "appOverrides": [],
     "appearance": {
       "activeBorder": "#e0563b",
-      "activeOpacity": 1,
+      "activeOpacity": 0.98,
       "animatedBorder": true,
       "animations": true,
       "blurBrightness": 1,

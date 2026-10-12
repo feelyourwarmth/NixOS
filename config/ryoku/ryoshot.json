@@ -4,6 +4,8 @@
   "zoomFactor": 2,
   "copyOnSave": true,
   "saveDir": "",
+  "delaySeconds": 1,
+  "recordMic": false,
   "lastAction": "shot",
   "toolStyle": {
     "redact": {
