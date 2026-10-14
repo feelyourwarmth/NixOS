@@ -4,6 +4,11 @@
     "editGridSnap": true,
     "front": [
     ],
+    "models": {
+        "draft": "u2netp",
+        "fine": "birefnet-general-lite",
+        "standard": "u2netp"
+    },
     "motion": {
         "amount": "subtle",
         "idle": "breathe",

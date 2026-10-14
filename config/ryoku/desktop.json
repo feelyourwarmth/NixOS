@@ -60,7 +60,7 @@
     },
     "apps": {
       "browser": "zen-beta --name zen-beta",
-      "editor": "kitty -e nvim",
+      "editor": "zeditor",
       "files": "nautilus"
     },
     "autostart": [

@@ -9,10 +9,10 @@
       "lockSec": 0
     },
     "ac": {
-      "dimSec": 180,
-      "screenOffSec": 420,
+      "dimSec": 600,
+      "screenOffSec": 900,
       "suspendSec": 0,
-      "lockSec": 900
+      "lockSec": 0
     },
     "onDesktops": true
   }

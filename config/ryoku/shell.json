@@ -83,7 +83,8 @@
   "clipboard": {
     "cardRadius": 6,
     "paneRadius": 8,
-    "panelRadius": 6
+    "panelRadius": 6,
+    "pruneWeekly": true
   },
   "controls": {
     "hidden": [
@@ -129,17 +130,19 @@
     }
   },
   "dock": {
-    "autohide": true,
+    "autohide": false,
+    "design": "ryoku",
     "edge": "auto",
     "enabled": false,
     "frost": true,
     "labels": false,
     "magnify": true,
-    "media": false,
-    "pinned": [
-      "kitty"
-    ],
+    "media": true,
+    "pinned": [],
     "shadow": true,
+    "shima": {
+      "shape": "auto"
+    },
     "style": "islands"
   },
   "fontFamily": "Inter",
@@ -2896,7 +2899,6 @@
         ],
         "right": [
           "tray",
-          "sysmon",
           "left"
         ]
       },
@@ -2986,7 +2988,7 @@
       "G9"
     ],
     "barShadowEnabled": true,
-    "barShellStyle": "islands",
+    "barShellStyle": "fit",
     "barTemperatureSource": "cpu",
     "iconOnlyGids": [
       "G18",
