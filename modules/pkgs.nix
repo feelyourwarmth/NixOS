@@ -34,6 +34,7 @@
     mission-center
     nwg-look
     anydesk
+    telegram-desktop
 
     # PACKAGES
     nil
@@ -73,6 +74,12 @@
   # COOLER CONTROL
   programs.coolercontrol = {
     enable = true;
+  };
+
+  # APPIMAGE SUPPORT FOR NIXOS
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
   };
 
   programs.nix-ld.enable = true;

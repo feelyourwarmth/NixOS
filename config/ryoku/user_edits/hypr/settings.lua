@@ -5,7 +5,7 @@
 hl.config({
   general = { gaps_in = 4, gaps_out = 6, border_size = 1, layout = "scrolling", gaps_workspaces = 16 },
   decoration = { rounding = 4, active_opacity = 0.98, inactive_opacity = 0.9, dim_inactive = true, dim_strength = 0.2, blur = { enabled = false, passes = 2, xray = true, popups = true }, shadow = { enabled = false } },
-  input = { kb_layout = "us,br", kb_variant = "", kb_options = "grp:alt_shift_toggle", sensitivity = 0.1, accel_profile = "flat", repeat_rate = 20, repeat_delay = 250, touchpad = { tap_to_click = false, tap_and_drag = false, disable_while_typing = false } },
+  input = { kb_layout = "us,br", kb_variant = "", kb_options = "grp:alt_shift_toggle", sensitivity = 0.1, accel_profile = "flat", repeat_rate = 20, repeat_delay = 250, touchpad = { tap_to_click = false, tap_and_drag = false, clickfinger_behavior = false, disable_while_typing = false } },
 })
 
 hl.animation({ leaf = "windowsIn", enabled = true, speed = 3.8, bezier = "ryokuBloom", style = "gnomed" })
@@ -18,6 +18,8 @@ end
 hl.animation({ leaf = "borderangle", enabled = true, speed = 50.0, bezier = "linear", style = "loop" })
 hl.curve("almostLinear", { type = "bezier", points = { { 0.34, 1.5 }, { 0.64, 1.0 } } })
 hl.animation({ leaf = "fadeOut", enabled = true, speed = 2.2, bezier = "almostLinear" })
+
+hl.animation({ leaf = "workspaces", enabled = true, speed = 3.5, bezier = "easeOutQuint", style = "fade" })
 
 hl.env("XCURSOR_THEME", "Bibata-Material-Ryoku")
 hl.env("XCURSOR_SIZE", "20")

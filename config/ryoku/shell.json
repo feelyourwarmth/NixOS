@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "python",
+  "barStyle": "qsbar",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -17,7 +17,6 @@
       "right_widgets": []
     },
     "frame": {
-      "enable_frame": true,
       "monitor_filter": []
     },
     "left_bar": {
@@ -121,6 +120,7 @@
       }
     ]
   },
+  "deckFrost": 0.45,
   "displays": {
     "bar_style": {
       "DP-1": ""
@@ -131,7 +131,7 @@
   },
   "dock": {
     "autohide": false,
-    "design": "ryoku",
+    "design": "none",
     "edge": "auto",
     "enabled": false,
     "frost": true,
@@ -2880,6 +2880,43 @@
     "tray": false,
     "weather": true
   },
+  "orpheus": {
+    "feel": "fluid",
+    "form": "square",
+    "gain": 0,
+    "layout": {
+      "center": [
+        "voice",
+        "activity"
+      ],
+      "left": [
+        "logo",
+        "workspaces"
+      ],
+      "right": [
+        "tray",
+        "controls"
+      ]
+    },
+    "mediaWidth": 220,
+    "opacity": 0.85,
+    "rim": false,
+    "scale": 0.85,
+    "seconds": false,
+    "showDate": true,
+    "span": "full",
+    "statusItems": [],
+    "sysmonItems": [
+      "cpu",
+      "mem",
+      "temp"
+    ],
+    "trayLimit": 3,
+    "wavy": true,
+    "windowWidth": 280,
+    "workspaceShowEmpty": false,
+    "workspaceStyle": "dashes"
+  },
   "osdOpacity": 1,
   "osdRadius": 0,
   "python": {
@@ -2976,14 +3013,14 @@
     "barAutoHide": false,
     "barBorderEnabled": false,
     "barColor": "accent",
-    "barCornerRadius": 6,
+    "barCornerRadius": 8,
     "barFrostEnabled": true,
-    "barGapBottom": -4,
-    "barGapLeft": 8,
-    "barGapRight": 8,
-    "barGapTop": 4,
+    "barGapBottom": 0,
+    "barGapLeft": 0,
+    "barGapRight": 0,
+    "barGapTop": 6,
     "barPosition": "top",
-    "barScale": 1.1,
+    "barScale": 1,
     "barSeps": [
       "G9"
     ],
@@ -3000,14 +3037,16 @@
     ],
     "launcherLogoMode": "icon",
     "layout": {
-      "center": [],
+      "center": [
+        "clock",
+        "status"
+      ],
       "left": [
         "launcher",
         "workspaces",
         "memory",
         "cpu",
-        "ai",
-        "clock"
+        "ai"
       ],
       "right": [
         "quick",
@@ -3021,8 +3060,7 @@
         "bluetooth",
         "cputemp",
         "network",
-        "storage",
-        "status"
+        "storage"
       ],
       "version": 1
     },
