@@ -1,15 +1,23 @@
 {
   "components": {
     "wallpaperSelector": {
-      "displayMode": "slices",
+      "displayMode": "duel",
+      "duelCorners": 36,
+      "duelFalloff": 40,
+      "duelHeight": 605,
+      "duelNavigationMs": 214,
+      "duelShadows": false,
+      "duelSkew": 2,
+      "duelWidth": 641,
       "enabled": true,
       "gridLayout": "uniform",
-      "lastAppliedKey": "wallhaven-9okkr1",
+      "lastAppliedKey": "photo-girl-school-uniform-transparent-umbrella",
       "startPosition": "browsing"
     }
   },
   "display": {},
   "filterBar": {
+    "defaultFolder": "",
     "sticky": true
   },
   "general": {

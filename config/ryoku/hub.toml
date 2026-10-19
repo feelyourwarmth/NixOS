@@ -1,4 +1,4 @@
 [ui]
-  section = "launcher"
+  section = "gpu"
   update_interval = "daily"
   advanced = "1"

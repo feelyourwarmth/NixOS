@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "qsbar",
+  "barStyle": "karuma",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -1539,11 +1539,11 @@
     "iris": {
       "appearance": {
         "accent": "blue",
-        "adaptive": 0,
+        "adaptive": 15,
         "aura": "subtle",
-        "controlPlate": "none",
+        "controlPlate": "glass",
         "customize": "shell",
-        "density": 1,
+        "density": 0.8,
         "expandedRadius": 28,
         "figureWeight": "bold",
         "fontFamily": "",
@@ -1554,7 +1554,7 @@
           "edgeLight": 34,
           "edgeLine": 10,
           "edgeWidth": 1.5,
-          "mode": "off",
+          "mode": "wallpaper",
           "tint": 58
         },
         "highlight": "orange",
@@ -1666,7 +1666,7 @@
           "shadow": 100,
           "shape": 100,
           "surface": "black",
-          "text": 100,
+          "text": 85,
           "weight": "regular"
         },
         "themeColoursOnly": false,
@@ -1700,7 +1700,7 @@
         "blockStyle": "plain",
         "centerModules": [],
         "clockAccent": "highlight",
-        "clockScale": 100,
+        "clockScale": 95,
         "clockStyle": "dateTime",
         "composition": "cluster",
         "desktopBanner": "wallpaper",
@@ -1754,7 +1754,7 @@
           "controls",
           "settings"
         ],
-        "notch": true,
+        "notch": false,
         "notchCurve": 100,
         "padding": 100,
         "pageWidth": 440,
@@ -2036,7 +2036,7 @@
         }
       },
       "surround": {
-        "enable": true,
+        "enable": false,
         "music": "widget",
         "radius": 22,
         "thickness": 10
@@ -2869,7 +2869,8 @@
   },
   "notifications": {
     "notification_position": "Right",
-    "popup_window_margins": 0
+    "popup_window_margins": 0,
+    "show_images": false
   },
   "obi": {
     "activeWindow": true,
@@ -2919,6 +2920,62 @@
   },
   "osdOpacity": 1,
   "osdRadius": 0,
+  "phone": {
+    "alarm": {
+      "clockApps": [],
+      "enabled": true,
+      "ignorePackages": [],
+      "pollMinutes": 10
+    },
+    "contacts": {
+      "enabled": true,
+      "hideUnnamed": true
+    },
+    "desktopNotifications": true,
+    "enabled": false,
+    "microphone": {
+      "enabled": false,
+      "micGain": 100,
+      "monitor": false,
+      "setDefault": false
+    },
+    "scrcpy": {
+      "appMode": {
+        "autoUnlock": true,
+        "displayDpi": 240,
+        "displayHeight": 960,
+        "displayWidth": 1280,
+        "flexDisplay": false,
+        "onSessionEnd": "home",
+        "showAppIcons": true
+      },
+      "audio": true,
+      "autoResume": true,
+      "autoWirelessIp": true,
+      "clipboardSync": true,
+      "keyboardMode": "uhid",
+      "maxFps": 60,
+      "maxSize": 0,
+      "pinAdbPort": false,
+      "recording": {
+        "folder": ""
+      },
+      "showTouches": false,
+      "stayAwake": true,
+      "turnScreenOff": false,
+      "useWireless": false,
+      "videoBitRate": "8M",
+      "wirelessIp": "",
+      "wirelessPort": 5555
+    },
+    "webcam": {
+      "cameraFacing": "back",
+      "fps": 30,
+      "height": 720,
+      "videoDevice": "",
+      "width": 1280
+    }
+  },
   "python": {
     "bar": {
       "autohide": false,
@@ -3092,6 +3149,52 @@
     "workspaceStyle": "numbers"
   },
   "screenShader": "",
+  "sounds": {
+    "enabled": true,
+    "events": {
+      "battery-full": {
+        "enabled": false,
+        "file": ""
+      },
+      "battery-low": {
+        "enabled": false,
+        "file": ""
+      },
+      "device-added": {
+        "enabled": true,
+        "file": ""
+      },
+      "device-removed": {
+        "enabled": true,
+        "file": ""
+      },
+      "notification": {
+        "enabled": false,
+        "file": ""
+      },
+      "notification-critical": {
+        "enabled": false,
+        "file": ""
+      },
+      "power-plug": {
+        "enabled": false,
+        "file": ""
+      },
+      "power-unplug": {
+        "enabled": false,
+        "file": ""
+      },
+      "shutter": {
+        "enabled": false,
+        "file": ""
+      },
+      "volume-change": {
+        "enabled": false,
+        "file": ""
+      }
+    },
+    "volume": 88
+  },
   "theme": {
     "attributes": {
       "font": {

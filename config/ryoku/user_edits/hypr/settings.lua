@@ -4,6 +4,7 @@
 
 hl.config({
   general = { gaps_in = 4, gaps_out = 6, border_size = 1, layout = "scrolling", gaps_workspaces = 16 },
+  master = { new_status = "slave" },
   decoration = { rounding = 4, active_opacity = 0.98, inactive_opacity = 0.9, dim_inactive = true, dim_strength = 0.2, blur = { enabled = false, passes = 2, xray = true, popups = true }, shadow = { enabled = false } },
   input = { kb_layout = "us,br", kb_variant = "", kb_options = "grp:alt_shift_toggle", sensitivity = 0.1, accel_profile = "flat", repeat_rate = 20, repeat_delay = 250, touchpad = { tap_to_click = false, tap_and_drag = false, clickfinger_behavior = false, disable_while_typing = false } },
 })
@@ -35,8 +36,7 @@ hl.window_rule({ name = "ryoku-user-3", match = { class = "discord-canary" }, wo
 hl.window_rule({ name = "ryoku-user-4", match = { title = "Ryotunes" }, workspace = "3" })
 hl.window_rule({ name = "ryoku-user-5", match = { title = "Sober" }, workspace = "1" })
 hl.window_rule({ name = "ryoku-user-6", match = { title = "Brave" }, maximize = true })
-hl.window_rule({ name = "ryoku-user-7", match = { title = "Vivaldi" }, maximize = true })
-hl.window_rule({ name = "ryoku-user-8", match = { title = "Steam" }, workspace = "1" })
+hl.window_rule({ name = "ryoku-user-7", match = { title = "Steam" }, workspace = "1" })
 hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd("ryomanager"))
 hl.config({ input = { follow_mouse = 1 } })
 

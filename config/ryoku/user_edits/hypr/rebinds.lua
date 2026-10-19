@@ -11,6 +11,7 @@ return {
 	["SUPER + ALT + 8"] = "SUPER + CTRL + 8",
 	["SUPER + ALT + 9"] = "SUPER + CTRL + 9",
 	["SUPER + ALT + E"] = "SUPER + SHIFT + E",
+	["SUPER + ALT + Space"] = false,
 	["SUPER + F"] = "SUPER + SHIFT + F",
 	["SUPER + J"] = "SUPER + M",
 	["SUPER + M"] = "SUPER + slash",

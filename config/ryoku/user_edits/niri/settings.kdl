@@ -42,8 +42,8 @@ layout {
     focus-ring {
         on
         width 1
-        active-color "#d2cab8"
-        inactive-color "#141311"
+        active-color "#b9ced0"
+        inactive-color "#111414"
         urgent-color "#9b0000"
     }
     tab-indicator {
@@ -116,6 +116,13 @@ window-rule {
 }
 
 window-rule {
+    match title="^ryoku-phone-.*$"
+    open-floating true
+    default-column-width { fixed 520; }
+    default-window-height { fixed 860; }
+}
+
+window-rule {
     match app-id="ryoport_console"
     open-floating true
 }
@@ -152,11 +159,6 @@ window-rule {
 
 window-rule {
     match title="Brave"
-    open-maximized true
-}
-
-window-rule {
-    match title="Vivaldi"
     open-maximized true
 }
 

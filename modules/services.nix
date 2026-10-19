@@ -17,6 +17,8 @@
       mkdir -p /etc/nixos/config/ryoku
       chown feel:users /etc/nixos/config/ryoku
       chmod 0755 /etc/nixos/config/ryoku
+      chown feel:users /etc/nixos/config/nvim
+      chmod 0755 /etc/nixos/config/nvim
     '';
   };
 
