@@ -9,13 +9,17 @@
   #};
 
   inputs = {
+    #ryoku = {
+    #  url = "path:/home/feel/Ryoku-on-NixOS";
+    #};
+    
     ryoku = {
-      url = "github:aethctl/Ryoku-on-NixOS/unstable-dev";
+      url = "github:ryoku-dev/Ryoku-on-NixOS/unstable-dev";
     };
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
+    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel";
 
     home-manager = {
       url = "github:nix-community/home-manager";

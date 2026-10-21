@@ -3,7 +3,7 @@
     "autoPowerSaverOnBattery": false,
     "disableBlur": false,
     "disableShadows": true,
-    "liveWallpaper60": false,
+    "liveWallpaper60": true,
     "lowPowerMode": false,
     "pauseLiveWallpaperWhenFullscreen": true,
     "powerProfileEffects": false,

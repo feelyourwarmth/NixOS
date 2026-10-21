@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "karuma",
+  "barStyle": "iris",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -121,6 +121,7 @@
     ]
   },
   "deckFrost": 0.45,
+  "deckFrostEnabled": true,
   "displays": {
     "bar_style": {
       "DP-1": ""
@@ -1539,7 +1540,7 @@
     "iris": {
       "appearance": {
         "accent": "blue",
-        "adaptive": 15,
+        "adaptive": 20,
         "aura": "subtle",
         "controlPlate": "glass",
         "customize": "shell",
@@ -1547,20 +1548,30 @@
         "expandedRadius": 28,
         "figureWeight": "bold",
         "fontFamily": "",
-        "frontend": "ryoku",
+        "frontend": "inir",
         "glass": {
-          "blur": 100,
+          "blur": 85,
           "edgeColour": "scene",
           "edgeLight": 34,
           "edgeLine": 10,
           "edgeWidth": 1.5,
           "mode": "wallpaper",
-          "tint": 58
+          "tint": 40
         },
         "highlight": "orange",
         "icons": {
           "plate": "black",
-          "style": "iris"
+          "style": "tile"
+        },
+        "leak": {
+          "grade": "ember",
+          "grain": 75,
+          "light": 65,
+          "prism": 55,
+          "shape": "beam",
+          "spill": 55,
+          "x": 0,
+          "y": 0
         },
         "morph": "direct",
         "motion": true,
@@ -1569,8 +1580,9 @@
         "preset": "iris",
         "previews": true,
         "saved": [],
-        "scheme": "auto",
-        "settingsLayout": "sidebar",
+        "scheme": "dark",
+        "settingsHost": "overlay",
+        "settingsLayout": "home",
         "studioPreview": true,
         "surfaces": {
           "cards": {
@@ -1634,6 +1646,7 @@
             "speed": 100
           }
         },
+        "texture": "leak",
         "theme": {
           "accentHue": 212,
           "air": 8,
@@ -1648,10 +1661,10 @@
             0.3,
             1
           ],
-          "fill": 100,
-          "glow": 0,
+          "fill": 80,
+          "glow": 20,
           "highlightHue": 32,
-          "lightReach": 100,
+          "lightReach": 120,
           "lines": 100,
           "linkShapes": false,
           "melt": 0,
@@ -1675,8 +1688,8 @@
         "titleFontFamily": "",
         "tune": {
           "dark": {
-            "colour": 100,
-            "lume": false,
+            "colour": 65,
+            "lume": true,
             "tone": 0,
             "widgets": 100
           },
@@ -3220,6 +3233,9 @@
       "scale": 1
     },
     "theme": "Wallpaper"
+  },
+  "urgentUpdates": {
+    "enabled": true
   },
   "wallpaper": {
     "content_fit": "Cover",

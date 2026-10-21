@@ -5,6 +5,7 @@
     # DEV
     neovim
     zed-editor
+    python314Packages.pip
 
     # CLI
     curl

@@ -17,8 +17,6 @@
       mkdir -p /etc/nixos/config/ryoku
       chown feel:users /etc/nixos/config/ryoku
       chmod 0755 /etc/nixos/config/ryoku
-      chown feel:users /etc/nixos/config/nvim
-      chmod 0755 /etc/nixos/config/nvim
     '';
   };
 
@@ -39,7 +37,7 @@
 
   
   systemd.services.fix-git-permissions = {
-    description = "Ensure NixOS Git repository has correct permissions";
+    description = "Ensure NixOS Git directory has correct permissions";
 
     wantedBy = [ "multi-user.target" ];
 
@@ -50,6 +48,21 @@
     script = ''
       chown -R feel:users /etc/nixos/.git
       chmod -R u+rwX /etc/nixos/.git
+    '';
+  };
+
+  systemd.services.fix-nvim-permissions = {
+    description = "Ensure NixOS Nvim directory has correct permissions";
+
+    wantedBy = [ "multi-user.target" ];
+
+    serviceConfig = {
+      Type = "oneshot";
+    };
+
+    script = ''
+      chown -R feel:users /etc/nixos/config/nvim
+      chmod -R u+rwX /etc/nixos/config/nvim
     '';
   };
 
