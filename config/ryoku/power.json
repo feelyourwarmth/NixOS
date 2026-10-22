@@ -12,7 +12,7 @@
       "dimSec": 600,
       "screenOffSec": 900,
       "suspendSec": 0,
-      "lockSec": 0
+      "lockSec": 1800
     },
     "onDesktops": true
   }

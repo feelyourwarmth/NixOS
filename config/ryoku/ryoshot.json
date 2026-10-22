@@ -4,13 +4,18 @@
   "zoomFactor": 2,
   "copyOnSave": true,
   "saveDir": "",
-  "delaySeconds": 1,
+  "delaySeconds": 0,
   "recordMic": false,
   "lastAction": "shot",
   "toolStyle": {
     "redact": {
       "color": "#e75a50",
       "width": 2,
+      "filled": false
+    },
+    "rect": {
+      "color": "#b9cce4",
+      "width": 4,
       "filled": false
     }
   }

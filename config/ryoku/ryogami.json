@@ -11,7 +11,7 @@
       "duelWidth": 641,
       "enabled": true,
       "gridLayout": "uniform",
-      "lastAppliedKey": "motionbgs-10312",
+      "lastAppliedKey": "wallhaven-yqkl97",
       "startPosition": "browsing"
     }
   },
@@ -37,6 +37,9 @@
   "performance": {
     "imageOptimizePreset": "quality",
     "imageOptimizeResolution": "4k"
+  },
+  "theme": {
+    "policy": "wallpaper"
   },
   "transition": {
     "shader": "fadecolor"

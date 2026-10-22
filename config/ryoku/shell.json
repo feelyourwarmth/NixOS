@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "iris",
+  "barStyle": "ricelin",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -72,12 +72,23 @@
     "warningPercent": 25
   },
   "chroma": {
-    "gap": 10,
-    "opacity": 0.92,
+    "gap": 8,
+    "opacity": 0.84,
     "position": "top",
     "radius": 8,
     "scale": 0.8,
-    "workspaceMode": "numbers"
+    "widgets": {
+      "audio": false,
+      "battery": false,
+      "clock": true,
+      "identity": false,
+      "media": true,
+      "network": false,
+      "notifications": true,
+      "settings": false,
+      "wallpaper": false
+    },
+    "workspaceMode": "dots"
   },
   "clipboard": {
     "cardRadius": 6,
@@ -122,6 +133,11 @@
   },
   "deckFrost": 0.45,
   "deckFrostEnabled": true,
+  "designs": {
+    "notification": "tegami",
+    "osd": "ito",
+    "sidebar": "ryoku"
+  },
   "displays": {
     "bar_style": {
       "DP-1": ""
@@ -3137,7 +3153,11 @@
     "panelTooltipBorderEnabled": true,
     "pickerStyle": "carousel",
     "widgetColorStyles": "-",
-    "widgetGeom": {},
+    "widgetGeom": {
+      "G8": {
+        "pad": 2
+      }
+    },
     "widgets": {
       "battery": false,
       "bluetooth": false,

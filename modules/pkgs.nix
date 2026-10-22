@@ -31,6 +31,7 @@
     gpu-screen-recorder-ui
     easyeffects
     (discord-canary.override { withVencord = true; }) # DISCORD CANARY
+    (discord.override { withEquicord = true; }) # DISCORD
     proton-vpn
     mission-center
     nwg-look
