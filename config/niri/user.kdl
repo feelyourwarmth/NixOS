@@ -63,6 +63,13 @@ window-rule {
     }
 }
 
+layer-rule {
+    match namespace="^mac(bar|barbg|dock|spot)$"
+    background-effect {
+        xray false
+    }
+}
+
 debug {
     disable-direct-scanout
 }

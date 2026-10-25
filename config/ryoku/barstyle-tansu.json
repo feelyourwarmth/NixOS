@@ -1,30 +1,33 @@
 {
   "bar.visible": true,
+  "bar.autohide": false,
   "bar.workspaces": true,
-  "bar.activeWindow": true,
-  "bar.media": true,
+  "bar.activeWindow": false,
+  "bar.media": false,
   "bar.tray": true,
-  "bar.status": true,
+  "bar.status": false,
   "bar.weather": true,
   "bar.clock": true,
-  "bar.date": true,
-  "bar.utilButtons": true,
-  "bar.resources": true,
-  "bar.battery": true,
+  "bar.date": false,
+  "bar.utilButtons": false,
+  "bar.resources": false,
+  "bar.battery": false,
   "bar.privacy": true,
-  "bar.updates": true,
+  "bar.updates": false,
   "bar.keyboardLayout": true,
   "bar.notifications": true,
   "bar.discord": false,
   "bar.compactWindow": false,
   "bar.perMonitor": false,
   "bar.style": "capsule",
+  "bar.roundness": 80,
+  "bar.reserve": 100,
+  "bar.scale": 0.85,
   "bar.position": "top",
   "bar.layout": {
     "left": [
       "activeWindow",
       "media",
-      "tray",
       "workspaces"
     ],
     "center": [
@@ -34,6 +37,7 @@
       "date"
     ],
     "right": [
+      "tray",
       "utilButtons",
       "resources",
       "battery",
@@ -44,7 +48,9 @@
     ]
   },
   "bar.screens": {},
-  "shell.scales": {},
+  "shell.scales": {
+    "DP-1": 0.95
+  },
   "bar.scrollHints": true,
   "bar.workspaceCount": 5,
   "notify.on": true,
@@ -64,6 +70,8 @@
   "quick.phoneShadow": true,
   "quick.flat": false,
   "quick.media": true,
+  "quick.pinScale": 58,
+  "quick.pinOpacity": 100,
   "quick.tiles": [
     {
       "id": "network",

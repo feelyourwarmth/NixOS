@@ -1,21 +1,42 @@
 {
+  "depth": {
+    "cut": {
+      "matting": true,
+      "model": "birefnet-general-lite"
+    },
     "edge": 0,
-    "editGridSize": 16,
-    "editGridSnap": true,
-    "front": [
-    ],
-    "models": {
-        "draft": "u2netp",
-        "fine": "birefnet-general-lite",
-        "standard": "u2netp"
-    },
-    "motion": {
-        "amount": "subtle",
-        "idle": "breathe",
-        "music": true,
-        "speed": 0.4
-    },
-    "quality": "fine",
+    "front": [],
     "shadow": 0.45,
     "shadowAngle": 90
+  },
+  "editGridSize": 16,
+  "editGridSnap": true,
+  "parallax": {
+    "cut": {
+      "matting": true,
+      "model": "birefnet-general-lite"
+    },
+    "depthBackdrop": true,
+    "edge": 0,
+    "front": [],
+    "motion": {
+      "amount": "subtle",
+      "idle": "breathe",
+      "music": true,
+      "speed": 0.4
+    },
+    "shadow": 0.45,
+    "shadowAngle": 90
+  },
+  "spatial": {
+    "model": "small",
+    "motion": {
+      "amount": "subtle",
+      "mouse": true,
+      "range": 1,
+      "sensitivity": 1
+    },
+    "shadowAngle": 90
+  },
+  "version": 3
 }

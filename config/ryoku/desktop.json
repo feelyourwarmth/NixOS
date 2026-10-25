@@ -362,6 +362,12 @@
       "hotkeyOverlayHideNotBound": false,
       "hotkeyOverlaySkip": true,
       "insertHint": true,
+      "keysounds": {
+        "enabled": true,
+        "profile": "cherry-mx-brown",
+        "release": true,
+        "volume": 0.6
+      },
       "layerRules": [],
       "modKey": "Super",
       "modKeyNested": "Super",
@@ -371,6 +377,11 @@
       "presetWindowHeights": "0.33333, 0.5, 0.66667",
       "recentWindows": false,
       "screenshotPath": "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png",
+      "settingsWindow": {
+        "height": 0.5,
+        "mode": "full",
+        "width": 0.5
+      },
       "struts": {
         "bottom": 0,
         "left": 0,

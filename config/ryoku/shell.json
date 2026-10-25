@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "ricelin",
+  "barStyle": "gokko",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -135,7 +135,7 @@
   "deckFrostEnabled": true,
   "designs": {
     "notification": "tegami",
-    "osd": "ito",
+    "osd": "ryoku",
     "sidebar": "ryoku"
   },
   "displays": {
@@ -1210,6 +1210,7 @@
           "x": 80,
           "y": 240
         },
+        "stacks": [],
         "style": "panel",
         "systemMonitor": {
           "backgroundOpacity": 0.16,
@@ -1554,9 +1555,30 @@
       "lockBeforeSleep": true
     },
     "iris": {
+      "anime": {
+        "audio": "sub",
+        "quality": "best",
+        "shows": 5,
+        "skipIntro": false,
+        "subtitlePosition": 100,
+        "subtitleScale": 100
+      },
       "appearance": {
         "accent": "blue",
         "adaptive": 20,
+        "afterglow": {
+          "atmosphere": 60,
+          "bloom": 50,
+          "chrome": 65,
+          "grade": "dusk",
+          "signal": 35
+        },
+        "anime": {
+          "enabled": false,
+          "highlight": false,
+          "palette": "sakura",
+          "strength": 60
+        },
         "aura": "subtle",
         "controlPlate": "glass",
         "customize": "shell",
@@ -1580,12 +1602,16 @@
           "style": "tile"
         },
         "leak": {
+          "frame": 100,
           "grade": "ember",
           "grain": 75,
+          "grainSize": 1.6,
           "light": 65,
           "prism": 55,
           "shape": "beam",
           "spill": 55,
+          "streaks": 15,
+          "widgets": 100,
           "x": 0,
           "y": 0
         },
@@ -1611,6 +1637,7 @@
             "light": "inherit",
             "material": "",
             "mixer": true,
+            "morph": "",
             "pad": 0,
             "radius": 0,
             "speed": 100,
@@ -1619,16 +1646,19 @@
           "controlCenter": {
             "light": "inherit",
             "material": "",
+            "morph": "",
             "radius": 0,
             "speed": 100
           },
           "gallery": {
             "light": "inherit",
             "material": "",
+            "morph": "",
             "radius": 0,
             "speed": 100
           },
           "island": {
+            "morph": "",
             "radius": 0,
             "speed": 100
           },
@@ -1636,28 +1666,35 @@
             "density": "compact",
             "light": "inherit",
             "material": "",
+            "morph": "",
             "radius": 0,
             "speed": 100
           },
           "osd": {
+            "light": "inherit",
             "material": "",
-            "radius": 0
+            "morph": "",
+            "radius": 0,
+            "speed": 100
           },
           "panels": {
             "light": "inherit",
             "material": "",
+            "morph": "",
             "radius": 0,
             "speed": 100
           },
           "settings": {
             "light": "inherit",
             "material": "",
+            "morph": "",
             "radius": 0,
             "speed": 100
           },
           "spotlight": {
             "light": "inherit",
             "material": "",
+            "morph": "",
             "radius": 0,
             "speed": 100
           }
@@ -1677,6 +1714,7 @@
             0.3,
             1
           ],
+          "edges": "line",
           "fill": 80,
           "glow": 20,
           "highlightHue": 32,
@@ -1791,6 +1829,7 @@
         "piecesSide": "end",
         "position": "top",
         "reserveSpace": true,
+        "revealOnEmpty": true,
         "rightModules": [],
         "satelliteGap": 6,
         "satelliteScale": 100,
@@ -1807,6 +1846,9 @@
         "cluster": true,
         "edgeGap": 20,
         "extras": {
+          "anime": {
+            "enable": false
+          },
           "battery": {
             "enable": false,
             "fx": 0.5,
@@ -1832,6 +1874,12 @@
             "place": "right"
           },
           "controls": {
+            "enable": false,
+            "fx": 0.5,
+            "fy": 0.5,
+            "place": "right"
+          },
+          "equalizer": {
             "enable": false,
             "fx": 0.5,
             "fy": 0.5,
@@ -1893,6 +1941,8 @@
           },
           "visualizer": {
             "enable": false,
+            "fx": 0.5,
+            "fy": 0.5,
             "place": "right"
           },
           "vitals": {
@@ -1942,6 +1992,7 @@
         }
       },
       "controlCenter": {
+        "accent": "system",
         "columns": 4,
         "controls": "tiles",
         "labels": false,
@@ -1981,9 +2032,22 @@
           "devices:2x1",
           "record:2x1"
         ],
+        "sliders": "neutral",
         "width": 360
       },
+      "desktopMenu": {
+        "items": [
+          "widgets",
+          "customize",
+          "screenshot",
+          "terminal",
+          "settings",
+          "restart"
+        ],
+        "wallpaper": true
+      },
       "dock": {
+        "arrange": "pinned",
         "autoHide": true,
         "badges": true,
         "blur": false,
@@ -1995,8 +2059,16 @@
         "material": "inherit",
         "notch": true,
         "position": "auto",
+        "reorder": true,
         "reserveSpace": true,
         "revealOnEmpty": false
+      },
+      "equalizer": {
+        "spectrum": {
+          "enabled": true,
+          "opacity": 0.5,
+          "style": "capsules"
+        }
       },
       "modules": {
         "controlCenter": true,
@@ -2010,12 +2082,23 @@
       },
       "notifications": {
         "duration": 4000,
+        "fullscreen": true,
         "width": 380
       },
       "osd": {
+        "duration": 1500,
+        "figure": true,
+        "fullscreen": "show",
+        "keyboard": true,
+        "levels": "yours",
+        "media": "yours",
+        "offset": 18,
+        "position": "bottom",
+        "style": "capsule",
         "width": 320
       },
       "palette": {
+        "clipboardResults": 8,
         "maxResults": 8,
         "opens": "floating",
         "showHints": true,
@@ -2028,7 +2111,12 @@
         "artworkBackground": true,
         "bubbleOpens": "card",
         "cardPinned": false,
-        "roundCover": false
+        "roundCover": false,
+        "visualizer": {
+          "bars": 5,
+          "colour": "art",
+          "style": "capsules"
+        }
       },
       "sidebars": {
         "left": {
@@ -2067,6 +2155,14 @@
       "surround": {
         "enable": false,
         "music": "widget",
+        "musicAppearance": "etched",
+        "musicColour": "pearl",
+        "musicEdges": "sides",
+        "musicLight": 35,
+        "musicLightWidth": 5,
+        "musicSensitivity": 140,
+        "musicSpeed": 100,
+        "musicStrength": 160,
         "radius": 22,
         "thickness": 10
       },
@@ -2079,18 +2175,31 @@
       "wallpaper": {
         "layout": "showcase",
         "livePreview": true,
+        "liveQuality": "best",
         "motion": true,
+        "onlineSort": "top",
         "pinned": [],
+        "sort": "newest",
+        "sources": [
+          "wallhaven",
+          "live"
+        ],
+        "suggestive": false,
         "thumbnailSize": 224,
+        "topRange": "1w",
         "width": 920
       },
       "widgets": {
+        "brightWallpapers": false,
         "design": "iris",
+        "legibleAlways": false,
         "material": "glass",
         "opacity": 100,
+        "outline": "auto",
         "radius": 22,
         "rim": false,
         "tint": "wallpaper",
+        "vibrance": 85,
         "weight": "regular"
       }
     },
@@ -2237,6 +2346,17 @@
       "timeoutNormal": 7000
     },
     "osd": {
+      "connections": {
+        "audio": true,
+        "bluetooth": true,
+        "displays": true,
+        "drives": true,
+        "enable": true,
+        "internet": true,
+        "network": true,
+        "power": true,
+        "usb": true
+      },
       "mediaEnabled": true
     },
     "osk": {
@@ -2726,6 +2846,9 @@
       "checkInterval": 120,
       "stronglyAdviseUpdateThreshold": 200
     },
+    "vpn": {
+      "details": false
+    },
     "waffles": {
       "bar": {
         "bottom": true,
@@ -2912,7 +3035,7 @@
   },
   "orpheus": {
     "feel": "fluid",
-    "form": "square",
+    "form": "liquid",
     "gain": 0,
     "layout": {
       "center": [
@@ -2929,7 +3052,7 @@
       ]
     },
     "mediaWidth": 220,
-    "opacity": 0.85,
+    "opacity": 0.72,
     "rim": false,
     "scale": 0.85,
     "seconds": false,
@@ -2944,8 +3067,8 @@
     "trayLimit": 3,
     "wavy": true,
     "windowWidth": 280,
-    "workspaceShowEmpty": false,
-    "workspaceStyle": "dashes"
+    "workspaceShowEmpty": true,
+    "workspaceStyle": "dots"
   },
   "osdOpacity": 1,
   "osdRadius": 0,
@@ -3097,7 +3220,7 @@
     "audioBoost": true,
     "barAnim": 0,
     "barAutoHide": false,
-    "barBorderEnabled": false,
+    "barBorderEnabled": true,
     "barColor": "accent",
     "barCornerRadius": 8,
     "barFrostEnabled": true,

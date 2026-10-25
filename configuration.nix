@@ -14,6 +14,7 @@
       ./modules/rules.nix
       ./modules/pkgs.nix
       ./modules/nct6687.nix
+      ./modules/fish.nix
       ./modules/services.nix
     ];
 
@@ -69,91 +70,7 @@
   };
 
   # Allow unfree packages
-  nixpkgs.config.allowUnfree = true; 
-
-  programs.fish.shellFunctions = {
-    rebuild = {
-      body = ''
-        sudo -v
-        sudo nixos-rebuild switch --flake /etc/nixos#nixos
-        echo "Rebuild Complete!"
-      '';
-    };
-
-    update = {
-      body = ''
-        sudo -v
-        ryoku status
-        ryoku update
-        sudo nix-channel --update
-        sudo nix flake update --flake /etc/nixos
-        sudo nixos-rebuild switch --flake /etc/nixos#nixos
-        echo "Update Complete!"
-      '';
-    };
-
-    clean = {
-      body = ''
-        sudo -v
-        sudo nix-collect-garbage -d
-        echo "Nix garbage collection complete!"
-      '';
-    };
-
-    nixos = {
-      body = ''
-        cd /etc/nixos
-      '';
-    };
-
-    nix = {
-      body = ''
-        sudo -E nvim /etc/nixos
-      '';
-    };
-
-    modules = {
-      body = ''
-        cd /etc/nixos/modules
-      '';
-    };
-
-    config = {
-      body = ''
-        sudo -E nvim /etc/nixos/configuration.nix
-      '';
-    };
-
-    flake = {
-      body = ''
-        sudo -E nvim /etc/nixos/flake.nix
-      '';
-    };
-
-    home = {
-      body = ''
-        sudo -E nvim /etc/nixos/home.nix
-      '';
-    };
-
-    pkgs = {
-      body = ''
-        sudo -E nvim /etc/nixos/modules/pkgs.nix
-      '';
-    };
-
-    services = {
-      body = ''
-        sudo -E nvim /etc/nixos/modules/services.nix
-      '';
-    };
-
-    larp = {
-      body = ''
-        fetch --infinite --shading-mode sextants
-      '';
-    };
-  };
+  nixpkgs.config.allowUnfree = true;
 
   #environment.variables = {
   #  EDITOR = "nvim";

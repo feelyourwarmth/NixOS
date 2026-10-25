@@ -10,11 +10,9 @@
     # CLI
     curl
     wget
-    nmap
     fetch
     ncdu
     btop
-    nvibrant
 
     # TUI
     claude-code
@@ -30,8 +28,8 @@
     lact
     gpu-screen-recorder-ui
     easyeffects
-    (discord-canary.override { withVencord = true; }) # DISCORD CANARY
-    (discord.override { withEquicord = true; }) # DISCORD
+    (discord-canary.override { withVencord = true; }) # DISCORD CANARY + VENCORD
+    equibop # EQUICORD
     proton-vpn
     mission-center
     nwg-look

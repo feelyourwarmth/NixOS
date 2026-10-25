@@ -23,6 +23,8 @@
     ./config/fastfetch/config.jsonc;
   home.file.".config/fastfetch/user.txt".source =
     ./config/fastfetch/user.txt;
+  home.file.".config/fastfetch/emoji.gif".source =
+    ./config/fastfetch/emoji.gif;
 
   # STARSHIP CONFIG
   home.file.".config/starship.toml".source =

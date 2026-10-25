@@ -24,10 +24,10 @@ binds {
     Super+D { maximize-column; }
     Super+C { center-column; }
     Alt+Tab { focus-window-previous; }
-    Super+Left { focus-column-left; }
-    Super+Right { focus-column-right; }
-    Super+Up { focus-window-up; }
-    Super+Down { focus-window-down; }
+    Super+Left { focus-column-or-monitor-left; }
+    Super+Right { focus-column-or-monitor-right; }
+    Super+Up { focus-window-or-monitor-up; }
+    Super+Down { focus-window-or-monitor-down; }
     Super+Home { focus-column-first; }
     Super+End { focus-column-last; }
     Super+Shift+Left { move-column-left; }
@@ -128,6 +128,7 @@ binds {
     Super+Alt+M { spawn "ryoku-shell" "visualizer-place"; }
     Super+grave { spawn "ryoku-shell" "voice"; }
     Super+comma { spawn "ryoku-shell" "hub" "open"; }
+    Super+Shift+D { spawn "ryoku-shell" "hub" "open" "widgets"; }
     Super+Shift+S { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock qs -c ryoshot; fi"; }
     Print { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock qs -c ryoshot; fi"; }
     Shift+Print { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor qs -c ryoshot; fi"; }
