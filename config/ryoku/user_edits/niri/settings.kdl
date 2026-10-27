@@ -133,11 +133,6 @@ window-rule {
 }
 
 window-rule {
-    match title="Discord"
-    open-maximized true
-}
-
-window-rule {
     match title="Zen"
     open-maximized true
 }
@@ -165,6 +160,16 @@ window-rule {
 window-rule {
     match title="Steam"
     open-on-workspace "1"
+}
+
+window-rule {
+    match title="Discord"
+    open-on-workspace "2"
+}
+
+window-rule {
+    match title="Discord"
+    open-maximized true
 }
 
 layer-rule {

@@ -306,5 +306,52 @@
       "x": 32,
       "y": 800
     }
+  },
+  "github-heatmap": {
+    "enabled": false,
+    "host": "desktopWidget",
+    "settings": {
+      "username": "feelyourwarmth",
+      "design": "minimal",
+      "background": "none",
+      "palette": "accent",
+      "colorScale": "github",
+      "monthGap": 4,
+      "cellSize": 10,
+      "cellGap": 2,
+      "cellShape": "circle",
+      "showMonths": false,
+      "showWeekdays": false,
+      "showStats": false,
+      "showLegend": false,
+      "showToolbar": false,
+      "showEmpty": false,
+      "monthFormat": "cap",
+      "weekdayStyle": "alt",
+      "highlightToday": true,
+      "range": "year",
+      "futureDays": "dim",
+      "clickOpens": false,
+      "hoverStyle": "tooltip"
+    },
+    "desktopWidget": {
+      "x": 0,
+      "y": 960,
+      "scale": 1,
+      "locked": true
+    }
+  },
+  "power-menu-v2": {
+    "enabled": true,
+    "host": "topbarGlyph",
+    "settings": {
+      "confirm": true,
+      "show_lock": false,
+      "show_logout": false,
+      "show_suspend": false,
+      "show_hibernate": false,
+      "show_reboot": true,
+      "show_poweroff": true
+    }
   }
 }

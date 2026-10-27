@@ -9,6 +9,7 @@
 
     # CLI
     curl
+    nmap
     wget
     fetch
     ncdu

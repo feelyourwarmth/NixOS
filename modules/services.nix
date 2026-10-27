@@ -3,6 +3,7 @@
 {
   services.flatpak.enable = true;
   services.lact.enable = true;
+  services.gvfs.enable = true;
 
   systemd.services.fix-ryoku-permissions = {
     description = "Ensure Ryoku config directory has correct permissions";

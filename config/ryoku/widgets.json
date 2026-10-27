@@ -1988,7 +1988,19 @@
             "musicLocked": true,
             "musicScale": 0.75,
             "musicX": 32,
-            "musicY": 608
+            "musicY": 608,
+            "pythonTimeAnchor": "free",
+            "pythonTimeEnabled": false,
+            "pythonTimeLocked": true,
+            "pythonTimeScale": 1.18,
+            "pythonTimeX": 48,
+            "pythonTimeY": 896,
+            "pythonVisualizerAnchor": "free",
+            "pythonVisualizerEnabled": false,
+            "pythonVisualizerLocked": false,
+            "pythonVisualizerScale": 1,
+            "pythonVisualizerX": 320,
+            "pythonVisualizerY": 608
         }
     },
     "musicAnchor": "free",

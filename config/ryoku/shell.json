@@ -97,6 +97,7 @@
     "pruneWeekly": true
   },
   "controls": {
+    "edgeGap": 12,
     "hidden": [
       "disk",
       "battery",
@@ -104,6 +105,7 @@
       "liveGraph",
       "gpu"
     ],
+    "position": "top-left",
     "sections": [
       {
         "id": "vitals",
@@ -132,7 +134,7 @@
     ]
   },
   "deckFrost": 0.45,
-  "deckFrostEnabled": true,
+  "deckFrostEnabled": false,
   "designs": {
     "notification": "tegami",
     "osd": "ryoku",
@@ -1692,7 +1694,7 @@
             "speed": 100
           },
           "spotlight": {
-            "light": "inherit",
+            "light": "wallpaper",
             "material": "",
             "morph": "",
             "radius": 0,

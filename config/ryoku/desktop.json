@@ -127,12 +127,6 @@
       {
         "action": "maximize",
         "class": "",
-        "title": "Discord",
-        "value": ""
-      },
-      {
-        "action": "maximize",
-        "class": "",
         "title": "Zen",
         "value": ""
       },
@@ -165,6 +159,18 @@
         "class": "",
         "title": "Steam",
         "value": "1"
+      },
+      {
+        "action": "workspace",
+        "class": "",
+        "title": "Discord",
+        "value": "2"
+      },
+      {
+        "action": "maximize",
+        "class": "",
+        "title": "Discord",
+        "value": ""
       }
     ],
     "windows": {

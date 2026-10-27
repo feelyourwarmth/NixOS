@@ -72,6 +72,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Latest Linux Zen kernel
+  boot.kernelPackages = pkgs.linuxPackages_zen;
+
   #environment.variables = {
   #  EDITOR = "nvim";
   #  VISUAL = "nvim";

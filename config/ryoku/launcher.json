@@ -1,15 +1,26 @@
 {
     "bgBlur": 2,
+    "columns": 8,
     "heroImage": "file:///home/feel/Pictures/Wallpapers/darkclouds.jpg",
     "heroPosX": 0.5,
     "heroPosY": 0.5,
     "heroStrength": 0.3962,
+    "hiddenApps": [
+    ],
+    "hiddenSections": [
+    ],
     "horizonColor": "#ffc777",
     "horizonMode": "auto",
+    "matWidth": 144,
+    "overlayOpacity": 0.94,
+    "pinnedApps": [
+    ],
     "radius": 10,
     "resultSettleMs": 120,
+    "sectionOrder": [
+    ],
     "showGreeting": true,
     "showWeather": true,
-    "variant": "main",
+    "variant": "mandara",
     "weatherUnit": "C"
 }

@@ -47,7 +47,7 @@
       '';
     };
 
-    nix = {
+    nixfl = {
       body = ''
         sudo -E nvim /etc/nixos
       '';

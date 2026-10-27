@@ -1,13 +1,4 @@
 {
-  #nixConfig = {
-  #  extra-substituters = [
-  #    "https://attic.xuyh0120.win/lantian"
-  #  ];
-  #  extra-trusted-public-keys = [
-  #    "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc="
-  #  ];
-  #};
-
   inputs = {
     #ryoku = {
     #  url = "path:/home/feel/Ryoku-on-NixOS";
@@ -18,8 +9,6 @@
     };
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
-    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -38,7 +27,7 @@
     };
   };
 
-  outputs = { ryoku, nix-cachyos-kernel, zen-browser, sls-steam, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { ryoku, zen-browser, sls-steam, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
@@ -50,14 +39,6 @@
         ryoku.nixosModules.default
         ./modules/ryoku.nix
         ./configuration.nix
-
-        ({ pkgs, ... }: {
-          nixpkgs.overlays = [
-            nix-cachyos-kernel.overlays.pinned
-          ];
-          boot.kernelPackages =
-            pkgs.cachyosKernels.linuxPackages-cachyos-latest;
-        })
 
         home-manager.nixosModules.home-manager
 
