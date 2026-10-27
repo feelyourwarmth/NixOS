@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> This configuration is tailored to my personal setup and **WILL NOT** work correctly on your system.
+> <br>
+> If you'd like to use it, treat it as a starting point and adapt it to your own profile, hardware, preferences and needs.
+
 ## how to larp like a master, best nixos config ever [TEL AVIV APPROVED]
 
 ```bash
