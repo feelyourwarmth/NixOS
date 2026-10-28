@@ -36,6 +36,7 @@
     clean = {
       body = ''
         sudo -v
+        sudo nh clean all
         sudo nix-collect-garbage -d
         echo "Nix garbage collection complete!"
       '';

@@ -172,6 +172,16 @@ window-rule {
     open-maximized true
 }
 
+window-rule {
+    match app-id="astra"
+    open-on-workspace "3"
+}
+
+window-rule {
+    match app-id="astra"
+    open-maximized true
+}
+
 layer-rule {
     match namespace="ryoku-overview-backdrop"
     place-within-backdrop true

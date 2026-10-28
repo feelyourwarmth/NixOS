@@ -105,6 +105,9 @@
       "touchScrollFactor": 1,
       "workspaceSwipe": false
     },
+    "keybindDisabled": [
+      "SUPER + J"
+    ],
     "keybindRebinds": {
       "SUPER + ALT + E": "SUPER + SHIFT + E",
       "SUPER + ALT + {n}": "SUPER + CTRL + {n}",
@@ -121,6 +124,12 @@
         "keys": "CTRL + ALT + Delete",
         "release": false,
         "value": "ryomanager"
+      },
+      {
+        "action": "exec",
+        "keys": "SUPER + M",
+        "release": false,
+        "value": "~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"
       }
     ],
     "windowRules": [
@@ -170,6 +179,18 @@
         "action": "maximize",
         "class": "",
         "title": "Discord",
+        "value": ""
+      },
+      {
+        "action": "workspace",
+        "class": "astra",
+        "title": "",
+        "value": "3"
+      },
+      {
+        "action": "maximize",
+        "class": "astra",
+        "title": "",
         "value": ""
       }
     ],

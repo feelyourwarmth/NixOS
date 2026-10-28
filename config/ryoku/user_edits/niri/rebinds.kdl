@@ -1,5 +1,6 @@
 binds {
     Ctrl+Alt+Delete { spawn-sh "ryomanager"; }
+    Super+M { spawn-sh "~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"; }
     Super+W repeat=false { spawn-sh "jq -e '(.barStyle // \"qsbar\") == \"iris\" and .inir.closeConfirm.enabled == true' \"${XDG_CONFIG_HOME:-$HOME/.config}/ryoku/shell.json\" >/dev/null 2>&1 && qs -c shell ipc call closeConfirm trigger || niri msg action close-window"; }
     Super+Shift+F { fullscreen-window; }
     Super+Ctrl+1 { move-window-to-workspace 1; }
@@ -14,7 +15,6 @@ binds {
     Super+Ctrl+0 { move-window-to-workspace 10; }
     Super+Z { spawn "ryoku-app" "terminal"; }
     Super+Shift+E { spawn "kitty" "-e" "yazi"; }
-    Super+M { spawn "ryotunes"; }
     Super+Q { spawn "ryogami" "wallpaper" "ui"; }
     Super+slash { spawn "ryoku-shell" "visualizer"; }
     Super+A { toggle-window-floating; }
@@ -118,6 +118,7 @@ binds {
     Super+N { spawn "ryoku-app" "editor"; }
     Super+O { spawn "ryoku-app" "notes"; }
     Super+Space { spawn "ryoku-shell" "launcher"; }
+    Alt+Space { spawn "ryoku-shell" "ask"; }
     Super+K { spawn-sh "pkill -x -f 'qs -c keys' 2>/dev/null || env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoku-keys.lock qs -c keys"; }
     Super+L { spawn "ryoku-shell" "lock"; }
     Super+Escape { spawn "ryoku-shell" "quicksettings"; }

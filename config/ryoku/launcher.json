@@ -21,6 +21,6 @@
     ],
     "showGreeting": true,
     "showWeather": true,
-    "variant": "mandara",
+    "variant": "main",
     "weatherUnit": "C"
 }

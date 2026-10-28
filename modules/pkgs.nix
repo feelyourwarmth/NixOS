@@ -14,6 +14,7 @@
     fetch
     ncdu
     btop
+    nh
 
     # TUI
     claude-code
