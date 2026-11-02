@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }:
 
 {
+  imports = [ inputs.nixcord.nixosModules.nixcord ];
   environment.systemPackages = with pkgs; [
     # DEV
     neovim
@@ -11,13 +12,9 @@
     curl
     nmap
     wget
-    fetch
     ncdu
     btop
     nh
-
-    # TUI
-    claude-code
 
     # GIT
     lazygit
@@ -30,12 +27,8 @@
     lact
     gpu-screen-recorder-ui
     easyeffects
-    (discord-canary.override { withVencord = true; }) # DISCORD CANARY + VENCORD
-    equibop # EQUICORD
-    proton-vpn
-    mission-center
+    #proton-vpn
     nwg-look
-    anydesk
     telegram-desktop
 
     # PACKAGES
@@ -52,12 +45,22 @@
     lsp-plugins
     uv
     unzip
+    unrar
 
     # LARP
+    fetch
     unimatrix
     cbonsai
     lavat
   ];
+
+  # MODDED DISCORD
+  programs.nixcord = {
+    enable = true;
+    user = "feel";
+    discord.equicord.enable = true;
+    discord.krisp.enable = true;
+  };
 
   # STEAM WITH SLSSTEAM
   programs.steam = {
@@ -79,10 +82,32 @@
   };
 
   # APPIMAGE SUPPORT FOR NIXOS
-  programs.appimage = {
+  programs.nix-ld = {
     enable = true;
-    binfmt = true;
+    libraries = with pkgs; [
+      gnutls
+      icu
+      fontconfig
+      fuse
+      e2fsprogs
+      libx11
+      libice
+      libsm
+      libxext
+      libxrandr
+      libxcursor
+      libxi
+      libxrender
+      libxcb
+      libjack2
+      libpulseaudio
+      vulkan-loader
+    ];
   };
 
-  programs.nix-ld.enable = true;
+  # APPIMAGE SUPPORT FOR NIXOS
+  programs.appimage = {
+    enable = true;
+    binfmt = false;
+  };
 }

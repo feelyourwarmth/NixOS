@@ -23,4 +23,8 @@
       '';
     };
   };
+
+  programs.zsh.shellAliases = {
+    gs = "git status";
+  }; 
 }

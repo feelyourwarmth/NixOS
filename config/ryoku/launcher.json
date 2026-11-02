@@ -21,6 +21,6 @@
     ],
     "showGreeting": true,
     "showWeather": true,
-    "variant": "main",
+    "variant": "gokko",
     "weatherUnit": "C"
 }

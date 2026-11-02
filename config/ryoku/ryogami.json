@@ -11,18 +11,22 @@
       "duelWidth": 641,
       "enabled": true,
       "gridLayout": "uniform",
-      "lastAppliedKey": "wallhaven-pomm99",
-      "startPosition": "browsing"
+      "lastAppliedKey": "wallhaven-9okkr1",
+      "startPosition": "beginning"
     }
   },
-  "display": {},
+  "display": {
+    "fillModes": {
+      "DP-1": "fill"
+    }
+  },
   "filterBar": {
     "defaultFolder": "",
     "sticky": true
   },
   "general": {
     "notifyOnWallpaperChange": false,
-    "selectorBackdropOpacity": 10,
+    "selectorBackdropOpacity": 13,
     "uiScale": 0.8
   },
   "integrations": [],
@@ -37,6 +41,9 @@
   "performance": {
     "imageOptimizePreset": "quality",
     "imageOptimizeResolution": "4k"
+  },
+  "selector": {
+    "livePreview": false
   },
   "theme": {
     "policy": "wallpaper"

@@ -8,9 +8,12 @@ $character"""
 
 [palettes.mythos]
 white = "#FFFFFF"
+grayish = "#BFBFBF"
+gray = "#9C9C9C"
+nix_blue = "#79acd1"
 
 [directory]
-style = "white bold"
+style = "gray bold"
 truncation_length = 3
 truncation_symbol = "…/"
 read_only = " 󰌾"
@@ -19,17 +22,17 @@ format = "[$path ]($style)[$read_only]($read_only_style)"
 
 [git_branch]
 symbol = "󰊢 "
-style = "white bold"
+style = "grayish bold"
 format = "[$symbol$branch ]($style)"
 
 [cmd_duration]
 min_time = 500
-style = "white bold"
+style = "grayish bold"
 format = "[󰔚 $duration ]($style)"
 
 [character]
-success_symbol = "[感じる ↝](white)"
-error_symbol = "[感じる ↝](white)"
+success_symbol = "[\U000F1105  ](fg:5)[感 ↝](white)"
+error_symbol   = "[\U000F1105  ](fg:5)[感 ↝](white)"
 
 [package]
 disabled = true

@@ -342,7 +342,7 @@
     }
   },
   "power-menu-v2": {
-    "enabled": true,
+    "enabled": false,
     "host": "topbarGlyph",
     "settings": {
       "confirm": true,
@@ -352,6 +352,14 @@
       "show_hibernate": false,
       "show_reboot": true,
       "show_poweroff": true
+    }
+  },
+  "gpu-monitor": {
+    "enabled": false,
+    "host": "topbarGlyph",
+    "settings": {
+      "gpu": "auto",
+      "terminal": "kitty"
     }
   }
 }

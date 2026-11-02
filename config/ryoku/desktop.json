@@ -43,7 +43,7 @@
       "noFocusFallback": false,
       "resizeCorner": 0,
       "resizeOnBorder": true,
-      "rounding": 4,
+      "rounding": 10,
       "roundingPower": 4,
       "shadowColor": "#000000",
       "shadowEnabled": false,
@@ -105,14 +105,12 @@
       "touchScrollFactor": 1,
       "workspaceSwipe": false
     },
-    "keybindDisabled": [
-      "SUPER + J"
-    ],
+    "keybindDisabled": [],
     "keybindRebinds": {
+      "ALT + Space": "ALT + B",
       "SUPER + ALT + E": "SUPER + SHIFT + E",
       "SUPER + ALT + {n}": "SUPER + CTRL + {n}",
       "SUPER + F": "SUPER + SHIFT + F",
-      "SUPER + J": "SUPER + M",
       "SUPER + M": "SUPER + slash",
       "SUPER + Q": "SUPER + W",
       "SUPER + Return": "SUPER + Z",
@@ -121,15 +119,9 @@
     "keybinds": [
       {
         "action": "exec",
-        "keys": "CTRL + ALT + Delete",
-        "release": false,
-        "value": "ryomanager"
-      },
-      {
-        "action": "exec",
         "keys": "SUPER + M",
         "release": false,
-        "value": "~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"
+        "value": "appimage-run ~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"
       }
     ],
     "windowRules": [

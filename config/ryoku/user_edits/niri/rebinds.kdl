@@ -1,6 +1,5 @@
 binds {
-    Ctrl+Alt+Delete { spawn-sh "ryomanager"; }
-    Super+M { spawn-sh "~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"; }
+    Super+M { spawn-sh "appimage-run ~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"; }
     Super+W repeat=false { spawn-sh "jq -e '(.barStyle // \"qsbar\") == \"iris\" and .inir.closeConfirm.enabled == true' \"${XDG_CONFIG_HOME:-$HOME/.config}/ryoku/shell.json\" >/dev/null 2>&1 && qs -c shell ipc call closeConfirm trigger || niri msg action close-window"; }
     Super+Shift+F { fullscreen-window; }
     Super+Ctrl+1 { move-window-to-workspace 1; }
@@ -117,17 +116,17 @@ binds {
     Super+B { spawn "ryoku-app" "browser"; }
     Super+N { spawn "ryoku-app" "editor"; }
     Super+O { spawn "ryoku-app" "notes"; }
+    Super+J { spawn "ryotunes"; }
     Super+Space { spawn "ryoku-shell" "launcher"; }
-    Alt+Space { spawn "ryoku-shell" "ask"; }
     Super+K { spawn-sh "pkill -x -f 'qs -c keys' 2>/dev/null || env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoku-keys.lock qs -c keys"; }
     Super+L { spawn "ryoku-shell" "lock"; }
-    Super+Escape { spawn "ryoku-shell" "quicksettings"; }
+    Super+Escape allow-inhibiting=false { spawn "ryoku-shell" "quicksettings"; }
     Super+Shift+W { spawn "ryogami" "wallpaper" "random"; }
     Super+Shift+V { spawn-sh "ryoku-summon ryovm env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryovm.lock qs -c ryovm"; }
     Super+V { spawn "ryoku-shell" "clipboard"; }
     Super+Shift+M { spawn "ryoku-shell" "visualizer-overlay"; }
     Super+Alt+M { spawn "ryoku-shell" "visualizer-place"; }
-    Super+grave { spawn "ryoku-shell" "voice"; }
+    Super+grave repeat=false { spawn "ryoku-shell" "voice"; }
     Super+comma { spawn "ryoku-shell" "hub" "open"; }
     Super+Shift+D { spawn "ryoku-shell" "hub" "open" "widgets"; }
     Super+Shift+S { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock qs -c ryoshot; fi"; }
@@ -135,12 +134,12 @@ binds {
     Shift+Print { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor qs -c ryoshot; fi"; }
     Super+Shift+C { spawn "hyprpicker" "-a"; }
     Super+Shift+A { spawn "ryoku-restart-audio"; }
-    Super+Shift+Escape { toggle-keyboard-shortcuts-inhibit; }
+    Super+Shift+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     XF86AudioRaiseVolume allow-when-locked=true { spawn "ryoku-volume" "up"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "ryoku-volume" "down"; }
-    XF86AudioMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
-    XF86AudioMicMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
-    XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86AudioMute allow-when-locked=true repeat=false { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    XF86AudioMicMute allow-when-locked=true repeat=false { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+    XF86AudioPlay allow-when-locked=true repeat=false { spawn "playerctl" "play-pause"; }
     XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
     XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "ryoku-cmd-brightness" "+5"; }

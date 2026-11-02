@@ -11,6 +11,7 @@
       ./modules/pkgs.nix
       ./modules/nct6687.nix
       ./modules/fish.nix
+      ./modules/zsh.nix
       ./modules/services.nix
     ];
 
@@ -65,10 +66,15 @@
     packages = with pkgs; [];
   };
 
+  services.pipewire = {
+    enable = true;
+    pulse.enable = true;
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Latest Linux Zen kernel
+  # Latest Zen kernel
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # System Version

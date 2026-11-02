@@ -38,7 +38,10 @@ hl.window_rule({ name = "ryoku-user-5", match = { title = "Brave" }, maximize = 
 hl.window_rule({ name = "ryoku-user-6", match = { title = "Steam" }, workspace = "1" })
 hl.window_rule({ name = "ryoku-user-7", match = { title = "Discord" }, workspace = "2" })
 hl.window_rule({ name = "ryoku-user-8", match = { title = "Discord" }, maximize = true })
+hl.window_rule({ name = "ryoku-user-9", match = { class = "astra" }, workspace = "3" })
+hl.window_rule({ name = "ryoku-user-10", match = { class = "astra" }, maximize = true })
 hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd("ryomanager"))
+hl.bind("SUPER + M", hl.dsp.exec_cmd("appimage-run ~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"))
 hl.config({ input = { follow_mouse = 1 } })
 
 

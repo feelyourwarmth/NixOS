@@ -7,6 +7,7 @@
     noto-fonts-color-emoji
     nerd-fonts.iosevka
     nerd-fonts.jetbrains-mono
+    nerd-fonts.symbols-only
     jetbrains-mono
   ];
 }

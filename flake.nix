@@ -22,13 +22,17 @@
       inputs.home-manager.follows = "home-manager";
     };
 
+    nixcord = {
+      url = "github:4evy/nixcord";
+    };
+
     sls-steam = {
       url = "github:AceSLS/SLSsteam";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { ryoku, zen-browser, sls-steam, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { ryoku, zen-browser, nixcord, sls-steam, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 

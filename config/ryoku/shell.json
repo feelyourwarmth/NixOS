@@ -136,7 +136,7 @@
   "deckFrost": 0.45,
   "deckFrostEnabled": false,
   "designs": {
-    "notification": "yatagarasu",
+    "notification": "ryoku",
     "osd": "ryoku",
     "sidebar": "ryoku"
   },
@@ -815,6 +815,10 @@
           "instrumentNumerals": true,
           "instrumentTrail": true,
           "instrumentTrailLength": 6,
+          "iris": {
+            "face": "digital",
+            "seconds": true
+          },
           "pixel": {
             "orientation": "horizontal"
           },
@@ -898,6 +902,14 @@
           "x": 80,
           "y": 260
         },
+        "designUndo": [
+          {
+            "key": "iris.widgets.design",
+            "output": "",
+            "value": "iris",
+            "widget": ""
+          }
+        ],
         "dynamicOpacity": 0,
         "editGrid": {
           "size": 32,
@@ -1225,7 +1237,7 @@
           "contentWidth": 320,
           "cornerRadius": -1,
           "dim": 0,
-          "displayMode": "tiles",
+          "displayMode": "bars",
           "enable": false,
           "fillOpacity": 0.7,
           "graphFillOpacity": 0.3,
@@ -1233,13 +1245,13 @@
           "preset": "default",
           "showBackground": true,
           "showBorder": true,
-          "showCpu": false,
+          "showCpu": true,
           "showDisk": true,
           "showGpu": false,
           "showGpuTemp": true,
           "showLabels": true,
           "showMemory": false,
-          "showTemp": true,
+          "showTemp": false,
           "trackAlpha": 0.08,
           "useBlur": false,
           "widgetOpacity": 100,
@@ -1566,8 +1578,8 @@
         "subtitleScale": 100
       },
       "appearance": {
-        "accent": "blue",
-        "adaptive": 20,
+        "accent": "wallpaper",
+        "adaptive": 50,
         "afterglow": {
           "atmosphere": 60,
           "bloom": 50,
@@ -1581,52 +1593,52 @@
           "palette": "sakura",
           "strength": 60
         },
-        "aura": "subtle",
-        "controlPlate": "glass",
-        "customize": "shell",
-        "density": 0.8,
+        "aura": "vivid",
+        "controlPlate": "none",
+        "customize": "studio",
+        "density": 0.9,
         "expandedRadius": 28,
-        "figureWeight": "bold",
-        "fontFamily": "",
-        "frontend": "inir",
+        "figureWeight": "light",
+        "fontFamily": "Rubik",
+        "frontend": "ryoku",
         "glass": {
-          "blur": 85,
+          "blur": 100,
           "edgeColour": "scene",
           "edgeLight": 34,
           "edgeLine": 10,
           "edgeWidth": 1.5,
           "mode": "wallpaper",
-          "tint": 40
+          "tint": 42
         },
-        "highlight": "orange",
+        "highlight": "wallpaper",
         "icons": {
           "plate": "black",
-          "style": "tile"
+          "style": "iris"
         },
         "leak": {
           "frame": 100,
-          "grade": "ember",
-          "grain": 75,
+          "grade": "prism",
+          "grain": 55,
           "grainSize": 1.6,
-          "light": 65,
-          "prism": 55,
-          "shape": "beam",
+          "light": 60,
+          "prism": 50,
+          "shape": "lens",
           "spill": 55,
           "streaks": 15,
           "widgets": 100,
           "x": 0,
           "y": 0
         },
-        "morph": "direct",
+        "morph": "liquid",
         "motion": true,
         "motionDuration": 220,
-        "numbersFontFamily": "",
-        "preset": "iris",
+        "numbersFontFamily": "Oxanium",
+        "preset": "round",
         "previews": true,
         "saved": [],
-        "scheme": "dark",
+        "scheme": "auto",
         "settingsHost": "overlay",
-        "settingsLayout": "home",
+        "settingsLayout": "sidebar",
         "studioPreview": true,
         "surfaces": {
           "cards": {
@@ -1694,19 +1706,19 @@
             "speed": 100
           },
           "spotlight": {
-            "light": "wallpaper",
+            "light": "inherit",
             "material": "",
             "morph": "",
             "radius": 0,
             "speed": 100
           }
         },
-        "texture": "leak",
+        "texture": "solid",
         "theme": {
           "accentHue": 212,
           "air": 8,
           "badge": "alert",
-          "bounce": 100,
+          "bounce": 120,
           "contentTiming": 100,
           "contrast": 100,
           "curve": "expressive",
@@ -1717,35 +1729,35 @@
             1
           ],
           "edges": "line",
-          "fill": 80,
+          "fill": 60,
           "glow": 20,
           "highlightHue": 32,
-          "lightReach": 120,
-          "lines": 100,
-          "linkShapes": false,
-          "melt": 0,
+          "lightReach": 170,
+          "lines": 0,
+          "linkShapes": true,
+          "melt": 55,
           "moveTime": 100,
           "openTime": 100,
-          "pieceShape": "circle",
+          "pieceShape": "square",
           "placement": "auto",
           "press": 100,
           "rim": true,
           "rimTint": "neutral",
           "rimWidth": 1,
-          "shadow": 100,
-          "shape": 100,
+          "shadow": 110,
+          "shape": 115,
           "surface": "black",
-          "text": 85,
-          "weight": "regular"
+          "text": 100,
+          "weight": "light"
         },
         "themeColoursOnly": false,
-        "themeId": "iris",
+        "themeId": "liquid-glass",
         "tint": 0,
-        "titleFontFamily": "",
+        "titleFontFamily": "Montserrat",
         "tune": {
           "dark": {
-            "colour": 65,
-            "lume": true,
+            "colour": 100,
+            "lume": false,
             "tone": 0,
             "widgets": 100
           },
@@ -1769,8 +1781,8 @@
         "blockStyle": "plain",
         "centerModules": [],
         "clockAccent": "highlight",
-        "clockScale": 95,
-        "clockStyle": "dateTime",
+        "clockScale": 90,
+        "clockStyle": "time",
         "composition": "cluster",
         "desktopBanner": "wallpaper",
         "desktopBannerBlur": 0,
@@ -1798,12 +1810,12 @@
           "workspaces",
           "window"
         ],
-        "height": 42,
+        "height": 44,
         "hoverDelay": 300,
         "hoverExpand": true,
         "layout": "island",
         "leftModules": [],
-        "margin": 8,
+        "margin": 4,
         "mediaBlocks": [
           "player",
           "timeline",
@@ -1833,8 +1845,8 @@
         "reserveSpace": true,
         "revealOnEmpty": true,
         "rightModules": [],
-        "satelliteGap": 6,
-        "satelliteScale": 100,
+        "satelliteGap": 18,
+        "satelliteScale": 90,
         "screenList": [],
         "scrollAction": "volume",
         "scrollBubbles": true,
@@ -1864,10 +1876,10 @@
             "place": "right"
           },
           "calendar": {
-            "enable": false,
-            "fx": 0.5,
-            "fy": 0.5,
-            "place": "right"
+            "enable": true,
+            "fx": 0.2514,
+            "fy": 0.0333,
+            "place": "top-right"
           },
           "clock": {
             "enable": false,
@@ -1885,19 +1897,19 @@
             "enable": false,
             "fx": 0.5,
             "fy": 0.5,
-            "place": "right"
+            "place": "top-right"
           },
           "focus": {
             "enable": false,
             "fx": 0.5,
             "fy": 0.5,
-            "place": "right"
+            "place": "top-right"
           },
           "media": {
             "enable": false,
-            "fx": 0.5,
-            "fy": 0.5,
-            "place": "right"
+            "fx": 0.085,
+            "fy": 0.1063,
+            "place": "free"
           },
           "mic": {
             "enable": false,
@@ -1906,10 +1918,10 @@
             "place": "right"
           },
           "network": {
-            "enable": false,
-            "fx": 0.537,
-            "fy": 0.189,
-            "place": "right"
+            "enable": true,
+            "fx": 0.6505,
+            "fy": 0.0333,
+            "place": "top-left"
           },
           "notifications": {
             "enable": false,
@@ -1921,7 +1933,7 @@
             "enable": false,
             "fx": 0.5,
             "fy": 0.5,
-            "place": "right"
+            "place": "top-left"
           },
           "tools": {
             "enable": false,
@@ -1930,10 +1942,10 @@
             "place": "right"
           },
           "tray": {
-            "enable": false,
+            "enable": true,
             "fx": 0.5,
             "fy": 0.5,
-            "place": "right"
+            "place": "top-right"
           },
           "updates": {
             "enable": false,
@@ -1949,55 +1961,55 @@
           },
           "vitals": {
             "enable": false,
-            "fx": 0.5,
-            "fy": 0.5,
-            "place": "right"
+            "fx": 0.244,
+            "fy": 0.106,
+            "place": "top-left"
           },
           "vpn": {
             "enable": false,
             "place": "right"
           },
           "weather": {
-            "enable": false,
-            "fx": 0.5,
-            "fy": 0.5,
-            "place": "right"
+            "enable": true,
+            "fx": 0.9813,
+            "fy": 0.1756,
+            "place": "top-right"
           },
           "workspaces": {
-            "enable": false,
+            "enable": true,
             "fx": 0.301,
             "fy": 0.262,
-            "opens": "card",
-            "place": "right"
+            "opens": "overview",
+            "place": "top-left"
           }
         },
-        "join": "notch",
+        "join": "weld",
         "left": {
-          "fx": 0.485,
-          "fy": 0.256,
-          "place": "island"
+          "fx": 0.4873,
+          "fy": 0.9722,
+          "place": "top-left"
         },
         "notchCurve": 100,
         "opens": "card",
         "reserve": true,
         "right": {
-          "fx": 0.18,
-          "fy": 0.511,
-          "place": "island"
+          "fx": 0.5109,
+          "fy": 0.9722,
+          "place": "top-right"
         },
-        "scale": 100,
+        "scale": 90,
         "snap": true,
         "utility": {
-          "fx": 0.5,
-          "fy": 0.5,
+          "fx": 0.499,
+          "fy": 0.98,
           "place": "island"
         }
       },
       "controlCenter": {
-        "accent": "system",
+        "accent": "accent",
         "columns": 4,
-        "controls": "tiles",
-        "labels": false,
+        "controls": "round",
+        "labels": true,
         "levels": [
           "brightness",
           "volume",
@@ -2006,14 +2018,12 @@
         "modules": [
           "platter",
           "media",
-          "darkMode",
           "nightLight",
           "levels",
           "idle",
-          "snip",
-          "devices",
-          "record",
-          "notifications"
+          "notifications",
+          "musicRecognition",
+          "equalizer"
         ],
         "opens": "island",
         "platter": [
@@ -2022,7 +2032,7 @@
           "focus",
           "gameMode"
         ],
-        "preset": "iris",
+        "preset": "custom",
         "sections": [
           "connectivity",
           "media",
@@ -2094,7 +2104,7 @@
         "keyboard": true,
         "levels": "yours",
         "media": "yours",
-        "offset": 18,
+        "offset": 12,
         "position": "bottom",
         "style": "capsule",
         "width": 320
@@ -2102,12 +2112,29 @@
       "palette": {
         "clipboardResults": 8,
         "maxResults": 8,
-        "opens": "floating",
+        "opens": "island",
         "showHints": true,
         "width": 640
       },
       "pieces": {
-        "icons": []
+        "icons": [
+          {
+            "glyph": "refresh",
+            "kind": "updates"
+          },
+          {
+            "glyph": "dark_mode",
+            "kind": "focus"
+          },
+          {
+            "glyph": "more_horiz",
+            "kind": "controls"
+          },
+          {
+            "glyph": "cast",
+            "kind": "bluetooth"
+          }
+        ]
       },
       "player": {
         "artworkBackground": true,
@@ -2132,8 +2159,8 @@
           "reserveSpace": true,
           "sections": [
             "media",
-            "tasks",
-            "notes"
+            "system",
+            "tasks"
           ],
           "width": 380
         },
@@ -2149,13 +2176,14 @@
           "sections": [
             "calendar",
             "weather",
-            "notifications"
+            "notifications",
+            "media"
           ],
           "width": 380
         }
       },
       "surround": {
-        "enable": false,
+        "enable": true,
         "music": "widget",
         "musicAppearance": "etched",
         "musicColour": "pearl",
@@ -2165,8 +2193,8 @@
         "musicSensitivity": 140,
         "musicSpeed": 100,
         "musicStrength": 160,
-        "radius": 22,
-        "thickness": 10
+        "radius": 18,
+        "thickness": 5
       },
       "tray": {
         "columns": 4,
@@ -2187,9 +2215,9 @@
           "live"
         ],
         "suggestive": false,
-        "thumbnailSize": 224,
+        "thumbnailSize": 228,
         "topRange": "1w",
-        "width": 920
+        "width": 960
       },
       "widgets": {
         "brightWallpapers": false,
@@ -2198,11 +2226,11 @@
         "material": "glass",
         "opacity": 100,
         "outline": "auto",
-        "radius": 22,
+        "radius": 30,
         "rim": false,
         "tint": "wallpaper",
         "vibrance": 85,
-        "weight": "regular"
+        "weight": "light"
       }
     },
     "keyboardIndicators": {
@@ -2463,7 +2491,7 @@
       "videoCodec": "libx264"
     },
     "search": {
-      "engineBaseUrl": "https://www.google.com/search?q=",
+      "engineBaseUrl": "https://duckduckgo.com/?q=",
       "excludedSites": [
         "quora.com"
       ],
@@ -2826,7 +2854,6 @@
     },
     "time": {
       "dateFormat": "ddd, dd/MM",
-      "format": "hh:mm",
       "pomodoro": {
         "breakTime": 300,
         "cyclesBeforeLongBreak": 4,
@@ -2849,7 +2876,7 @@
       "stronglyAdviseUpdateThreshold": 200
     },
     "vpn": {
-      "details": false
+      "details": true
     },
     "waffles": {
       "bar": {
@@ -3059,7 +3086,7 @@
     "scale": 0.85,
     "seconds": false,
     "showDate": true,
-    "span": "full",
+    "span": "islands",
     "statusItems": [],
     "sysmonItems": [
       "cpu",
@@ -3134,8 +3161,10 @@
     "bar": {
       "autohide": false,
       "autohideTimeout": 1000,
+      "centerByEdges": true,
       "distinctPills": true,
       "groupColors": {},
+      "height": 34,
       "hideEmptyWorkspaces": false,
       "modules": {
         "center": [
@@ -3152,12 +3181,12 @@
       },
       "opacity": 92,
       "position": "top",
-      "style": "solid",
+      "style": "fill",
       "time": {
         "format": "HH:mm:ss"
       },
       "timeStyle": "material",
-      "width": 65,
+      "width": 76,
       "workspaceCount": 5,
       "workspacesStyle": "numbers"
     },
@@ -3211,6 +3240,8 @@
     },
     "theme": {
       "activePreset": "Matugen",
+      "blurBackground": true,
+      "blurStyle": "blur",
       "borderRadius": 8,
       "colors": {},
       "fontFamily": "Space Grotesk",
@@ -3222,21 +3253,19 @@
     "audioBoost": true,
     "barAnim": 0,
     "barAutoHide": false,
-    "barBorderEnabled": true,
+    "barBorderEnabled": false,
     "barColor": "accent",
-    "barCornerRadius": 8,
+    "barCornerRadius": 10,
     "barFrostEnabled": true,
     "barGapBottom": 0,
     "barGapLeft": 0,
     "barGapRight": 0,
-    "barGapTop": 6,
+    "barGapTop": 0,
     "barPosition": "top",
     "barScale": 1,
-    "barSeps": [
-      "G9"
-    ],
-    "barShadowEnabled": true,
-    "barShellStyle": "fit",
+    "barSeps": [],
+    "barShadowEnabled": false,
+    "barShellStyle": "full",
     "barTemperatureSource": "cpu",
     "iconOnlyGids": [
       "G18",
@@ -3249,8 +3278,7 @@
     "launcherLogoMode": "icon",
     "layout": {
       "center": [
-        "clock",
-        "status"
+        "clock"
       ],
       "left": [
         "launcher",
@@ -3271,7 +3299,8 @@
         "bluetooth",
         "cputemp",
         "network",
-        "storage"
+        "storage",
+        "status"
       ],
       "version": 1
     },
@@ -3294,7 +3323,7 @@
       "layout": false,
       "media": false,
       "memory": false,
-      "mpris": false,
+      "mpris": true,
       "network": false,
       "power": false,
       "quick": false,
@@ -3307,6 +3336,7 @@
     "workspaceStyle": "numbers"
   },
   "screenShader": "",
+  "showJapaneseGloss": true,
   "sounds": {
     "enabled": true,
     "events": {

@@ -1,5 +1,5 @@
 {
-    "active": 0,
+    "activeId": "viz-1",
     "adaptive": true,
     "angle": 0,
     "auraAccent": 0.7,
@@ -45,7 +45,7 @@
     "bloom": 0.51,
     "color": "",
     "color2": "#FFC362",
-    "enabled": true,
+    "enabled": false,
     "extras": [
     ],
     "fps": 30,
@@ -54,7 +54,9 @@
     "grow": "center",
     "h": 0.09,
     "idleWave": false,
+    "instanceId": "viz-1",
     "mirror": false,
+    "nextId": 2,
     "peaks": false,
     "reflection": 0.1,
     "segments": 6,

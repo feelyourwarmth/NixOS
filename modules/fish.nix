@@ -21,6 +21,15 @@
       '';
     };
 
+    update-flake = {
+      body = ''
+        sudo -v
+        sudo nix-channel --update
+        sudo nix flake update --flake /etc/nixos
+        echo "Flake Updated!"
+      '';
+    };
+
     update = {
       body = ''
         sudo -v
@@ -36,8 +45,8 @@
     clean = {
       body = ''
         sudo -v
-        sudo nh clean all
         sudo nix-collect-garbage -d
+        sudo nh clean all
         echo "Nix garbage collection complete!"
       '';
     };

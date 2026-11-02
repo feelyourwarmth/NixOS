@@ -14,7 +14,6 @@ return {
 	["SUPER + ALT + E"] = "SUPER + SHIFT + E",
 	["SUPER + ALT + Space"] = false,
 	["SUPER + F"] = "SUPER + SHIFT + F",
-	["SUPER + J"] = "SUPER + M",
 	["SUPER + M"] = "SUPER + slash",
 	["SUPER + Q"] = "SUPER + W",
 	["SUPER + Return"] = "SUPER + Z",
