@@ -1,6 +1,8 @@
-# Managed by ryoku-install.
 { ... }:
 
 {
-  programs.ryoku.enable = true;
+  programs.ryoku = {
+    enable = true;
+    optionalApps = [];
+  };
 }

@@ -13,6 +13,7 @@
       ./modules/fish.nix
       ./modules/zsh.nix
       ./modules/services.nix
+      ./modules/nixcord.nix
     ];
 
   # Use the systemd-boot EFI boot loader.

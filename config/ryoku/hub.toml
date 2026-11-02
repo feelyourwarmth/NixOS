@@ -1,5 +1,5 @@
 [ui]
-  section = "global"
+  section = "updates"
   update_interval = "daily"
   update_system = "off"
   advanced = "1"

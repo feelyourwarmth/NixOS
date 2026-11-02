@@ -1,7 +1,6 @@
 { inputs, pkgs, ... }:
 
 {
-  imports = [ inputs.nixcord.nixosModules.nixcord ];
   environment.systemPackages = with pkgs; [
     # DEV
     neovim
@@ -15,6 +14,9 @@
     ncdu
     btop
     nh
+
+    # TUI
+    yazi
 
     # GIT
     lazygit
@@ -30,11 +32,17 @@
     #proton-vpn
     nwg-look
     telegram-desktop
+    pavucontrol
 
     # PACKAGES
     nil
     nixd
     tumbler
+    starship
+    zoxide
+    eza
+    bat
+    fzf
     ffmpegthumbnailer
     ffmpeg-headless
     lm_sensors
@@ -49,18 +57,11 @@
 
     # LARP
     fetch
+    fastfetch
     unimatrix
     cbonsai
     lavat
   ];
-
-  # MODDED DISCORD
-  programs.nixcord = {
-    enable = true;
-    user = "feel";
-    discord.equicord.enable = true;
-    discord.krisp.enable = true;
-  };
 
   # STEAM WITH SLSSTEAM
   programs.steam = {
