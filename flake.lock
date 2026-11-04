@@ -195,6 +195,23 @@
         "url": "https://codeberg.org/zacoons/imgborders.git"
       }
     },
+    "inirSrc": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791487322,
+        "narHash": "sha256-+0rQz1y6wAIv1T4xAG3udY6bZSpTZ2nhdS9nzTCijkw=",
+        "owner": "snowarch",
+        "repo": "iNiR",
+        "rev": "48cdcecb0f6089cfbb7019054602eab28e154b3b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "snowarch",
+        "repo": "iNiR",
+        "rev": "48cdcecb0f6089cfbb7019054602eab28e154b3b",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -422,6 +439,7 @@
         "bibataMaterialSrc": "bibataMaterialSrc",
         "hyprglassSrc": "hyprglassSrc",
         "imgbordersSrc": "imgbordersSrc",
+        "inirSrc": "inirSrc",
         "nixpkgs": "nixpkgs_3",
         "ryokuPackagesNixpkgs": "ryokuPackagesNixpkgs",
         "ryokuUpstream": "ryokuUpstream",
@@ -429,11 +447,11 @@
         "skwdWall": "skwdWall_3"
       },
       "locked": {
-        "lastModified": 1793599854,
-        "narHash": "sha256-n2S0GTatS3bz/oxv18srevS7cOu3XHQo/0MMFEdbBwA=",
+        "lastModified": 1793671923,
+        "narHash": "sha256-r4G/UuXp+3W6BViKcL+w3CbLDXYEnUa3QA6lUEJ3dRU=",
         "owner": "ryoku-dev",
         "repo": "Ryoku-on-NixOS",
-        "rev": "9efae502e3a0aed528390304430bf5b9a004c23d",
+        "rev": "67aacf230e7e6c3aa8e248985f61c3a7772b3407",
         "type": "github"
       },
       "original": {

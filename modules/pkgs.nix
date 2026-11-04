@@ -51,6 +51,8 @@
     lua51Packages.luarocks
     vimPlugins.LazyVim
     lsp-plugins
+    kdePackages.syntax-highlighting
+    mangohud
     uv
     unzip
     unrar
@@ -62,6 +64,8 @@
     cbonsai
     lavat
   ];
+
+  qt.enable = true;
 
   # STEAM WITH SLSSTEAM
   programs.steam = {
@@ -91,6 +95,22 @@
       fontconfig
       fuse
       e2fsprogs
+      libusb1
+      libdrm
+      libglvnd
+      harfbuzz
+      freetype
+      fribidi
+      libgpg-error
+      gmp
+      alsa-lib
+      libxfixes
+      libxscrnsaver
+      libxtst
+      wayland
+      libxkbcommon
+      libdecor
+      dbus
       libx11
       libice
       libsm

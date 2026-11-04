@@ -113,7 +113,7 @@
 
     timerConfig = {
       OnBootSec = "1min";
-      OnUnitActiveSec = "5min";
+      OnUnitActiveSec = "30min";
     };
 
     wantedBy = [ "timers.target" ];

@@ -3,7 +3,7 @@
 -- after Ryoku's defaults and before your user.lua, which still wins.
 
 hl.config({
-  general = { gaps_in = 4, gaps_out = 6, border_size = 1, layout = "scrolling", gaps_workspaces = 16 },
+  general = { gaps_in = 4, gaps_out = 6, layout = "scrolling", gaps_workspaces = 16 },
   master = { new_status = "slave" },
   decoration = { rounding = 10, active_opacity = 0.98, inactive_opacity = 0.9, dim_inactive = true, dim_strength = 0.2, blur = { enabled = false, passes = 2, xray = true, popups = true }, shadow = { enabled = false } },
   input = { kb_layout = "us,br", kb_variant = "", kb_options = "grp:alt_shift_toggle", sensitivity = 0.1, accel_profile = "flat", repeat_rate = 20, repeat_delay = 250, touchpad = { tap_to_click = false, tap_and_drag = false, clickfinger_behavior = false, disable_while_typing = false } },

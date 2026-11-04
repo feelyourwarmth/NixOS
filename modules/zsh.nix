@@ -57,6 +57,8 @@
 
         clean() {
           sudo -v
+          sudo rm -rf /var/lib/systemd/coredump/*
+          sudo rm -rf ~/.local/share/Steam/appcache/librarycache/*
           sudo nix-collect-garbage -d
           sudo nh clean all
           nix-store --optimise && echo "Nix garbage collection complete!"

@@ -112,6 +112,7 @@
       profiles = false;
     };
     platformSpoofer.enable = true;
+    previewMessage.enable = true;
     questify = {
       acknowledgedNotices = {
         quest-ban-warning-2026-08-07 = true;

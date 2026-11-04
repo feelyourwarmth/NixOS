@@ -1,0 +1,309 @@
+{
+    "appearance": {
+        "animationMultiplier": 1,
+        "blurSize": 40,
+        "borderColorType": "user",
+        "borderWidth": 1,
+        "borderless": true,
+        "extraBackgroundTint": 0,
+        "fonts": {
+            "expressive": "Google Sans Flex",
+            "iconNerd": "JetBrainsMono Nerd Font",
+            "main": "Google Sans Flex",
+            "monospace": "JetBrainsMono Nerd Font",
+            "numbers": "Google Sans Flex",
+            "reading": "Google Sans Flex",
+            "title": "Google Sans Flex"
+        },
+        "gapsOut": 0,
+        "icons": {
+            "enableThemed": true
+        },
+        "roundingValue": 12,
+        "roundnessFull": "0.6",
+        "transparency": {
+            "automatic": true,
+            "backgroundTransparency": 0.14,
+            "contentTransparency": 0.9,
+            "enable": false,
+            "popups": false
+        }
+    },
+    "apps": {
+        "terminal": "foot"
+    },
+    "background": {
+        "widgets": {
+            "gridStep": 40
+        }
+    },
+    "bar": {
+        "bottom": true,
+        "sizes": {
+            "height": 40,
+            "width": 40
+        },
+        "tooltips": {
+            "enableTooltips": true
+        },
+        "verbose": false
+    },
+    "dock": {
+        "height": 70
+    },
+    "launcher": {
+        "pinnedApps": [
+        ]
+    },
+    "overview": {
+        "animationStyle": "zoom",
+        "cardDesign": "classic",
+        "enable": true,
+        "position": ""
+    },
+    "search": {
+        "algorithm": "fuzzy",
+        "aliases": [
+        ],
+        "alwaysListApps": false,
+        "appearance": {
+            "accentPanels": true,
+            "accentStrength": 0.12,
+            "panelBodyHeight": 420,
+            "panelWidth": 860,
+            "resultsStyle": "classic",
+            "showKeyHintBar": true,
+            "showKeyHints": true
+        },
+        "baseHeight": 500,
+        "baseWidth": 580,
+        "bestMatch": {
+            "enable": false,
+            "secondaryActions": 4,
+            "uniformList": true
+        },
+        "blurFileSearchResultPreviews": false,
+        "browserSites": {
+            "allowRemoteFavicons": false,
+            "enable": true,
+            "includeHistory": true,
+            "maxIndexedSites": 300,
+            "maxResults": 6,
+            "profilePath": "",
+            "refreshMinutes": 10,
+            "useLocalFavicons": true
+        },
+        "calculator": {
+            "historyMaxItems": 30,
+            "updateExchangeRates": true
+        },
+        "clipboard": {
+            "detectors": {
+                "email": true,
+                "filePath": true,
+                "hexColor": true,
+                "json": true,
+                "markdown": true,
+                "multiline": true,
+                "number": true,
+                "phone": true,
+                "url": true
+            },
+            "enableSloppySearch": false,
+            "imageHeight": 200,
+            "listColumnRatio": 0.4,
+            "panelWidth": 860,
+            "previewFontSize": 12,
+            "showMetadata": true
+        },
+        "enableMathPreview": true,
+        "engineBaseUrl": "https://www.google.com/search?q=",
+        "excludedSites": [
+        ],
+        "favorites": {
+            "enable": true
+        },
+        "fileContent": {
+            "maxFileSizeMb": 8,
+            "maxResults": 40,
+            "minimumQueryLength": 3
+        },
+        "fileSearch": {
+            "excludedDirectories": [
+                "node_modules",
+                ".git",
+                ".cache",
+                ".venv",
+                "__pycache__",
+                ".cargo",
+                ".rustup",
+                ".npm",
+                ".local/share/Trash"
+            ],
+            "includeHidden": false,
+            "inlineResults": true,
+            "maxDepth": 0,
+            "maxResults": 8,
+            "minimumQueryLength": 3,
+            "threads": 4
+        },
+        "fileSearchDirectory": "",
+        "frecency": true,
+        "frecencyData": {
+            "trackPanels": true
+        },
+        "fuzzyRelativeCutoff": 0.35,
+        "fuzzyThreshold": 0.35,
+        "history": {
+            "enable": true,
+            "maxItems": 50
+        },
+        "keybindings": [
+            {
+                "actionId": "actions",
+                "shortcut": "Ctrl+K"
+            },
+            {
+                "actionId": "favorite",
+                "shortcut": "Ctrl+P"
+            },
+            {
+                "actionId": "historyPrevious",
+                "shortcut": "Up"
+            },
+            {
+                "actionId": "historyNext",
+                "shortcut": "Down"
+            },
+            {
+                "actionId": "section",
+                "shortcut": "Tab"
+            },
+            {
+                "actionId": "sectionPrevious",
+                "shortcut": "Ctrl+Up"
+            },
+            {
+                "actionId": "sectionNext",
+                "shortcut": "Ctrl+Down"
+            },
+            {
+                "actionId": "secondary",
+                "shortcut": "Ctrl+Enter"
+            },
+            {
+                "actionId": "copy",
+                "shortcut": "Ctrl+C"
+            },
+            {
+                "actionId": "save",
+                "shortcut": "Ctrl+S"
+            },
+            {
+                "actionId": "edit",
+                "shortcut": "Ctrl+E"
+            },
+            {
+                "actionId": "create",
+                "shortcut": "Ctrl+N"
+            },
+            {
+                "actionId": "copyDispatch",
+                "shortcut": "Ctrl+Shift+K"
+            },
+            {
+                "actionId": "delete",
+                "shortcut": "Shift+Delete"
+            }
+        ],
+        "levenshtein": false,
+        "modules": {
+            "clipboard": true,
+            "emojis": {
+                "defaultCategory": "all",
+                "enable": true,
+                "gridColumns": 8,
+                "showRecents": true,
+                "skinTone": "none"
+            },
+            "fileContent": true,
+            "fileSearch": true,
+            "math": true,
+            "shellCommand": true,
+            "webSearch": true,
+            "windowSearch": true
+        },
+        "nonAppResultDelay": 30,
+        "nowPlaying": {
+            "enable": false
+        },
+        "prefix": {
+            "action": "/",
+            "app": ">",
+            "clipboard": ";",
+            "emojis": ":",
+            "fileBrowser": "~",
+            "fileContent": "'",
+            "fileSearch": ",",
+            "math": "=",
+            "shellCommand": "$",
+            "showDefaultActionsWithoutPrefix": true,
+            "webSearch": "?",
+            "windowSearch": "#"
+        },
+        "resultKeybinds": {
+            "enable": true
+        },
+        "scoreThreshold": 0.2,
+        "sectionOrder": [
+            {
+                "id": "suggested"
+            },
+            {
+                "id": "aliases"
+            },
+            {
+                "id": "best"
+            },
+            {
+                "id": "apps"
+            },
+            {
+                "id": "tools"
+            },
+            {
+                "id": "sites"
+            },
+            {
+                "id": "actions"
+            },
+            {
+                "id": "other"
+            },
+            {
+                "id": "files"
+            },
+            {
+                "id": "continue"
+            }
+        ],
+        "showNowPlayingBubble": false,
+        "sloppy": false,
+        "suggestions": {
+            "enable": false,
+            "maxSuggestionsPerSection": 5,
+            "showAliases": true,
+            "showApps": true,
+            "showCommands": false,
+            "showFrecency": true,
+            "showPanels": true,
+            "showToggles": true
+        },
+        "typoTolerance": {
+            "enable": true,
+            "keyboardLayouts": true,
+            "maxResults": 8,
+            "threshold": 0.3
+        }
+    }
+}

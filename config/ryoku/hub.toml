@@ -1,5 +1,5 @@
 [ui]
-  section = "updates"
+  section = "bar-studio"
   update_interval = "daily"
   update_system = "off"
   advanced = "1"

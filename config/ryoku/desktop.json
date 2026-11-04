@@ -22,7 +22,7 @@
       "borderAngleSpeed": 6,
       "borderFollowsPalette": true,
       "borderPartOfWindow": true,
-      "borderSize": 1,
+      "borderSize": 2,
       "dimAround": 0.4,
       "dimInactive": true,
       "dimModal": true,
@@ -107,7 +107,6 @@
     },
     "keybindDisabled": [],
     "keybindRebinds": {
-      "ALT + Space": "ALT + B",
       "SUPER + ALT + E": "SUPER + SHIFT + E",
       "SUPER + ALT + {n}": "SUPER + CTRL + {n}",
       "SUPER + F": "SUPER + SHIFT + F",

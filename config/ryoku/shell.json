@@ -105,7 +105,7 @@
       "liveGraph",
       "gpu"
     ],
-    "position": "top-left",
+    "position": "top-center",
     "sections": [
       {
         "id": "vitals",
