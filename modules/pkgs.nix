@@ -51,7 +51,6 @@
     lua51Packages.luarocks
     vimPlugins.LazyVim
     lsp-plugins
-    kdePackages.syntax-highlighting
     mangohud
     uv
     unzip
@@ -64,8 +63,6 @@
     cbonsai
     lavat
   ];
-
-  qt.enable = true;
 
   # STEAM WITH SLSSTEAM
   programs.steam = {

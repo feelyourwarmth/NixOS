@@ -1,0 +1,326 @@
+{
+  "modes": {
+    "enable": false,
+    "overlayEnabled": true,
+    "presetsSeeded": true,
+    "flash": "auto",
+    "lockPill": true,
+    "lastTab": "modes",
+    "lastModeId": "",
+    "lastRoutineId": "",
+    "graceSec": 5,
+    "modes": [
+      {
+        "actions": [
+          {
+            "type": "dnd",
+            "value": true
+          },
+          {
+            "type": "nightLight",
+            "value": true
+          },
+          {
+            "type": "screenShader",
+            "value": "grayscale"
+          },
+          {
+            "type": "brightness",
+            "value": 20
+          },
+          {
+            "type": "keepAwake",
+            "value": false
+          }
+        ],
+        "auto": false,
+        "color": "",
+        "end": {
+          "autoOffMin": 0,
+          "notify": true,
+          "revert": true,
+          "strict": false
+        },
+        "icon": "bedtime",
+        "id": "sleep",
+        "match": "any",
+        "name": "Sleep",
+        "notify": true,
+        "preset": true,
+        "triggers": [
+          {
+            "days": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "forSec": 0,
+            "from": "23:00",
+            "not": false,
+            "to": "07:00",
+            "type": "schedule"
+          }
+        ]
+      },
+      {
+        "actions": [
+          {
+            "type": "dnd",
+            "value": true
+          },
+          {
+            "type": "keepAwake",
+            "value": true
+          },
+          {
+            "type": "powerProfile",
+            "value": "balanced"
+          }
+        ],
+        "auto": false,
+        "color": "",
+        "end": {
+          "autoOffMin": 0,
+          "notify": true,
+          "revert": true,
+          "strict": false
+        },
+        "icon": "work",
+        "id": "work",
+        "match": "any",
+        "name": "Work",
+        "notify": true,
+        "preset": true,
+        "triggers": [
+          {
+            "days": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "forSec": 0,
+            "from": "09:00",
+            "not": false,
+            "to": "18:00",
+            "type": "schedule"
+          }
+        ]
+      },
+      {
+        "actions": [
+          {
+            "type": "dnd",
+            "value": true
+          },
+          {
+            "type": "media",
+            "value": "pause"
+          }
+        ],
+        "auto": false,
+        "color": "",
+        "end": {
+          "autoOffMin": 0,
+          "notify": true,
+          "revert": true,
+          "strict": false
+        },
+        "icon": "center_focus_strong",
+        "id": "focus",
+        "match": "any",
+        "name": "Focus",
+        "notify": true,
+        "preset": true,
+        "triggers": []
+      },
+      {
+        "actions": [
+          {
+            "type": "gameMode",
+            "value": true
+          },
+          {
+            "type": "dnd",
+            "value": true
+          },
+          {
+            "type": "powerProfile",
+            "value": "performance"
+          },
+          {
+            "type": "keepAwake",
+            "value": true
+          },
+          {
+            "type": "nightLight",
+            "value": false
+          }
+        ],
+        "auto": false,
+        "color": "",
+        "end": {
+          "autoOffMin": 0,
+          "notify": true,
+          "revert": true,
+          "strict": false
+        },
+        "icon": "sports_esports",
+        "id": "gaming",
+        "match": "any",
+        "name": "Gaming",
+        "notify": true,
+        "preset": true,
+        "triggers": [
+          {
+            "forSec": 0,
+            "not": false,
+            "offSec": null,
+            "type": "game",
+            "when": "running"
+          }
+        ]
+      },
+      {
+        "actions": [
+          {
+            "type": "dnd",
+            "value": true
+          },
+          {
+            "type": "keepAwake",
+            "value": true
+          },
+          {
+            "type": "nightLight",
+            "value": false
+          }
+        ],
+        "auto": false,
+        "color": "",
+        "end": {
+          "autoOffMin": 0,
+          "notify": true,
+          "revert": true,
+          "strict": false
+        },
+        "icon": "theaters",
+        "id": "theater",
+        "match": "any",
+        "name": "Theater",
+        "notify": true,
+        "preset": true,
+        "triggers": [
+          {
+            "forSec": 0,
+            "not": false,
+            "type": "fullscreen"
+          }
+        ]
+      },
+      {
+        "actions": [
+          {
+            "type": "dnd",
+            "value": true
+          },
+          {
+            "type": "keepAwake",
+            "value": true
+          },
+          {
+            "type": "nightLight",
+            "value": false
+          },
+          {
+            "type": "screenShader",
+            "value": ""
+          }
+        ],
+        "auto": false,
+        "color": "",
+        "end": {
+          "autoOffMin": 0,
+          "notify": true,
+          "revert": true,
+          "strict": false
+        },
+        "icon": "co_present",
+        "id": "presentation",
+        "match": "any",
+        "name": "Presentation",
+        "notify": true,
+        "preset": true,
+        "triggers": [
+          {
+            "count": 2,
+            "forSec": 0,
+            "names": [],
+            "not": false,
+            "type": "monitors"
+          }
+        ]
+      },
+      {
+        "actions": [
+          {
+            "type": "nightLight",
+            "value": true
+          },
+          {
+            "type": "brightness",
+            "value": 50
+          }
+        ],
+        "auto": false,
+        "color": "",
+        "end": {
+          "autoOffMin": 0,
+          "notify": true,
+          "revert": true,
+          "strict": false
+        },
+        "icon": "spa",
+        "id": "relax",
+        "match": "any",
+        "name": "Relax",
+        "notify": true,
+        "preset": true,
+        "triggers": [
+          {
+            "days": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "forSec": 0,
+            "from": "20:00",
+            "not": false,
+            "to": "23:00",
+            "type": "schedule"
+          }
+        ]
+      }
+    ],
+    "routines": [],
+    "game": {
+      "useLauncherClasses": true,
+      "useDesktopCategory": true,
+      "useGpuHeuristic": true,
+      "useMangoHudLog": false,
+      "gpuThreshold": 45,
+      "holdSec": 20,
+      "extraClasses": [],
+      "ignoreClasses": []
+    }
+  }
+}

@@ -2,7 +2,7 @@
   inputs = {
     # Ryoku on NixOS local repo
     #ryoku = {
-    #  url = "path:/home/feel/Ryoku-on-NixOS";
+    #  url = "path:/home/feel/ryoku";
     #};
     
     ryoku = {

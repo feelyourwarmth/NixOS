@@ -4,6 +4,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./services.nix
       ./modules/fonts.nix
       ./modules/git.nix
       ./modules/nvidia.nix
@@ -12,7 +13,6 @@
       ./modules/nct6687.nix
       ./modules/fish.nix
       ./modules/zsh.nix
-      ./modules/services.nix
       ./modules/nixcord.nix
     ];
 

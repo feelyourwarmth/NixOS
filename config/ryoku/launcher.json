@@ -21,6 +21,6 @@
     ],
     "showGreeting": true,
     "showWeather": true,
-    "variant": "imi",
+    "variant": "main",
     "weatherUnit": "C"
 }

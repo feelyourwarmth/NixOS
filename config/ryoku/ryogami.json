@@ -22,6 +22,11 @@
   },
   "filterBar": {
     "defaultFolder": "",
+    "last": {
+      "color": 99,
+      "sort": "date",
+      "type": ""
+    },
     "sticky": true
   },
   "general": {

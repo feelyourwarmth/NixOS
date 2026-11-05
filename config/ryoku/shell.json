@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "gokko",
+  "barStyle": "nomarchy",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -137,7 +137,7 @@
   "deckFrostEnabled": false,
   "designs": {
     "notification": "ryoku",
-    "osd": "ryoku",
+    "osd": "ito",
     "sidebar": "ryoku"
   },
   "displays": {
@@ -3086,7 +3086,7 @@
     "scale": 0.85,
     "seconds": false,
     "showDate": true,
-    "span": "islands",
+    "span": "fused",
     "statusItems": [],
     "sysmonItems": [
       "cpu",
@@ -3097,6 +3097,7 @@
     "wavy": true,
     "windowWidth": 280,
     "workspaceShowEmpty": true,
+    "workspaceSpare": true,
     "workspaceStyle": "dots"
   },
   "osdOpacity": 1,
