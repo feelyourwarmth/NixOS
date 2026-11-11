@@ -56,19 +56,38 @@
     description = "Ensure NixOS Nvim directory has correct permissions";
 
     wantedBy = [ "multi-user.target" ];
+    after = [ "local-fs.target" ];
 
     serviceConfig = {
       Type = "oneshot";
+      User = "root";
     };
 
     script = ''
-      chown -R feel:users /etc/nixos/config/nvim
-      chmod -R u+rwX /etc/nixos/config/nvim
+      set -eu
+
+      # Ensure Neovim directories exist
+      install -d -o feel -g users -m 0755 \
+        /home/feel/.local/state \
+        /home/feel/.local/share/nvim \
+        /home/feel/.cache/nvim
+
+      # Fix ownership and permissions
+      for dir in \
+        /home/feel/.local/state \
+        /home/feel/.local/share/nvim \
+        /home/feel/.cache/nvim \
+        /etc/nixos/config/nvim
+      do
+        if [ -d "$dir" ]; then
+          chown -R feel:users "$dir"
+          chmod -R u+rwX "$dir"
+        fi
+      done
     '';
   };
 
-
-  systemd.user.services.sync-ryoku = {
+systemd.user.services.sync-ryoku = {
     description = "Sync Ryoku config to NixOS";
 
     serviceConfig = {

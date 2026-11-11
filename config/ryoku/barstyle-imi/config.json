@@ -132,7 +132,7 @@
         ],
         "defaultBorderRadius": 18,
         "extraBackgroundTint": true,
-        "fakeScreenRounding": 1,
+        "fakeScreenRounding": 2,
         "fonts": {
             "enableCustom": false,
             "expressive": "Space Grotesk",
@@ -365,7 +365,7 @@
         "wallpaperAnimation": "",
         "wallpaperEngineAssetsPath": "",
         "wallpaperEngineId": "",
-        "wallpaperPath": "",
+        "wallpaperPath": "/home/feel/Pictures/Wallpapers/wallhaven-vpel8p.jpg",
         "widgets": {
             "ai_chat": {
                 "enable": false,
@@ -1793,7 +1793,7 @@
                 "enable": true
             }
         },
-        "barBackgroundStyle": 1,
+        "barBackgroundStyle": 0,
         "barGroupStyle": 0,
         "battery": {
             "colorByPowerProfile": true,
@@ -1827,7 +1827,7 @@
             "reliefVariant": "split",
             "showMeridiem": true
         },
-        "cornerStyle": 0,
+        "cornerStyle": 1,
         "dashboardButton": {
             "colorMode": "primary",
             "orbVariant": "filled",
@@ -2106,7 +2106,7 @@
         "sidebarClickOpen": true,
         "singleMonitorName": "",
         "sizes": {
-            "height": 40,
+            "height": 36,
             "width": 44
         },
         "sports": {
@@ -2158,25 +2158,25 @@
             "aiPlanUsage": "expressive",
             "battery": "expressive",
             "bluetooth": "expressive",
-            "clock": "expressive",
-            "dashboard": "expressive",
+            "clock": "default",
+            "dashboard": "default",
             "date": "default",
             "keyboard": "expressive",
             "media": "default",
             "networkSpeed": "default",
             "notification": "default",
-            "policies": "expressive",
+            "policies": "default",
             "portWatcher": "expressive",
-            "power": "expressive",
+            "power": "default",
             "recordIndicator": "expressive",
             "resources": "expressive",
             "search": "default",
             "sports": "expressive",
-            "systray": "expressive",
+            "systray": "default",
             "timer": "expressive",
             "utilButtons": "expressive",
-            "weather": "expressive",
-            "workspaces": "default"
+            "weather": "default",
+            "workspaces": "pills"
         },
         "systray": {
             "colorMode": "neutral"
@@ -2201,7 +2201,7 @@
             "enableTooltips": true,
             "popupScaleMultiplier": 1
         },
-        "topLeftIcon": "spark",
+        "topLeftIcon": "mistral",
         "transparentGlow": true,
         "useMaterialSymbolForTopLeftIcon": false,
         "utilButtons": {
@@ -2220,7 +2220,7 @@
             "showWallpaperToggle": true
         },
         "verbose": true,
-        "vertical": true,
+        "vertical": false,
         "weather": {
             "city": "",
             "enable": false,
@@ -2269,7 +2269,7 @@
         }
     },
     "battery": {
-        "automaticSuspend": true,
+        "automaticSuspend": false,
         "critical": 5,
         "defaultStateWhenFull": false,
         "full": 101,
@@ -2392,7 +2392,7 @@
             "time": "23:30",
             "windDownMinutes": 30
         },
-        "enable": true,
+        "enable": false,
         "phoneAlarm": {
             "clockApps": [
                 "Clock",
@@ -2995,7 +2995,7 @@
         }
     },
     "easyEffects": {
-        "appEnable": true,
+        "appEnable": false,
         "applyDeviceDefaultOnStart": true,
         "applyDeviceDefaultOnSwitch": true,
         "cycleScope": "device",
@@ -3750,7 +3750,7 @@
     "notes": {
         "autosaveDelay": 400,
         "defaultPaper": "plain",
-        "enable": true,
+        "enable": false,
         "paperStrength": 50
     },
     "notifications": {
@@ -3761,7 +3761,7 @@
         },
         "position": "top_right",
         "timeout": 7000,
-        "zoomPercent": 100
+        "zoomPercent": 90
     },
     "oledSaver": {
         "antiBurnIn": false,
@@ -3794,7 +3794,7 @@
         },
         "position": "right",
         "showValues": true,
-        "style": "default",
+        "style": "tuner",
         "timeout": 3000,
         "tuner": {
             "toggleRuler": false
@@ -4029,9 +4029,9 @@
         }
     },
     "policies": {
-        "ai": 1,
+        "ai": 0,
         "anki": 0,
-        "phone": 1,
+        "phone": 0,
         "player": 0,
         "translator": 1,
         "wallpapers": 0,

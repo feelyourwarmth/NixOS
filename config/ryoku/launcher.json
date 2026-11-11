@@ -1,7 +1,7 @@
 {
     "bgBlur": 2,
     "columns": 8,
-    "heroImage": "file:///home/feel/Pictures/Wallpapers/darkclouds.jpg",
+    "heroImage": "file:///home/feel/Pictures/Wallpapers/wallhaven-212ldx.png",
     "heroPosX": 0.5,
     "heroPosY": 0.5,
     "heroStrength": 0.3962,
@@ -21,6 +21,6 @@
     ],
     "showGreeting": true,
     "showWeather": true,
-    "variant": "main",
+    "variant": "imi",
     "weatherUnit": "C"
 }

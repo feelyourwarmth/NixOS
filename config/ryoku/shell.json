@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "nomarchy",
+  "barStyle": "imi",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -136,7 +136,7 @@
   "deckFrost": 0.45,
   "deckFrostEnabled": false,
   "designs": {
-    "notification": "ryoku",
+    "notification": "tegami",
     "osd": "ito",
     "sidebar": "ryoku"
   },

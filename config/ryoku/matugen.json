@@ -4,7 +4,7 @@
   "lightnessDark": 0,
   "lightnessLight": 0,
   "prefer": "saturation",
-  "schemeType": "scheme-content",
+  "schemeType": "scheme-tonal-spot",
   "sourceColorIndex": 0,
   "themeRyokuApps": true,
   "templates": {

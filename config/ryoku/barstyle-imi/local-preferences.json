@@ -322,5 +322,83 @@
       "extraClasses": [],
       "ignoreClasses": []
     }
+  },
+  "clockApp": {
+    "enable": false,
+    "startTab": "last",
+    "showTimetableEvents": true,
+    "timetableLeadMinutes": 15,
+    "timetableLookaheadDays": 2,
+    "analogWorldClock": true,
+    "showSecondsInApp": true,
+    "bedtime": {
+      "enable": false,
+      "time": "23:30",
+      "days": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "windDownMinutes": 30,
+      "remindEveryMinutes": 15,
+      "nightEndsHour": 5,
+      "intrusive": false,
+      "snoozeMinutes": 5,
+      "maxSnoozes": 3,
+      "shutdownGraceSeconds": 30
+    },
+    "phoneAlarm": {
+      "enable": true,
+      "pollMinutes": 10,
+      "clockApps": [
+        "Clock",
+        "Relógio",
+        "Alarm",
+        "Alarme",
+        "com.google.android.deskclock",
+        "com.sec.android.app.clockpackage"
+      ],
+      "ignorePackages": [
+        "com.samsung.android.app.routines"
+      ]
+    },
+    "reminders": {
+      "defaultAlert": "light",
+      "allDayTime": "09:00",
+      "snoozeMinutes": 5,
+      "autoSilenceMinutes": 1,
+      "catchUpMinutes": 10,
+      "wakeFromSuspend": true,
+      "alertBackgroundColor": "",
+      "alertBackgroundImage": "",
+      "alertSound": true,
+      "autoDeleteCompletedDays": 0,
+      "trashDays": 30,
+      "sortBy": "alertTime",
+      "pinImportant": true,
+      "showCompleted": false,
+      "view": "card",
+      "categoriesExpanded": true,
+      "showTemplates": true,
+      "defaultCategory": "default",
+      "showInTimetable": true,
+      "todoSync": {
+        "enable": false,
+        "intervalMinutes": 15
+      }
+    }
+  },
+  "policies": {
+    "ai": 0,
+    "weeb": 0,
+    "wallpapers": 0,
+    "translator": 1,
+    "player": 0,
+    "phone": 0,
+    "anki": 0
   }
 }

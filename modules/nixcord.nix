@@ -20,7 +20,9 @@
       hideArrow = true;
     };
     betterBackreading.enable = true;
+    betterMutualServers.enable = true;
     betterRoleDot.enable = true;
+    betterSearch.enable = true;
     betterSessions.enable = true;
     betterSettings.enable = true;
     betterUploadButton.enable = true;
@@ -111,7 +113,6 @@
       enable = true;
       profiles = false;
     };
-    platformSpoofer.enable = true;
     previewMessage.enable = true;
     questify = {
       acknowledgedNotices = {

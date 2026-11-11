@@ -24,7 +24,6 @@
 
     # APPS
     openrgb
-    brave-origin
     chromium
     lact
     gpu-screen-recorder-ui
@@ -55,6 +54,7 @@
     uv
     unzip
     unrar
+    p7zip
 
     # LARP
     fetch

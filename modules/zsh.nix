@@ -93,7 +93,11 @@
         }
 
         services() {
-          sudo -E nvim /etc/nixos/modules/services.nix
+          sudo -E nvim /etc/nixos/services.nix
+        }
+
+        nixcord() {
+          sudo -E nvim /etc/nixos/modules/nixcord.nix
         }
 
         larp() {
