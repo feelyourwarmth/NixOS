@@ -29,6 +29,31 @@ window-rule {
 }
 
 window-rule {
+    match app-id="Capri" title="Capri"
+    open-focused false
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+
+    background-effect {
+        blur false
+    }
+}
+
+window-rule {
+    match app-id="^Capri$"
+
+    open-floating true
+    focus-ring {
+        off
+    }
+    shadow {
+        off
+    }
+    background-effect {
+        blur false
+    }
+}
+
+window-rule {
     match app-id="xdg-desktop-portal-gnome"
     open-focused false
 }

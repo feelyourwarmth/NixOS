@@ -392,12 +392,54 @@
       }
     }
   },
+  "time": {
+    "format": "hh:mm",
+    "secondsFormat": "ss",
+    "shortDateFormat": "dd/MM",
+    "longDateFormat": "dd/MM/yyyy",
+    "dateWithYearFormat": "dd/MM/yyyy",
+    "dateFormat": "dd/MM, ddd",
+    "firstDayOfWeek": 6,
+    "pomodoro": {
+      "breakTime": 300,
+      "cyclesBeforeLongBreak": 4,
+      "focus": 1500,
+      "longBreak": 900,
+      "notify": true
+    },
+    "timer": {
+      "notify": true,
+      "presets": [
+        60,
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ]
+    },
+    "worldClocks": [],
+    "secondPrecision": false,
+    "alarms": {
+      "useFullscreenPopup": false,
+      "showAnalogClock": true,
+      "showWorldClocks": true,
+      "showAlarmsSection": true,
+      "snoozeMinutes": 9,
+      "autoSilenceMinutes": 5,
+      "catchUpMinutes": 10,
+      "wakeFromSuspend": true,
+      "wakeLeadSeconds": 90,
+      "upcomingMinutes": 60,
+      "showUpcoming": true
+    }
+  },
   "policies": {
     "ai": 0,
     "weeb": 0,
     "wallpapers": 0,
-    "translator": 1,
-    "player": 0,
+    "translator": 0,
+    "player": 1,
     "phone": 0,
     "anki": 0
   }

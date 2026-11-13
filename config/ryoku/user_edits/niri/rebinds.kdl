@@ -119,6 +119,7 @@ binds {
     Super+J { spawn "ryotunes"; }
     Super+Space { spawn "ryoku-shell" "launcher"; }
     Super+K { spawn "ryoku-shell" "cheatsheet"; }
+    Super+Shift+G allow-inhibiting=false { spawn "ryoku-shell" "gamebar"; }
     Super+L { spawn "ryoku-shell" "lock"; }
     Super+Escape allow-inhibiting=false { spawn "ryoku-shell" "quicksettings"; }
     Super+Shift+W { spawn "ryogami" "wallpaper" "random"; }
@@ -139,7 +140,8 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn "ryoku-volume" "down"; }
     XF86AudioMute allow-when-locked=true repeat=false { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute allow-when-locked=true repeat=false { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
-    XF86AudioPlay allow-when-locked=true repeat=false { spawn "playerctl" "play-pause"; }
+    XF86AudioPlay allow-when-locked=true repeat=false { spawn "ryoku-media" "play-pause"; }
+    XF86AudioPause allow-when-locked=true repeat=false { spawn "ryoku-media" "play-pause"; }
     XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
     XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "ryoku-cmd-brightness" "+5"; }

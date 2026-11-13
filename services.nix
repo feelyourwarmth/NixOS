@@ -5,6 +5,9 @@
   services.lact.enable = true;
   services.gvfs.enable = true;
 
+  # Disable Speechd
+  services.speechd.enable = false;
+
   systemd.services.fix-ryoku-permissions = {
     description = "Ensure Ryoku config directory has correct permissions";
 

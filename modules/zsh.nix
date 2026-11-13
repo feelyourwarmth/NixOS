@@ -1,7 +1,7 @@
 { pkgs, lib, ... }:
 
 {
-  programs.zsh = {
+ programs.zsh = {
     enable = true;
     enableCompletion = true;
 
@@ -64,6 +64,10 @@
           nix-store --optimise && echo "Nix garbage collection complete!"
         }
 
+        gen() {
+          nixos-rebuild list-generations
+        }
+
         nixos() {
           cd /etc/nixos
         }
@@ -102,6 +106,32 @@
 
         larp() {
           fetch --infinite --shading-mode sextants
+        }
+
+        ch() {
+          chmod +x "$@"
+        }
+
+        perm() {
+          if [[ $# -ne 1 || ! -d "$1" ]]; then
+            echo "Usage: perm <directory>"
+            return 1
+          fi
+
+          local dir
+          dir="$(realpath -e -- "$1")" || return 1
+
+          # Avoid accidentally changing critical directories
+          case "$dir" in
+            /|/home|"$HOME"|/nix|/nix/store/*)
+              echo "Refusing to modify protected directory: $dir"
+              return 1
+              ;;
+          esac
+
+          sudo chown -R feel:users -- "$dir" &&
+          sudo chmod -R u+rwX -- "$dir" &&
+          echo "Permissions fixed: $dir"
         }
       ''
 

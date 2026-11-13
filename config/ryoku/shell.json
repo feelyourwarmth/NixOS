@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "imi",
+  "barStyle": "iris",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -251,6 +251,29 @@
   "frameEnabled": true,
   "frameOpacity": 0.9,
   "frameThickness": 2,
+  "gamebar": {
+    "damping": 0.58,
+    "dim": 0.62,
+    "enabled": true,
+    "fade": 200,
+    "gridAlpha": 0.28,
+    "gridStep": 48,
+    "guideGrid": true,
+    "mass": 1,
+    "radius": 14,
+    "scale": 1,
+    "snap": true,
+    "snapGrid": 24,
+    "snapReach": 9,
+    "spring": 3.2,
+    "voiceAvatarSize": 52,
+    "voiceAvatars": 8,
+    "voiceBgOpacity": 0.72,
+    "voiceControls": true,
+    "voiceDim": true,
+    "voiceDimOpacity": 0.5,
+    "voiceNames": true
+  },
   "general": {
     "clock_format_24_h": true,
     "temperature_unit": "Metric",

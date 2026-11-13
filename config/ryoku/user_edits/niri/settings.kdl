@@ -42,9 +42,16 @@ layout {
     focus-ring {
         on
         width 2
-        active-color "#cacaca"
-        inactive-color "#131313"
+        active-color "#c1cbe0"
+        inactive-color "#111318"
         urgent-color "#9b0000"
+    }
+    shadow {
+        on
+        softness 45
+        spread 0
+        offset x=0 y=5
+        color "#000000"
     }
     tab-indicator {
         width 4
@@ -88,12 +95,8 @@ spawn-sh-at-startup "easyeffects --hide-window --service-mode"
 spawn-sh-at-startup "gsr-ui"
 
 window-rule {
-    geometry-corner-radius 10
+    geometry-corner-radius 12
     clip-to-geometry true
-}
-
-window-rule {
-    opacity 0.98
 }
 
 window-rule {

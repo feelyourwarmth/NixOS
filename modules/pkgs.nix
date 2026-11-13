@@ -15,6 +15,10 @@
     btop
     nh
 
+    # AI
+    codex
+    bubblewrap
+
     # TUI
     yazi
 
@@ -63,6 +67,12 @@
     cbonsai
     lavat
   ];
+
+  # OLLAMA (NVIDIA ONLY)
+  services.ollama = {
+    enable = true;
+    package = pkgs.ollama-cuda;
+  };
 
   # STEAM WITH SLSSTEAM
   programs.steam = {
@@ -120,6 +130,10 @@
       libjack2
       libpulseaudio
       vulkan-loader
+      stdenv.cc.cc.lib
+      zlib
+      openssl
+      glib
     ];
   };
 

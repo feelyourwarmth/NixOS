@@ -1793,8 +1793,8 @@
                 "enable": true
             }
         },
-        "barBackgroundStyle": 0,
-        "barGroupStyle": 0,
+        "barBackgroundStyle": 3,
+        "barGroupStyle": 2,
         "battery": {
             "colorByPowerProfile": true,
             "colorMode": "primary",
@@ -1873,8 +1873,8 @@
         "dynamicIslandSpacingVertical": 16,
         "enableBrightnessScroll": true,
         "enableVolumeScroll": true,
-        "expressiveColorTheme": "content",
-        "expressiveColors": false,
+        "expressiveColorTheme": "surface",
+        "expressiveColors": true,
         "expressiveGroupColor": false,
         "floatStyleShadow": true,
         "floatingNotch": {
@@ -2201,7 +2201,7 @@
             "enableTooltips": true,
             "popupScaleMultiplier": 1
         },
-        "topLeftIcon": "mistral",
+        "topLeftIcon": "spark",
         "transparentGlow": true,
         "useMaterialSymbolForTopLeftIcon": false,
         "utilButtons": {
@@ -4032,8 +4032,8 @@
         "ai": 0,
         "anki": 0,
         "phone": 0,
-        "player": 0,
-        "translator": 1,
+        "player": 1,
+        "translator": 0,
         "wallpapers": 0,
         "weeb": 0
     },
@@ -5078,7 +5078,7 @@
             "wakeFromSuspend": true,
             "wakeLeadSeconds": 90
         },
-        "dateFormat": "MM/dd, ddd",
+        "dateFormat": "dd/MM, ddd",
         "dateWithYearFormat": "dd/MM/yyyy",
         "firstDayOfWeek": 6,
         "format": "hh:mm",

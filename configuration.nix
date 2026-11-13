@@ -76,7 +76,8 @@
   nixpkgs.config.allowUnfree = true;
 
   # Latest Zen kernel
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  #boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # System Version
   system.stateVersion = "26.05";
