@@ -25,7 +25,6 @@
     betterSearch.enable = true;
     betterSessions.enable = true;
     betterSettings.enable = true;
-    betterUploadButton.enable = true;
     biggerStreamPreview.enable = true;
     callTimer.enable = true;
     channelTabs = {
@@ -146,6 +145,7 @@
     };
     webScreenShareFixes.enable = true;
     whosWatching.enable = true;
+    zipPreview.enable = true;
   };
   programs.nixcord.extraConfig.plugins = {
     musicRichPresence = {

@@ -13,6 +13,7 @@ return {
 	["SUPER + ALT + 9"] = "SUPER + CTRL + 9",
 	["SUPER + ALT + E"] = "SUPER + SHIFT + E",
 	["SUPER + ALT + Space"] = false,
+	["SUPER + D"] = "SUPER + F",
 	["SUPER + F"] = "SUPER + SHIFT + F",
 	["SUPER + M"] = "SUPER + slash",
 	["SUPER + Q"] = "SUPER + W",

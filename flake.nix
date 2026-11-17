@@ -16,6 +16,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    valen = {
+      url = "path:/home/feel/valenf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,7 +37,7 @@
     };
   };
 
-  outputs = { ryoku, zen-browser, nixcord, sls-steam, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { ryoku, valen, zen-browser, nixcord, sls-steam, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 

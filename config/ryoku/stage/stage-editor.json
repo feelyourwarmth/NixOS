@@ -351,7 +351,6 @@
         "icon3": ""
       },
       "at_a_glance": {
-        "animateContent": true,
         "calendarWindowMinutes": 60,
         "dualColumnMode": false,
         "enable": false,
@@ -360,7 +359,6 @@
         "enableKdeConnect": true,
         "enableLocalSend": true,
         "enableMedia": true,
-        "enableSports": true,
         "enableTodo": true,
         "enableWeather": true,
         "placementStrategy": "free",
@@ -374,10 +372,6 @@
           "kdeconnect",
           "fallback"
         ],
-        "showLocation": true,
-        "showSeparators": true,
-        "showServiceLabel": false,
-        "sportsWindowHours": 12,
         "widgetSize": 100,
         "widthCells": 3,
         "x": 400,
@@ -505,7 +499,6 @@
         "enableGlassReflection": true,
         "enableShadows": false,
         "placementStrategy": "free",
-        "progressShape": "Cookie9Sided",
         "showDevicePill": true,
         "showNextButton": true,
         "showPrevButton": true,
@@ -516,11 +509,9 @@
       },
       "clock_cookie": {
         "aiStyling": false,
-        "aiStylingModel": "gemini",
         "backgroundShape": "Arch",
         "backgroundStyle": "cookie",
         "constantlyRotate": false,
-        "dateInClock": true,
         "dateStyle": "bubble",
         "dialNumberStyle": "full",
         "disableAnimationOnLock": false,
@@ -541,7 +532,6 @@
         "enable": false,
         "enableInnerShadow": false,
         "enableShadows": false,
-        "expressiveColors": false,
         "hourHandStyle": "fill",
         "minuteHandStyle": "medium",
         "placementStrategy": "free",
@@ -639,10 +629,8 @@
       },
       "colorScheme": "default",
       "compact_media": {
-        "backgroundShape": "Rectangle",
         "dynamicAlbumColors": false,
         "enable": false,
-        "enableInnerShadow": false,
         "enableShadows": false,
         "placementStrategy": "free",
         "widgetSize": 100,
@@ -882,15 +870,14 @@
         "showTemperature": false
       },
       "nothing_wheel_clock": {
+        "accentMinute": true,
         "enable": false,
-        "expressiveColors": false,
         "placementStrategy": "free",
-        "x": 200,
-        "y": 200,
-        "timeFormat": "system",
         "showDateHeader": true,
         "showMinuteNeighbors": true,
-        "accentMinute": true
+        "timeFormat": "system",
+        "x": 200,
+        "y": 200
       },
       "pc_battery_bars": {
         "enable": false,
@@ -1005,6 +992,30 @@
         "widgetSize": 100,
         "x": 400,
         "y": 100
+      },
+      "resource_nothing_cpu": {
+        "enable": false,
+        "placementStrategy": "free",
+        "x": 400,
+        "y": 100,
+        "widgetSize": 100,
+        "useAccentColor": false
+      },
+      "resource_nothing_disk": {
+        "enable": false,
+        "placementStrategy": "free",
+        "x": 400,
+        "y": 100,
+        "widgetSize": 100,
+        "useAccentColor": false
+      },
+      "resource_nothing_ram": {
+        "enable": false,
+        "placementStrategy": "free",
+        "x": 400,
+        "y": 100,
+        "widgetSize": 100,
+        "useAccentColor": false
       },
       "resource_ram_pill": {
         "aspectRatio": "2x0.5",
@@ -1124,7 +1135,6 @@
         "showMinuteHand": true,
         "showOuterNumbers": true,
         "showSunsetComplication": true,
-        "useAlbumColors": true,
         "widgetSize": 100,
         "x": 400,
         "y": 100
@@ -1213,30 +1223,6 @@
         "placementStrategy": "free",
         "x": 200,
         "y": 200
-      },
-      "resource_nothing_disk": {
-        "enable": false,
-        "placementStrategy": "free",
-        "x": 400,
-        "y": 100,
-        "widgetSize": 100,
-        "useAccentColor": false
-      },
-      "resource_nothing_cpu": {
-        "enable": false,
-        "placementStrategy": "free",
-        "x": 400,
-        "y": 100,
-        "widgetSize": 100,
-        "useAccentColor": false
-      },
-      "resource_nothing_ram": {
-        "enable": false,
-        "placementStrategy": "free",
-        "x": 400,
-        "y": 100,
-        "widgetSize": 100,
-        "useAccentColor": false
       }
     },
     "windowZoomLiveCapture": true,
@@ -1905,6 +1891,13 @@
     "autoKillNotificationDaemons": false,
     "autoKillTrays": false
   },
+  "contextMenu": {
+    "style": "comfortable",
+    "submenus": "inline",
+    "scale": 1,
+    "layouts": [],
+    "customEntries": []
+  },
   "crosshair": {
     "code": "0;P;d;1;0l;10;0o;2;1b;0"
   },
@@ -1967,12 +1960,14 @@
     "livePreviewFollowActiveWindow": true,
     "livePreviewPaintCursor": false,
     "livePreviewSlots": 2,
+    "lockReorder": false,
     "magnificationCurve": "cosine",
     "magnificationDynamicSpacing": true,
     "magnificationInfluenceRadius": 2.35,
     "magnificationMotion": "balanced",
     "magnificationScale": 1.5,
     "manualOrder": [],
+    "monitor": "",
     "monochromeIcons": false,
     "notificationAnimation": "bounce",
     "order": [
@@ -1988,10 +1983,13 @@
       "trash",
       "overview"
     ],
-    "pinnedApps": [
-      "org.kde.dolphin",
-      "kitty"
-    ],
+    "overviewButton": {
+      "iconFile": "",
+      "symbol": "",
+      "iconTint": true,
+      "shape": "SoftBurst",
+      "alwaysShowShape": false
+    },
     "pinnedFiles": [],
     "pinnedOnStartup": false,
     "position": "auto",
@@ -2005,22 +2003,6 @@
     "showTrashButton": false,
     "smartGrouping": false,
     "switchPresetsOnScroll": true,
-    "widgetRadius": -1,
-    "widgetStackItems": [
-      "media",
-      "weather",
-      "tasks"
-    ],
-    "monitor": "",
-    "lockReorder": false,
-    "overviewButton": {
-      "iconFile": "",
-      "symbol": "",
-      "iconTint": true,
-      "shape": "SoftBurst",
-      "alwaysShowShape": false
-    },
-    "utilityWidgets": [],
     "utilities": {
       "stopwatch": {
         "clickToggles": true
@@ -2080,7 +2062,18 @@
         "localsendAlias": "",
         "localsendIp": ""
       }
-    }
+    },
+    "utilityWidgets": [],
+    "widgetRadius": -1,
+    "widgetStackItems": [
+      "media",
+      "weather",
+      "tasks"
+    ],
+    "pinnedApps": [
+      "org.kde.dolphin",
+      "kitty"
+    ]
   },
   "dockToPanel": {
     "alignToWorkspace": false,
@@ -2653,6 +2646,15 @@
       "persistManual": "always",
       "to": "06:30"
     }
+  },
+  "liveDraw": {
+    "enable": true,
+    "mouseSmoothing": 60,
+    "sheetMode": "workspace",
+    "nativeCursor": false,
+    "boardPattern": "grid",
+    "boardLight": "#f7f6f2",
+    "boardDark": "#1f2124"
   },
   "localsend": {
     "autoStart": true,
@@ -4286,21 +4288,5 @@
         "university"
       ]
     }
-  },
-  "contextMenu": {
-    "style": "comfortable",
-    "submenus": "inline",
-    "scale": 1,
-    "layouts": [],
-    "customEntries": []
-  },
-  "liveDraw": {
-    "enable": true,
-    "mouseSmoothing": 60,
-    "sheetMode": "workspace",
-    "nativeCursor": false,
-    "boardPattern": "grid",
-    "boardLight": "#f7f6f2",
-    "boardDark": "#1f2124"
   }
 }

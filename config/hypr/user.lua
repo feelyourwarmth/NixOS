@@ -23,7 +23,7 @@ local ws_helper = (os.getenv("HOME") or "") .. "/.config/hypr/scripts/ryoku-work
 
 local scrolling_expanded = false
 
-hl.bind("SUPER + F", function()
+hl.bind("SUPER + D", function()
 	local workspace = hl.get_active_special_workspace() or hl.get_active_workspace()
 	local layout = workspace and (workspace.tiled_layout or tostring(hl.get_config("general.layout")))
 		or tostring(hl.get_config("general.layout"))
@@ -60,8 +60,17 @@ hl.bind("CTRL + Backslash", hl.dsp.exec_cmd("flock -n -o /tmp/ryoshot.lock env R
 hl.bind("SUPER + SHIFT + mouse_up", hl.dsp.focus({ workspace = "r-1" }))
 hl.bind("SUPER + SHIFT + mouse_down", hl.dsp.focus({ workspace = "r+1" }))
 
-hl.bind("SUPER + mouse_up", hl.dsp.focus({ direction = "l" }))
-hl.bind("SUPER + mouse_down", hl.dsp.focus({ direction = "r" }))
+--hl.bind("SUPER + mouse_up", hl.dsp.focus({ direction = "l" }))
+--hl.bind("SUPER + mouse_down", hl.dsp.focus({ direction = "r" }))
+
+hl.bind("SUPER + mouse_up", hl.dsp.layout("focus l"))
+hl.bind("SUPER + mouse_down", hl.dsp.layout("focus r"))
+
+hl.config({
+	binds = {
+		scroll_event_delay = 120,
+	},
+})
 
 hl.window_rule({
 	name = "Spotify",

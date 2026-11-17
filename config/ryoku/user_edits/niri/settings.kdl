@@ -10,6 +10,7 @@ input {
         repeat-delay 250
     }
     touchpad {
+        click-method "clickfinger"
         accel-speed 0.1
         accel-profile "flat"
     }

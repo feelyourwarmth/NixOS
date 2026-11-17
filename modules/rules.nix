@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  boot.loader.systemd-boot.configurationLimit = 5;
+  boot.loader.systemd-boot.configurationLimit = 10;
 
   nix.optimise = {
     automatic = true;

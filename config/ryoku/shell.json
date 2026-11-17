@@ -7,7 +7,7 @@
       "y": 0.68
     }
   },
-  "barStyle": "iris",
+  "barStyle": "qsbar",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -72,7 +72,7 @@
     "warningPercent": 25
   },
   "chroma": {
-    "gap": 8,
+    "gap": 7,
     "opacity": 0.84,
     "position": "top",
     "radius": 8,
@@ -157,20 +157,34 @@
     "labels": false,
     "magnify": true,
     "media": true,
-    "pinned": [],
+    "pinned": [
+      "org.kde.dolphin",
+      "kitty"
+    ],
+    "python": {
+      "autohideTimeout": 1000,
+      "cascadeScale": false,
+      "enableScrolling": false,
+      "exclusive": false,
+      "floating": false,
+      "hoverScale": 120,
+      "onTop": true,
+      "opacity": 100,
+      "overrideBoundsCorrection": false,
+      "smartAutohide": true,
+      "visibleElements": 7
+    },
     "shadow": true,
     "shima": {
       "shape": "auto"
     },
+    "size": 44,
     "style": "islands"
   },
   "fontFamily": "Inter",
   "fontScale": 1,
   "formatLocale": "en_US",
   "frameBars": {
-    "dock": {
-      "pinned": []
-    },
     "menus": {
       "theme": {
         "anchor": "right",
@@ -1522,9 +1536,7 @@
         "enable": false,
         "threshold": 80
       },
-      "critical": 5,
       "full": 101,
-      "low": 20,
       "suspend": 3
     },
     "calendar": {
@@ -2207,7 +2219,6 @@
       },
       "surround": {
         "enable": true,
-        "music": "widget",
         "musicAppearance": "etched",
         "musicColour": "pearl",
         "musicEdges": "sides",
@@ -3205,7 +3216,7 @@
       },
       "opacity": 92,
       "position": "top",
-      "style": "fill",
+      "style": "solid",
       "time": {
         "format": "HH:mm:ss"
       },
@@ -3213,25 +3224,6 @@
       "width": 76,
       "workspaceCount": 5,
       "workspacesStyle": "numbers"
-    },
-    "dock": {
-      "apps": [],
-      "autohide": false,
-      "autohideTimeout": 1000,
-      "cascadeScale": false,
-      "editing": false,
-      "elementSize": 44,
-      "enableScrolling": false,
-      "enabled": false,
-      "exclusive": false,
-      "floating": false,
-      "hoverScale": 120,
-      "onTop": true,
-      "opacity": 100,
-      "overrideBoundsCorrection": false,
-      "position": "bottom",
-      "smartAutohide": true,
-      "visibleElements": 7
     },
     "general": {
       "avatarPath": "",
@@ -3268,6 +3260,7 @@
       "blurStyle": "blur",
       "borderRadius": 8,
       "colors": {},
+      "elementOpacity": 85,
       "fontFamily": "Space Grotesk",
       "matugen": true
     }
@@ -3278,18 +3271,18 @@
     "barAnim": 0,
     "barAutoHide": false,
     "barBorderEnabled": false,
-    "barColor": "accent",
+    "barColor": "foreground",
     "barCornerRadius": 10,
     "barFrostEnabled": true,
     "barGapBottom": 0,
     "barGapLeft": 0,
     "barGapRight": 0,
-    "barGapTop": 0,
+    "barGapTop": 4,
     "barPosition": "top",
     "barScale": 1,
     "barSeps": [],
     "barShadowEnabled": false,
-    "barShellStyle": "full",
+    "barShellStyle": "fit",
     "barTemperatureSource": "cpu",
     "iconOnlyGids": [
       "G18",
@@ -3299,6 +3292,7 @@
       "G14",
       "G17"
     ],
+    "isolateMonitors": false,
     "launcherLogoMode": "icon",
     "layout": {
       "center": [
@@ -3328,6 +3322,8 @@
       ],
       "version": 1
     },
+    "mprisBarStyle": "default",
+    "mprisTitleWidth": 88,
     "panelTooltipBorderEnabled": true,
     "pickerStyle": "carousel",
     "widgetColorStyles": "-",
@@ -3357,7 +3353,7 @@
       "weather": true
     },
     "workspaceMode": "5",
-    "workspaceStyle": "kanji"
+    "workspaceStyle": "numbers"
   },
   "screenShader": "",
   "showJapaneseGloss": true,

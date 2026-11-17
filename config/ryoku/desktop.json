@@ -8,7 +8,7 @@
       "animations": true,
       "blurBrightness": 1,
       "blurContrast": 0.8916,
-      "blurEnabled": false,
+      "blurEnabled": true,
       "blurIgnoreOpacity": true,
       "blurNewOptimizations": true,
       "blurNoise": 0.01,
@@ -22,12 +22,12 @@
       "borderAngleSpeed": 6,
       "borderFollowsPalette": true,
       "borderPartOfWindow": true,
-      "borderSize": 2,
+      "borderSize": 1,
       "dimAround": 0.4,
       "dimInactive": true,
       "dimModal": true,
       "dimSpecial": 0.2,
-      "dimStrength": 0.2,
+      "dimStrength": 0.07,
       "extendBorderGrab": 15,
       "fullscreenOpacity": 1,
       "gapsIn": 4,
@@ -55,7 +55,7 @@
       "shadowSharp": false,
       "shadowSpread": 0,
       "snapEnabled": false,
-      "windowStyle": "gnomed",
+      "windowStyle": "slide",
       "wobblyWindows": false
     },
     "apps": {
@@ -80,7 +80,7 @@
     "env": [],
     "input": {
       "accelProfile": "flat",
-      "clickfinger": false,
+      "clickfinger": true,
       "disableWhileTyping": false,
       "followMouse": 1,
       "kbLayout": "us,br",
@@ -109,6 +109,7 @@
     "keybindRebinds": {
       "SUPER + ALT + E": "SUPER + SHIFT + E",
       "SUPER + ALT + {n}": "SUPER + CTRL + {n}",
+      "SUPER + D": "SUPER + F",
       "SUPER + F": "SUPER + SHIFT + F",
       "SUPER + M": "SUPER + slash",
       "SUPER + Q": "SUPER + W",
@@ -120,7 +121,7 @@
         "action": "exec",
         "keys": "SUPER + M",
         "release": false,
-        "value": "appimage-run ~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"
+        "value": "valen"
       }
     ],
     "windowRules": [
@@ -183,6 +184,18 @@
         "class": "astra",
         "title": "",
         "value": ""
+      },
+      {
+        "action": "workspace",
+        "class": "",
+        "title": "Valen",
+        "value": "3"
+      },
+      {
+        "action": "maximize",
+        "class": "",
+        "title": "Valen",
+        "value": ""
       }
     ],
     "windows": {
@@ -208,6 +221,55 @@
             "leaf": "fadeOut",
             "speed": 2.2,
             "style": ""
+          },
+          {
+            "bezier": "ryokuSettle",
+            "enabled": true,
+            "leaf": "windows",
+            "speed": 3.2,
+            "style": ""
+          },
+          {
+            "bezier": "ryokuSettle",
+            "enabled": true,
+            "leaf": "workspaces",
+            "speed": 1.8,
+            "style": "slide"
+          },
+          {
+            "bezier": "almostLinear",
+            "enabled": true,
+            "leaf": "fade",
+            "speed": 3,
+            "style": ""
+          },
+          {
+            "bezier": "ryokuBloom",
+            "enabled": true,
+            "leaf": "windowsIn",
+            "speed": 3.8,
+            "style": "slide"
+          },
+          {
+            "bezier": "ryokuSettle",
+            "enabled": true,
+            "leaf": "windowsOut",
+            "speed": 2.4,
+            "style": "slide"
+          },
+          {
+            "bezier": "ryokuSettle",
+            "enabled": true,
+            "leaf": "windowsMove",
+            "speed": 3.2,
+            "style": "slide"
+          },
+          {
+            "bezier": "ryokuSettle",
+            "enabled": false,
+            "leaf": "global",
+            "speed": 3.2,
+            "style": ""
           }
         ]
       },
@@ -228,6 +290,13 @@
         "smartResizing": true
       },
       "plugins": {
+        "borders-plus-plus": {
+          "color": "#e0563b",
+          "count": 1,
+          "enabled": false,
+          "naturalRounding": true,
+          "size": 2
+        },
         "dynamicCursors": {
           "enabled": false,
           "magnify": 4,
@@ -257,6 +326,14 @@
           "theme": "dark",
           "tint": "8899aa22"
         },
+        "hyprgrass": {
+          "edgeMargin": 10,
+          "enabled": false,
+          "longPressDelay": 400,
+          "resizeOnBorderLongPress": false,
+          "sensitivity": 1,
+          "threeFingerTap": false
+        },
         "hyprscrolling": {
           "columnWidth": 0.5,
           "followFocus": true
@@ -276,6 +353,14 @@
           "release": true,
           "volume": 0.6
         }
+      },
+      "render": {
+        "autoHdr": false
+      },
+      "settingsWindow": {
+        "height": 0.5,
+        "mode": "custom",
+        "width": 0.5
       }
     },
     "niri": {

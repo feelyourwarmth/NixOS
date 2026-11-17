@@ -383,6 +383,7 @@
         "nixpkgs": "nixpkgs_2",
         "ryoku": "ryoku",
         "sls-steam": "sls-steam",
+        "valen": "valen",
         "zen-browser": "zen-browser"
       }
     },
@@ -705,6 +706,23 @@
         "owner": "numtide",
         "repo": "treefmt-nix",
         "type": "github"
+      }
+    },
+    "valen": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1794867346,
+        "narHash": "sha256-L9Ioqej1AxOTzR491j2BsOt0E6UH5g2G2vsoWnN4i4w=",
+        "path": "/home/feel/valenf",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/feel/valenf",
+        "type": "path"
       }
     },
     "zen-browser": {

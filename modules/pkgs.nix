@@ -7,6 +7,8 @@
     zed-editor
     python314Packages.pip
 
+    inputs.valen.packages.${pkgs.stdenv.hostPlatform.system}.default
+    
     # CLI
     curl
     nmap
@@ -59,6 +61,10 @@
     unzip
     unrar
     p7zip
+    quickshell
+    slurp
+    python3
+    coreutils
 
     # LARP
     fetch

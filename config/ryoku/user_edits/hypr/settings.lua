@@ -3,14 +3,17 @@
 -- after Ryoku's defaults and before your user.lua, which still wins.
 
 hl.config({
-  general = { gaps_in = 4, gaps_out = 6, layout = "scrolling", gaps_workspaces = 16 },
+  general = { gaps_in = 4, gaps_out = 6, border_size = 1, layout = "scrolling", gaps_workspaces = 16 },
   master = { new_status = "slave" },
-  decoration = { rounding = 12, inactive_opacity = 0.9, dim_inactive = true, dim_strength = 0.2, blur = { enabled = false, passes = 2, xray = true, popups = true } },
-  input = { kb_layout = "us,br", kb_variant = "", kb_options = "grp:alt_shift_toggle", sensitivity = 0.1, accel_profile = "flat", repeat_rate = 20, repeat_delay = 250, touchpad = { tap_to_click = false, tap_and_drag = false, clickfinger_behavior = false, disable_while_typing = false } },
+  decoration = { rounding = 12, inactive_opacity = 0.9, dim_inactive = true, dim_strength = 0.07, blur = { passes = 2, xray = true, popups = true } },
+  input = { kb_layout = "us,br", kb_variant = "", kb_options = "grp:alt_shift_toggle", sensitivity = 0.1, accel_profile = "flat", repeat_rate = 20, repeat_delay = 250, touchpad = { tap_to_click = false, tap_and_drag = false, clickfinger_behavior = true, disable_while_typing = false } },
 })
 
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 3.8, bezier = "ryokuBloom", style = "gnomed" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 2.4, bezier = "ryokuSettle", style = "gnomed" })
+-- the Hub made tiled windows translucent so blur should win
+hl.window_rule({ name = "tiled-blur", match = { float = false }, no_blur = false })
+
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 3.8, bezier = "ryokuBloom", style = "slide" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 2.4, bezier = "ryokuSettle", style = "slide" })
 do
   local ok, wc = pcall(dofile, os.getenv("HOME") .. "/.cache/ryoku/hypr-colors.lua")
   local function rgb(h, f) if type(h) ~= "string" then h = f end return "rgb(" .. h:gsub("#", "") .. ")" end
@@ -19,8 +22,15 @@ end
 hl.animation({ leaf = "borderangle", enabled = true, speed = 50.0, bezier = "linear", style = "loop" })
 hl.curve("almostLinear", { type = "bezier", points = { { 0.34, 1.5 }, { 0.64, 1.0 } } })
 hl.animation({ leaf = "fadeOut", enabled = true, speed = 2.2, bezier = "almostLinear" })
+hl.animation({ leaf = "windows", enabled = true, speed = 3.2, bezier = "ryokuSettle" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 1.8, bezier = "ryokuSettle", style = "slide" })
+hl.animation({ leaf = "fade", enabled = true, speed = 3.0, bezier = "almostLinear" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 3.8, bezier = "ryokuBloom", style = "slide" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 2.4, bezier = "ryokuSettle", style = "slide" })
+hl.animation({ leaf = "windowsMove", enabled = true, speed = 3.2, bezier = "ryokuSettle", style = "slide" })
+hl.animation({ leaf = "global", enabled = false, speed = 3.2, bezier = "ryokuSettle" })
 
-hl.animation({ leaf = "workspaces", enabled = true, speed = 3.5, bezier = "easeOutQuint", style = "fade" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 1.8, bezier = "ryokuSettle", style = "fade" })
 
 hl.env("XCURSOR_THEME", "Bibata-Material-Ryoku")
 hl.env("XCURSOR_SIZE", "20")
@@ -40,7 +50,9 @@ hl.window_rule({ name = "ryoku-user-7", match = { title = "Discord" }, workspace
 hl.window_rule({ name = "ryoku-user-8", match = { title = "Discord" }, maximize = true })
 hl.window_rule({ name = "ryoku-user-9", match = { class = "astra" }, workspace = "3" })
 hl.window_rule({ name = "ryoku-user-10", match = { class = "astra" }, maximize = true })
-hl.bind("SUPER + M", hl.dsp.exec_cmd("appimage-run ~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"))
+hl.window_rule({ name = "ryoku-user-11", match = { title = "Valen" }, workspace = "3" })
+hl.window_rule({ name = "ryoku-user-12", match = { title = "Valen" }, maximize = true })
+hl.bind("SUPER + M", hl.dsp.exec_cmd("valen"))
 hl.config({ input = { follow_mouse = 1 } })
 
 

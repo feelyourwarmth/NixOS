@@ -108,6 +108,13 @@
           fetch --infinite --shading-mode sextants
         }
 
+        reskate() {
+          sudo modprobe uinput
+
+          nix-shell -p 'python3.withPackages (ps: [ ps.evdev ])' \
+            --run 'sudo "$(command -v python3)" "$HOME/.local/bin/reskate_360_hardflip.py" --device /dev/input/event31'
+        }
+
         ch() {
           chmod +x "$@"
         }
