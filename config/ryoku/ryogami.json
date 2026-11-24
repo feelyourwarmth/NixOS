@@ -11,7 +11,7 @@
       "duelWidth": 641,
       "enabled": true,
       "gridLayout": "uniform",
-      "lastAppliedKey": "macbook-pro-m3-4k_bmZrZ22UmZqaraWkpJRoaWprrWdnaGk-2626065929",
+      "lastAppliedKey": "motionbgs-9265",
       "startPosition": "applied"
     }
   },
@@ -35,9 +35,6 @@
     "uiScale": 0.8
   },
   "integrations": [],
-  "matugen": {
-    "mode": "dark"
-  },
   "overviewBackdrop": {
     "blur": 40,
     "blurEnabled": true,

@@ -7,6 +7,7 @@
   "delaySeconds": 0,
   "recordMic": false,
   "lastAction": "shot",
+  "beautifySeen": true,
   "toolStyle": {
     "redact": {
       "color": "#e75a50",

@@ -19,6 +19,9 @@
 -- hl.window_rule({ name = "float-mpv", match = { class = "mpv" }, float = true })
 -- hl.config({ general = { border_size = 3 } })
 
+hl.env("QML_IMPORT_PATH", "")
+hl.env("QML2_IMPORT_PATH", "")
+
 local ws_helper = (os.getenv("HOME") or "") .. "/.config/hypr/scripts/ryoku-workspace"
 
 local scrolling_expanded = false
@@ -54,8 +57,11 @@ end
 hl.unbind("SUPER + mouse_up")
 hl.unbind("SUPER + mouse_down")
 
-hl.bind("ALT + Backslash", hl.dsp.exec_cmd("flock -n -o /tmp/ryoshot.lock qs -c ryoshot"))
-hl.bind("CTRL + Backslash", hl.dsp.exec_cmd("flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor qs -c ryoshot"))
+hl.bind("ALT + Backslash", hl.dsp.exec_cmd("flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot"))
+hl.bind(
+	"CTRL + Backslash",
+	hl.dsp.exec_cmd("flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor ryoku-qs -c ryoshot")
+)
 
 hl.bind("SUPER + SHIFT + mouse_up", hl.dsp.focus({ workspace = "r-1" }))
 hl.bind("SUPER + SHIFT + mouse_down", hl.dsp.focus({ workspace = "r+1" }))

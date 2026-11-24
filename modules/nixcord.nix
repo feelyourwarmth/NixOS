@@ -127,6 +127,11 @@
     sendTimestamps.enable = true;
     serverInfo.enable = true;
     settings.enable = true;
+    showConnections = {
+      enable = true;
+      iconSize = 18;
+      showGithubOrgs = false;
+    };
     silentMessageToggle.enable = true;
     silentTyping.enable = true;
     supportHelper.enable = true;

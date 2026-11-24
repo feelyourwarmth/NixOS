@@ -1,0 +1,26 @@
+{
+  "appearance": {
+    "mode": "dark",
+    "density": "comfortable",
+    "reduceMotion": false
+  },
+  "defaults": {
+    "cores": 4,
+    "ramGb": 8,
+    "diskGb": 64,
+    "display": "window",
+    "tools": [
+      "git",
+      "build",
+      "cli",
+      "spice"
+    ],
+    "extraPkgs": ""
+  },
+  "pinned": [],
+  "grouping": "kind",
+  "updates": {
+    "check": true,
+    "lastCheck": "2026-11-23T06:26:52.037252103-03:00"
+  }
+}

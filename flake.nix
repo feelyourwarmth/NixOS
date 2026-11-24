@@ -2,11 +2,11 @@
   inputs = {
     # Ryoku on NixOS local repo
     #ryoku = {
-    #  url = "path:/home/feel/ryoku";
+    #  url = "path:/home/feel/Ryoku-on-NixOS";
     #};
     
     ryoku = {
-      url = "github:ryoku-dev/Ryoku-on-NixOS/unstable-dev";
+      url = "github:Ryoku-dev/Ryoku-on-NixOS/feature/hyperion-v2-nixos";
     };
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -17,7 +17,7 @@
     };
 
     valen = {
-      url = "path:/home/feel/valenf";
+      url = "github:dodo986/valen";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -35,9 +35,11 @@
       url = "github:AceSLS/SLSsteam";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    niri-float-sticky.url = "github:probeldev/niri-float-sticky";
   };
 
-  outputs = { ryoku, valen, zen-browser, nixcord, sls-steam, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { ryoku, valen, zen-browser, nixcord, sls-steam, niri-float-sticky, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
@@ -46,6 +48,10 @@
       };
 
       modules = [
+      #{ programs.ryoku.hyperionNiriOnly.enable = true; } # ryoku-v2-host-slim
+
+      { programs.ryoku.hyperionPackages.enable = true; } # ryoku-v2-host-override
+
         ryoku.nixosModules.default
         ./modules/ryoku.nix
         ./configuration.nix

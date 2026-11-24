@@ -1,5 +1,6 @@
 [ui]
-  section = "animations"
+  section = "graphics"
   update_interval = "daily"
   update_system = "off"
-  advanced = "1"
+  wm_switch = ""
+  update_notifications = "ryoku"

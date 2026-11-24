@@ -3,9 +3,8 @@
 -- after Ryoku's defaults and before your user.lua, which still wins.
 
 hl.config({
-  general = { gaps_in = 4, gaps_out = 6, border_size = 1, layout = "scrolling", gaps_workspaces = 16 },
-  master = { new_status = "slave" },
-  decoration = { rounding = 12, inactive_opacity = 0.9, dim_inactive = true, dim_strength = 0.07, blur = { passes = 2, xray = true, popups = true } },
+  general = { gaps_in = 4, gaps_out = 6, layout = "scrolling", gaps_workspaces = 16 },
+  decoration = { rounding = 12, inactive_opacity = 0.9, dim_inactive = true, dim_strength = 0.07, blur = { passes = 2, xray = true, popups = true }, shadow = { enabled = false } },
   input = { kb_layout = "us,br", kb_variant = "", kb_options = "grp:alt_shift_toggle", sensitivity = 0.1, accel_profile = "flat", repeat_rate = 20, repeat_delay = 250, touchpad = { tap_to_click = false, tap_and_drag = false, clickfinger_behavior = true, disable_while_typing = false } },
 })
 
@@ -14,12 +13,6 @@ hl.window_rule({ name = "tiled-blur", match = { float = false }, no_blur = false
 
 hl.animation({ leaf = "windowsIn", enabled = true, speed = 3.8, bezier = "ryokuBloom", style = "slide" })
 hl.animation({ leaf = "windowsOut", enabled = true, speed = 2.4, bezier = "ryokuSettle", style = "slide" })
-do
-  local ok, wc = pcall(dofile, os.getenv("HOME") .. "/.cache/ryoku/hypr-colors.lua")
-  local function rgb(h, f) if type(h) ~= "string" then h = f end return "rgb(" .. h:gsub("#", "") .. ")" end
-  hl.config({ general = { ["col.active_border"] = { colors = { rgb(ok and wc and wc.active, "#e0563b"), rgb(ok and wc and wc.inactive, "#313a4d") }, angle = 45 } } })
-end
-hl.animation({ leaf = "borderangle", enabled = true, speed = 50.0, bezier = "linear", style = "loop" })
 hl.curve("almostLinear", { type = "bezier", points = { { 0.34, 1.5 }, { 0.64, 1.0 } } })
 hl.animation({ leaf = "fadeOut", enabled = true, speed = 2.2, bezier = "almostLinear" })
 hl.animation({ leaf = "windows", enabled = true, speed = 3.2, bezier = "ryokuSettle" })
@@ -40,18 +33,18 @@ hl.env("HYPRCURSOR_SIZE", "20")
 hl.env("BROWSER", "zen-beta --name zen-beta")
 
 hl.window_rule({ name = "ryoku-tame-maximize-on-open", match = { class = ".*" }, suppress_event = "maximize" })
-hl.window_rule({ name = "ryoku-user-1", match = { title = "Zen" }, maximize = true })
-hl.window_rule({ name = "ryoku-user-2", match = { class = "discord-canary" }, workspace = "2" })
-hl.window_rule({ name = "ryoku-user-3", match = { title = "Ryotunes" }, workspace = "3" })
-hl.window_rule({ name = "ryoku-user-4", match = { title = "Sober" }, workspace = "1" })
-hl.window_rule({ name = "ryoku-user-5", match = { title = "Brave" }, maximize = true })
-hl.window_rule({ name = "ryoku-user-6", match = { title = "Steam" }, workspace = "1" })
-hl.window_rule({ name = "ryoku-user-7", match = { title = "Discord" }, workspace = "2" })
+hl.window_rule({ name = "ryoku-user-1", match = { title = "Valen" }, tile = true })
+hl.window_rule({ name = "ryoku-user-2", match = { title = "Valen" }, maximize = true })
+hl.window_rule({ name = "ryoku-user-3", match = { title = "Valen" }, workspace = "3" })
+hl.window_rule({ name = "ryoku-user-4", match = { title = "astra" }, tile = true })
+hl.window_rule({ name = "ryoku-user-5", match = { title = "astra" }, maximize = true })
+hl.window_rule({ name = "ryoku-user-6", match = { title = "astra" }, workspace = "3" })
+hl.window_rule({ name = "ryoku-user-7", match = { title = "Discord" }, tile = true })
 hl.window_rule({ name = "ryoku-user-8", match = { title = "Discord" }, maximize = true })
-hl.window_rule({ name = "ryoku-user-9", match = { class = "astra" }, workspace = "3" })
-hl.window_rule({ name = "ryoku-user-10", match = { class = "astra" }, maximize = true })
-hl.window_rule({ name = "ryoku-user-11", match = { title = "Valen" }, workspace = "3" })
-hl.window_rule({ name = "ryoku-user-12", match = { title = "Valen" }, maximize = true })
+hl.window_rule({ name = "ryoku-user-9", match = { title = "Discord" }, workspace = "2" })
+hl.window_rule({ name = "ryoku-user-10", match = { class = "hyprland-share-picker" }, float = true })
+hl.window_rule({ name = "ryoku-user-11", match = { class = "zen-beta" }, tile = true })
+hl.window_rule({ name = "ryoku-user-12", match = { class = "zen-beta" }, maximize = true })
 hl.bind("SUPER + M", hl.dsp.exec_cmd("valen"))
 hl.config({ input = { follow_mouse = 1 } })
 

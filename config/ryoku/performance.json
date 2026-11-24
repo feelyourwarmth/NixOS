@@ -1,15 +1,10 @@
 {
-    "ambientBarMotion": true,
-    "autoPowerSaverOnBattery": false,
-    "disableBlur": false,
-    "disableShadows": true,
-    "liveWallpaper60": true,
-    "lowPowerMode": false,
-    "pauseLiveWallpaperWhenFullscreen": true,
-    "powerProfileEffects": false,
-    "reduceMotion": false,
-    "unloadLauncherWhenIdle": true,
-    "unloadOverviewWhenIdle": true,
-    "unloadVisualizerWhenSilent": true,
-    "unloadWidgetsWhenCovered": true
+  "ambientBarMotion": true,
+  "autoPowerSaverOnBattery": false,
+  "lowPowerMode": false,
+  "powerProfileEffects": false,
+  "unloadLauncherWhenIdle": true,
+  "unloadOverviewWhenIdle": true,
+  "unloadVisualizerWhenSilent": true,
+  "unloadWidgetsWhenCovered": true
 }

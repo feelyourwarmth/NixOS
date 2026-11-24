@@ -7,7 +7,10 @@
       "y": 0.68
     }
   },
-  "barStyle": "qsbar",
+  "audio": {
+    "boost": true
+  },
+  "barStyle": "ricelin",
   "bars": {
     "bottom_bar": {
       "center_widgets": [],
@@ -133,14 +136,17 @@
       }
     ]
   },
-  "deckFrost": 0.45,
+  "deckFrost": 0.43,
   "deckFrostEnabled": false,
   "designs": {
-    "notification": "tegami",
+    "notification": "ryoku",
     "osd": "ito",
     "sidebar": "ryoku"
   },
   "displays": {
+    "bar": {
+      "DP-1": true
+    },
     "bar_style": {
       "DP-1": ""
     },
@@ -268,13 +274,12 @@
   "gamebar": {
     "damping": 0.58,
     "dim": 0.62,
-    "enabled": true,
+    "enabled": false,
     "fade": 200,
     "gridAlpha": 0.28,
     "gridStep": 48,
     "guideGrid": true,
     "mass": 1,
-    "radius": 14,
     "scale": 1,
     "snap": true,
     "snapGrid": 24,
@@ -290,7 +295,6 @@
   },
   "general": {
     "clock_format_24_h": true,
-    "temperature_unit": "Metric",
     "weather_location_query": {
       "country": "",
       "lat": 0,
@@ -2938,9 +2942,7 @@
   "kairos": {
     "clock12h": false,
     "clockSeconds": false,
-    "dateWheel": true,
     "music": true,
-    "musicPeek": 90,
     "scale": 0.95,
     "showLocation": true,
     "topGap": 4,
@@ -3102,8 +3104,7 @@
     "gain": 0,
     "layout": {
       "center": [
-        "voice",
-        "activity"
+        "voice"
       ],
       "left": [
         "logo",
@@ -3111,7 +3112,8 @@
       ],
       "right": [
         "tray",
-        "controls"
+        "controls",
+        "battery"
       ]
     },
     "mediaWidth": 220,
@@ -3150,7 +3152,6 @@
     "desktopNotifications": true,
     "enabled": false,
     "microphone": {
-      "enabled": false,
       "micGain": 100,
       "monitor": false,
       "setDefault": false
@@ -3267,7 +3268,6 @@
   },
   "qsbar": {
     "aiTools": "claude,codex,opencode",
-    "audioBoost": true,
     "barAnim": 0,
     "barAutoHide": false,
     "barBorderEnabled": false,
@@ -3417,17 +3417,19 @@
       },
       "window_opacity": 1
     },
-    "matugen": {
-      "contrast": 0,
-      "mode": "Dark",
-      "preference": "Darkness",
-      "scheme_type": "TonalSpot"
+    "colours": "ryoku",
+    "contrast": "standard",
+    "design": "material",
+    "effects": {
+      "glass": false,
+      "shadows": false
     },
     "motion": {
       "reduce": false,
       "scale": 1
     },
-    "theme": "Wallpaper"
+    "theme": "Wallpaper",
+    "tint": "low"
   },
   "urgentUpdates": {
     "enabled": true

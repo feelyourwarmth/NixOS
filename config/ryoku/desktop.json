@@ -4,7 +4,7 @@
     "appearance": {
       "activeBorder": "#e0563b",
       "activeOpacity": 1,
-      "animatedBorder": true,
+      "animatedBorder": false,
       "animations": true,
       "blurBrightness": 1,
       "blurContrast": 0.8916,
@@ -22,7 +22,7 @@
       "borderAngleSpeed": 6,
       "borderFollowsPalette": true,
       "borderPartOfWindow": true,
-      "borderSize": 1,
+      "borderSize": 2,
       "dimAround": 0.4,
       "dimInactive": true,
       "dimModal": true,
@@ -46,7 +46,7 @@
       "rounding": 12,
       "roundingPower": 4,
       "shadowColor": "#000000",
-      "shadowEnabled": true,
+      "shadowEnabled": false,
       "shadowOffsetX": 0,
       "shadowOffsetY": 5,
       "shadowPower": 4,
@@ -109,7 +109,6 @@
     "keybindRebinds": {
       "SUPER + ALT + E": "SUPER + SHIFT + E",
       "SUPER + ALT + {n}": "SUPER + CTRL + {n}",
-      "SUPER + D": "SUPER + F",
       "SUPER + F": "SUPER + SHIFT + F",
       "SUPER + M": "SUPER + slash",
       "SUPER + Q": "SUPER + W",
@@ -126,63 +125,15 @@
     ],
     "windowRules": [
       {
-        "action": "maximize",
+        "action": "tile",
         "class": "",
-        "title": "Zen",
+        "title": "Valen",
         "value": ""
       },
       {
-        "action": "workspace",
-        "class": "discord-canary",
-        "title": "",
-        "value": "2"
-      },
-      {
-        "action": "workspace",
-        "class": "",
-        "title": "Ryotunes",
-        "value": "3"
-      },
-      {
-        "action": "workspace",
-        "class": "",
-        "title": "Sober",
-        "value": "1"
-      },
-      {
         "action": "maximize",
         "class": "",
-        "title": "Brave",
-        "value": ""
-      },
-      {
-        "action": "workspace",
-        "class": "",
-        "title": "Steam",
-        "value": "1"
-      },
-      {
-        "action": "workspace",
-        "class": "",
-        "title": "Discord",
-        "value": "2"
-      },
-      {
-        "action": "maximize",
-        "class": "",
-        "title": "Discord",
-        "value": ""
-      },
-      {
-        "action": "workspace",
-        "class": "astra",
-        "title": "",
-        "value": "3"
-      },
-      {
-        "action": "maximize",
-        "class": "astra",
-        "title": "",
+        "title": "Valen",
         "value": ""
       },
       {
@@ -192,9 +143,57 @@
         "value": "3"
       },
       {
+        "action": "tile",
+        "class": "",
+        "title": "astra",
+        "value": ""
+      },
+      {
         "action": "maximize",
         "class": "",
-        "title": "Valen",
+        "title": "astra",
+        "value": ""
+      },
+      {
+        "action": "workspace",
+        "class": "",
+        "title": "astra",
+        "value": "3"
+      },
+      {
+        "action": "tile",
+        "class": "",
+        "title": "Discord",
+        "value": ""
+      },
+      {
+        "action": "maximize",
+        "class": "",
+        "title": "Discord",
+        "value": ""
+      },
+      {
+        "action": "workspace",
+        "class": "",
+        "title": "Discord",
+        "value": "2"
+      },
+      {
+        "action": "float",
+        "class": "hyprland-share-picker",
+        "title": "",
+        "value": ""
+      },
+      {
+        "action": "tile",
+        "class": "zen-beta",
+        "title": "",
+        "value": ""
+      },
+      {
+        "action": "maximize",
+        "class": "zen-beta",
+        "title": "",
         "value": ""
       }
     ],
@@ -356,11 +355,6 @@
       },
       "render": {
         "autoHdr": false
-      },
-      "settingsWindow": {
-        "height": 0.5,
-        "mode": "custom",
-        "width": 0.5
       }
     },
     "niri": {
@@ -379,7 +373,7 @@
           "dampingRatio": 1,
           "durationMs": 250,
           "epsilon": 0.0001,
-          "mode": "default",
+          "mode": "spring",
           "stiffness": 800
         },
         "overviewOpenClose": {
@@ -435,11 +429,11 @@
           "dampingRatio": 1,
           "durationMs": 250,
           "epsilon": 0.0001,
-          "mode": "default",
+          "mode": "spring",
           "stiffness": 800
         }
       },
-      "animationSlowdown": 1,
+      "animationSlowdown": 0.745,
       "backdropColor": "#1E1E1E",
       "backgroundColor": "",
       "blockOutApps": "",
@@ -460,7 +454,7 @@
       "gradientAngle": 180,
       "gradientFrom": "#e0563b",
       "gradientRelativeTo": "window",
-      "gradientTo": "#9b3226",
+      "gradientTo": "#ffffff",
       "hotCorners": false,
       "hotkeyOverlayHideNotBound": false,
       "hotkeyOverlaySkip": true,
@@ -480,11 +474,6 @@
       "presetWindowHeights": "0.33333, 0.5, 0.66667",
       "recentWindows": false,
       "screenshotPath": "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png",
-      "settingsWindow": {
-        "height": 0.5,
-        "mode": "full",
-        "width": 0.5
-      },
       "struts": {
         "bottom": 0,
         "left": 0,

@@ -5,6 +5,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./services.nix
+      ./modules/portals.nix
       ./modules/fonts.nix
       ./modules/git.nix
       ./modules/nvidia.nix
@@ -75,34 +76,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Portals
-  xdg.portal = {
-    enable = true;
-
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gnome
-      xdg-desktop-portal-gtk
-    ];
-
-    config = {
-      hyprland = lib.mkForce {
-        default = [ "gnome" "gtk" "hyprland" ];
-
-        "org.freedesktop.impl.portal.ScreenCast" = [ "hyprland" ];
-        "org.freedesktop.impl.portal.Screenshot" = [ "hyprland" ];
-        "org.freedesktop.impl.portal.FileChooser" = [ "gnome" "gtk" ];
-      };
-    };
-  };
-
-  
-  systemd.user.services.xdg-desktop-portal-hyprland.environment = {
-    QSP_THEME = "dark";
-    XDPH_PICKER_DEFAULT_TAB = "window";
-  };
-
-
-
   # Remove all Tesseract Languages
   nixpkgs.overlays = [
     (final: prev: {
@@ -112,10 +85,7 @@
     })
   ];
 
-  # Latest Zen Kernel
-  #boot.kernelPackages = pkgs.linuxPackages_zen;
-
-  # Latest Linux Kernel
+  # Linux Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # System Version

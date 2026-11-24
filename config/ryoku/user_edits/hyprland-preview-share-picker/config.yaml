@@ -1,0 +1,27 @@
+stylesheets:
+  - style.css
+
+default_page: windows
+
+window:
+  width: 1000
+  height: 560
+
+image:
+  resize_size: 300
+  widget_size: 190
+
+windows:
+  min_per_row: 3
+  max_per_row: 4
+  clicks: 2
+  spacing: 12
+
+outputs:
+  clicks: 2
+  spacing: 8
+  show_label: true
+  respect_output_scaling: true
+
+hide_token_restore: false
+debug: false

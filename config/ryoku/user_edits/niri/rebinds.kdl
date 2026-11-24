@@ -1,6 +1,6 @@
 binds {
-    Super+M { spawn-sh "appimage-run ~/.local/share/ryoku-apps/Astra-0.8.0-beta-Linux.AppImage"; }
-    Super+W repeat=false { spawn-sh "jq -e '(.barStyle // \"qsbar\") == \"iris\" and .inir.closeConfirm.enabled == true' \"${XDG_CONFIG_HOME:-$HOME/.config}/ryoku/shell.json\" >/dev/null 2>&1 && qs -c shell ipc call closeConfirm trigger || niri msg action close-window"; }
+    Super+M { spawn-sh "valen"; }
+    Super+W repeat=false { spawn-sh "jq -e '.activeOwns | index(\"windowClose\")' \"${XDG_STATE_HOME:-$HOME/.local/state}/ryoku/store/shells.json\" >/dev/null 2>&1 && ryoku-shell ipc call closeConfirm trigger || niri msg action close-window"; }
     Super+Shift+F { fullscreen-window; }
     Super+Ctrl+1 { move-window-to-workspace 1; }
     Super+Ctrl+2 { move-window-to-workspace 2; }
@@ -40,6 +40,8 @@ binds {
     Super+Ctrl+Up { set-window-height "-10%"; }
     Super+Ctrl+Down { set-window-height "+10%"; }
     Super+Ctrl+R { reset-window-height; }
+    Super+equal { switch-preset-column-width; }
+    Super+minus { switch-preset-column-width-back; }
     Super+1 { focus-workspace 1; }
     Super+2 { focus-workspace 2; }
     Super+3 { focus-workspace 3; }
@@ -118,21 +120,23 @@ binds {
     Super+O { spawn "ryoku-app" "notes"; }
     Super+J { spawn "ryotunes"; }
     Super+Space { spawn "ryoku-shell" "launcher"; }
+    Alt+Space { spawn "ryoku-shell" "ask"; }
+    Super+Alt+Space { spawn "ryoku-summon" "--app-id" "dev.ryoku.rashin" "rashin-app"; }
     Super+K { spawn "ryoku-shell" "cheatsheet"; }
     Super+Shift+G allow-inhibiting=false { spawn "ryoku-shell" "gamebar"; }
     Super+L { spawn "ryoku-shell" "lock"; }
     Super+Escape allow-inhibiting=false { spawn "ryoku-shell" "quicksettings"; }
     Super+Shift+W { spawn "ryogami" "wallpaper" "random"; }
-    Super+Shift+V { spawn-sh "ryoku-summon ryovm env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryovm.lock qs -c ryovm"; }
+    Super+Shift+V { spawn "ryoku-summon" "--app-id" "dev.ryoku.ryoport" "ryoport"; }
     Super+V { spawn "ryoku-shell" "clipboard"; }
     Super+Shift+M { spawn "ryoku-shell" "visualizer-overlay"; }
     Super+Alt+M { spawn "ryoku-shell" "visualizer-place"; }
     Super+grave repeat=false { spawn "ryoku-shell" "voice"; }
     Super+comma { spawn "ryoku-shell" "settings"; }
     Super+Shift+D { spawn "ryoku-shell" "hub" "open" "widgets"; }
-    Super+Shift+S { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock qs -c ryoshot; fi"; }
-    Print { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock qs -c ryoshot; fi"; }
-    Shift+Print { spawn-sh "if command -v ryoku-qs >/dev/null 2>&1; then flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor ryoku-qs -c ryoshot; else env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" flock -n -o /tmp/ryoshot.lock env RYOSHOT_MODE=monitor qs -c ryoshot; fi"; }
+    Super+Shift+S { spawn-sh "env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" ryoku-cmd-ryoshot"; }
+    Print { spawn-sh "env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" ryoku-cmd-ryoshot"; }
+    Shift+Print { spawn-sh "env QML_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" QML2_IMPORT_PATH=\"$HOME/.local/lib/qt6/qml\" RYOSHOT_MODE=monitor ryoku-cmd-ryoshot"; }
     Super+Shift+C { spawn "hyprpicker" "-a"; }
     Super+Shift+A { spawn "ryoku-restart-audio"; }
     Super+Shift+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
@@ -141,14 +145,14 @@ binds {
     XF86AudioMute allow-when-locked=true repeat=false { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute allow-when-locked=true repeat=false { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
     XF86AudioPlay allow-when-locked=true repeat=false { spawn "ryoku-media" "play-pause"; }
-    XF86AudioPause allow-when-locked=true repeat=false { spawn "ryoku-media" "play-pause"; }
+    XF86AudioPause allow-when-locked=true repeat=false { spawn "ryoku-media" "pause"; }
     XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
     XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "ryoku-cmd-brightness" "+5"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "ryoku-cmd-brightness" "-5"; }
-    XF86TouchpadToggle allow-when-locked=true repeat=false { spawn "ryoku-wm-niri" "act" "input.touchpad" "toggle"; }
-    XF86TouchpadOn allow-when-locked=true repeat=false { spawn "ryoku-wm-niri" "act" "input.touchpad" "on"; }
-    XF86TouchpadOff allow-when-locked=true repeat=false { spawn "ryoku-wm-niri" "act" "input.touchpad" "off"; }
+    XF86TouchpadToggle allow-when-locked=true { spawn "ryoku-wm-niri" "act" "input.touchpad" "toggle"; }
+    XF86TouchpadOn allow-when-locked=true { spawn "ryoku-wm-niri" "act" "input.touchpad" "on"; }
+    XF86TouchpadOff allow-when-locked=true { spawn "ryoku-wm-niri" "act" "input.touchpad" "off"; }
     Super+KP_End { focus-workspace 1; }
     Super+KP_Down { focus-workspace 2; }
     Super+KP_Next { focus-workspace 3; }

@@ -11,16 +11,16 @@ original, and ryoku reset <path> hands it back.
 Ryoku Settings (Super + ,) writes these here; change them in the GUI, not by
 hand:
 
-    ~/.config/niri/settings.kdl
-    ~/.config/niri/rebinds.kdl
+    ~/.config/hypr/settings.lua
+    ~/.config/hypr/rebinds.lua
 
 --- Simple tweaks do NOT go here -----------------------------------------
 
 Edit the tool's own user file at its normal place. Ryoku never overwrites these,
 so your edits always survive an update:
 
-    ~/.config/niri/user.kdl
-    ~/.config/niri/monitors_user.kdl
+    ~/.config/hypr/user.lua
+    ~/.config/hypr/monitors_user.lua
     ~/.config/kitty/user.conf
 
 Putting one of those in this overlay is the old, broken way: the overlay froze a

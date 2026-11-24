@@ -43,20 +43,23 @@ layout {
     focus-ring {
         on
         width 2
-        active-color "#c1cbe0"
-        inactive-color "#111318"
+        active-color "#efc470"
+        inactive-color "#17130b"
         urgent-color "#9b0000"
-    }
-    shadow {
-        on
-        softness 45
-        spread 0
-        offset x=0 y=5
-        color "#000000"
     }
     tab-indicator {
         width 4
         hide-when-single-tab
+    }
+}
+
+animations {
+    slowdown 0.745
+    workspace-switch {
+        spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
+    }
+    horizontal-view-movement {
+        spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
     }
 }
 
@@ -90,6 +93,8 @@ recent-windows {
 
 environment {
     BROWSER "zen-beta --name zen-beta"
+    XCURSOR_THEME "Bibata-Material-Ryoku"
+    XCURSOR_SIZE "20"
 }
 
 spawn-sh-at-startup "easyeffects --hide-window --service-mode"
@@ -113,7 +118,14 @@ window-rule {
 }
 
 window-rule {
-    match title="^Rashin$"
+    match title="^Ryoku Settings$"
+    open-floating true
+    default-column-width { fixed 1280; }
+    default-window-height { fixed 800; }
+}
+
+window-rule {
+    match app-id="^dev\\.ryoku\\.rashin$"
     open-floating true
     default-column-width { fixed 1280; }
     default-window-height { fixed 820; }
@@ -127,6 +139,13 @@ window-rule {
 }
 
 window-rule {
+    match app-id="^dev\\.ryoku\\.ryoport$"
+    open-floating true
+    default-column-width { fixed 1180; }
+    default-window-height { fixed 760; }
+}
+
+window-rule {
     match app-id="ryoport_console"
     open-floating true
 }
@@ -137,33 +156,43 @@ window-rule {
 }
 
 window-rule {
-    match title="Zen"
+    match title="Valen"
+    open-floating false
+}
+
+window-rule {
+    match title="Valen"
     open-maximized true
 }
 
 window-rule {
-    match app-id="discord-canary"
-    open-on-workspace "2"
-}
-
-window-rule {
-    match title="Ryotunes"
+    match title="Valen"
     open-on-workspace "3"
 }
 
 window-rule {
-    match title="Sober"
-    open-on-workspace "1"
+    match title="astra"
+    open-floating false
 }
 
 window-rule {
-    match title="Brave"
+    match title="astra"
     open-maximized true
 }
 
 window-rule {
-    match title="Steam"
-    open-on-workspace "1"
+    match title="astra"
+    open-on-workspace "3"
+}
+
+window-rule {
+    match title="Discord"
+    open-floating false
+}
+
+window-rule {
+    match title="Discord"
+    open-maximized true
 }
 
 window-rule {
@@ -172,17 +201,17 @@ window-rule {
 }
 
 window-rule {
-    match title="Discord"
-    open-maximized true
+    match app-id="hyprland-share-picker"
+    open-floating true
 }
 
 window-rule {
-    match app-id="astra"
-    open-on-workspace "3"
+    match app-id="zen-beta"
+    open-floating false
 }
 
 window-rule {
-    match app-id="astra"
+    match app-id="zen-beta"
     open-maximized true
 }
 

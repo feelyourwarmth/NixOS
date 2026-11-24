@@ -31,6 +31,7 @@
     # APPS
     openrgb
     chromium
+    brave-origin
     lact
     gpu-screen-recorder-ui
     easyeffects
@@ -65,6 +66,17 @@
     slurp
     python3
     coreutils
+    inputs.niri-float-sticky.packages.${pkgs.stdenv.hostPlatform.system}.default
+    nvtopPackages.full
+
+    # VM
+    quickemu
+    spice-gtk
+    xorriso
+    qemu
+    socat
+    swtpm
+    cdrtools
 
     # LARP
     fetch

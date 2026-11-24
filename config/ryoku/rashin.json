@@ -1,5 +1,13 @@
 {
+  "version": 2,
   "enabled": false,
-  "optedOut": true,
-  "port": 3600
+  "ask": {"model":"auto","habits":true,"approvals":"read-only"},
+  "agent": {"harness":"","approvals":"read-only","idleStopMinutes":10},
+  "daemon": {"idleExitMinutes":5},
+  "index": {"system":true,"semantic":true},
+  "api": {"enabled":false,"port":3600},
+  "teams": {"maxRunning":3,"perTeam":2,"routinesWake":true,"defaults":{"approvals":"ask","budget":{"monthTokens":2000000,"warnPercent":80,"taskTurns":20,"taskMinutes":60},"notify":"all","memory":{"remember":true,"carryReport":true,"readsYou":false,"suggest":true}},"approvalHours":24,"hidden":null,"keepDays":0},
+  "providers": {"local":{"llamacpp":"http://127.0.0.1:8080/v1","ollama-local":"http://127.0.0.1:11434/v1"}},
+  "memory": {"asked":false,"use":false,"learn":false,"sessions":true,"agents":true,"teamSuggestions":"ask","sensitive":false,"model":"localFirst","fadeMonths":0,"quietMinutes":10,"engine":"builtin","hindsight":{"local":true},"honcho":{"workspace":"rashin-desktop"}},
+  "skills": {}
 }
