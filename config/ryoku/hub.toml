@@ -1,5 +1,5 @@
 [ui]
-  section = "graphics"
+  section = "shortcuts"
   update_interval = "daily"
   update_system = "off"
   wm_switch = ""
